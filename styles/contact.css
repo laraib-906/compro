@@ -1,0 +1,63 @@
+/***********************************
+  all contact page styles
+***********************************/
+
+.divine-section {
+    margin-top: 100px;
+}
+
+.divine-section .section-header {
+    font-family: 'Roboto Medium';
+    text-align: center;
+    font-size: 30px;
+}
+
+.input,
+.select,
+.text-area {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border: 1px solid #84858b !important;
+    border-radius: .375rem;
+    outline: none;
+}
+
+.submit-button {
+    border: none;
+    background: #3A79F9;
+    padding: 10px 60px;
+    border-radius: 50px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Inter Medium';
+}
+
+.info-section {
+    background: linear-gradient(90deg, #3A79F9, #171E41 60%);
+    padding: 40px;
+}
+
+.contact-info-content {
+    color: white;
+}
+
+.contact-info-content .main-heading {
+    font-family: 'Roboto Bold';
+    font-size: 30px;
+}
+
+.contact-info-content .main-subheading {
+    text-align: center;
+    font-family: 'Inter Medium';
+    font-size: 16px;
+    font-weight: 500 !important;
+    color: #CFCFCF !important;
+}
+
+.contact-info-content .icon-text {
+    text-align: center;
+    font-family: 'Inter Regular';
+    font-size: 16px;
+    font-weight: 500 !important;
+}

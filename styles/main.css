@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
 }
 
 
@@ -33,6 +38,64 @@
 
 
 /**************************************
+  Banner
+*************************************/
+
+.banner {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 868px;
+    text-align: center;
+}
+
+.banner .banner-heading {
+    font-size: 80px;
+    font-family: "Roboto Bold";
+    color: #ffffff;
+}
+
+.banner .banner-heading-2 {
+    font-size: 80px;
+    font-family: "Roboto Regular";
+    color: #ffffff;
+}
+
+.banner .banner-description {
+    font-size: 26px;
+    font-family: "Inter Regular";
+    color: #ffffff;
+}
+
+.banner .glass-wrapper {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+
+.about-banner {
+    background-image: linear-gradient( rgba(50, 58, 81, 0.6), rgba(50, 58, 81, 0.6)), url(../assets/images/banners/about_banner.png);
+}
+
+.services-banner {
+    background-image: linear-gradient( rgba(50, 58, 81, 0.6), rgba(50, 58, 81, 0.6)), url(../assets/images/banners/services_banner.png);
+}
+
+.portfolio-banner {
+    background-image: linear-gradient( rgba(50, 58, 81, 0.6), rgba(50, 58, 81, 0.6)), url(../assets/images/banners/portfolio_banner.png);
+}
+
+.contact-banner {
+    background-image: linear-gradient( rgba(50, 58, 81, 0.6), rgba(50, 58, 81, 0.6)), url(../assets/images/banners/contact_banner.png);
+}
+
+
+/**************************************
   Footer
 *************************************/
 
@@ -49,7 +112,7 @@
 }
 
 .footer .heading {
-    font-family: "Roboto";
+    font-family: "Roboto Medium";
     font-size: 30px;
     color: #3a79f9;
 }
@@ -57,13 +120,13 @@
 .footer .description {
     font-family: "Inter Light BETA";
     font-size: 18px;
-    color: #E1E4EB !important;
+    color: #e1e4eb !important;
     width: 380px;
     font-weight: lighter;
 }
 
 .footer .contact-info-item {
-    color: #E2E6EF;
+    color: #e2e6ef;
     font-family: "Inter Light BETA";
     font-size: 18px;
 }
@@ -75,7 +138,7 @@
 .footer .information {
     font-family: "Inter Light BETA";
     font-size: 18px;
-    color: #E2E6EF;
+    color: #e2e6ef;
 }
 
 .footer-bottom {
@@ -86,12 +149,28 @@
     padding: 25px;
 }
 
-.cursor-pointer {
-    cursor: pointer;
-}
-
 .footer-bottom .seprator {
     background: #e8e8e8;
     width: 1px;
     height: 100%;
+}
+
+
+/**************************************
+  General Styles
+*************************************/
+
+#top-button {
+    position: fixed;
+    background: #323a51;
+    padding: 15px 20px;
+    z-index: 1020;
+    bottom: 20px;
+    right: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cursor-pointer {
+    cursor: pointer;
 }

@@ -76,6 +76,15 @@
     animation: ball 4s infinite;
 }
 
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 @-webkit-keyframes ball {
     0% {
         transform: translate(0, 0);
