@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/**************************************
+  Navbar
+*************************************/
+
+.custom-nav {
+    background: #f2f6ff !important;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar .navbar-nav .nav-item .quote {
+    margin: 0;
+    padding: 10px 20px;
+    background: #3a79f9;
+    border: none;
+    color: white;
+    border-radius: 50px;
+}
+
+.splitter {
+    height: 66px;
+    width: 100px;
+}
+
+
+/**************************************
+  Footer
+*************************************/
+
+.footer {
+    background: #171e41;
+    color: white;
+    padding: 20px;
+}
+
+.footer .footer-logo {
+    margin-top: 80px;
+    width: 230px;
+    mix-blend-mode: luminosity;
+}
+
+.footer .heading {
+    font-family: "Roboto";
+    font-size: 30px;
+    color: #3a79f9;
+}
+
+.footer .description {
+    font-family: "Inter Light BETA";
+    font-size: 18px;
+    color: #E1E4EB !important;
+    width: 380px;
+    font-weight: lighter;
+}
+
+.footer .contact-info-item {
+    color: #E2E6EF;
+    font-family: "Inter Light BETA";
+    font-size: 18px;
+}
+
+.footer .contact-info-item .icon {
+    width: 26px;
+}
+
+.footer .information {
+    font-family: "Inter Light BETA";
+    font-size: 18px;
+    color: #E2E6EF;
+}
+
+.footer-bottom {
+    font-family: "Open Sans Regular";
+    background: #3a79f9;
+    color: #e8e8e8;
+    font-size: 16px;
+    padding: 25px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.footer-bottom .seprator {
+    background: #e8e8e8;
+    width: 1px;
+    height: 100%;
+}
