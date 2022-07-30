@@ -1,0 +1,259 @@
+/* all services css */
+
+.old-service-section {
+    padding: 40px;
+}
+
+.past-services {
+    height: 100%;
+}
+
+.past-history {
+    height: 100%;
+}
+
+.past-history-year {
+    font-family: "Inter Semi Bold";
+    font-size: 22px;
+}
+
+.past-history-content {
+    font-family: "Inter Regular";
+    font-size: 18px;
+}
+
+.current-services-section {
+    background: linear-gradient(#f0f6ff, #ffffff 100%);
+    /* padding: 100px; */
+}
+
+.services-section-header {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #3A79F9;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.services-section-header img {
+    cursor: pointer;
+    width: 60px;
+}
+
+.sevices-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.sevices-details .sevices-details-header {
+    font-family: "Roboto Bold";
+    font-size: 40px;
+    color: #050817;
+}
+
+.sevices-details .sevices-details-description {
+    font-family: "Inter Regular";
+    font-size: 24px;
+    color: #001427;
+}
+
+.sevices-details-list {
+    list-style: none;
+    padding-left: 50px;
+    margin-top: 20px;
+}
+
+.sevices-details-list .sevices-details-list-item {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 30px 0;
+    border-bottom: 1px solid #a7c4ff;
+}
+
+.sevices-details-list .sevices-details-list-item .sevices-details-list-item-text {
+    font-family: "Inter Regular";
+    font-size: 22px;
+    color: #001427;
+}
+
+.sevices-details-more {
+    padding-left: 50px;
+}
+
+.sevices-details-more .sevices-details-more-button {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    background: #3A79F9;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+}
+
+
+/* image services left section css */
+
+.sevices-left-images {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sevices-left-images .sevices-left-images-dottedImage {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 225px;
+}
+
+.sevices-left-images .sevices-left-images-upper-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.sevices-left-images .sevices-left-images-upper-box-inner {
+    width: 200px;
+    height: 260px;
+    background: #DCE7FE;
+    border-radius: 40px;
+    z-index: 1;
+}
+
+.sevices-left-images .sevices-left-images-lower-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.sevices-left-images .sevices-left-images-lower-box-inner {
+    width: 200px;
+    height: 240px;
+    background: #DCE7FE;
+    border-radius: 40px;
+}
+
+.sevices-left-images-img2 {
+    max-width: 416px;
+}
+
+.sevices-left-images-centering-logo-container {
+    position: relative;
+}
+
+.sevices-left-images .sevices-left-images-centering-logo {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    bottom: -70px;
+    right: 160px;
+    z-index: 2;
+}
+
+
+/* image services left section css closed */
+
+
+/* image services right section css */
+
+.sevices-right-images {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sevices-right-images .sevices-right-images-dottedImage {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 225px;
+}
+
+.sevices-right-images .sevices-right-images-upper-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.sevices-right-images .sevices-right-images-upper-box-inner {
+    width: 200px;
+    height: 260px;
+    background: #DCE7FE;
+    border-radius: 40px;
+    z-index: 1;
+}
+
+.sevices-right-images .sevices-right-images-lower-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.sevices-right-images .sevices-right-images-lower-box-inner {
+    width: 200px;
+    height: 240px;
+    background: #DCE7FE;
+    border-radius: 40px;
+}
+
+.sevices-right-images-img2 {
+    max-width: 416px;
+}
+
+.sevices-right-images-centering-logo-container {
+    position: relative;
+}
+
+.sevices-right-images .sevices-right-images-centering-logo {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    bottom: -70px;
+    right: 320px;
+    z-index: 2;
+}
+
+
+/* image services right section css closed */
+
+.margin-top-rem5 {
+    margin-top: 5rem !important;
+}
+
+.margin-bottom-6rem {
+    margin-bottom: 6rem !important;
+}
