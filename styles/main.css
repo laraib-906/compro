@@ -36,6 +36,14 @@ body {
     width: 100px;
 }
 
+.get-quote-top {
+    display: none;
+}
+
+.get-quote-bottom {
+    display: flex;
+}
+
 
 /**************************************
   Banner

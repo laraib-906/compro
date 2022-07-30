@@ -32,4 +32,12 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         });
+
+        // masonry gird filter and preview options
+
+        mixitup(".filter-container");
+        lightbox.option({
+            resizeDuration: 200,
+            wrapAround: true,
+        });
     })();

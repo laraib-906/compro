@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="fonts/open-sans/style.css">
     <link rel="stylesheet" href="fonts/roboto/style.css">
     <link rel="stylesheet" href="fonts/inter/style.css">
+    <link rel="stylesheet" href="styles/responsive.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/loader.css">
@@ -39,7 +40,10 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav ms-auto navbar-nav-scroll d-flex gap-5" style="--bs-scroll-height: 100px;">
+                <ul class="navbar-nav ms-auto navbar-nav-scroll d-flex gap-5">
+                    <li class="nav-item get-quote-top">
+                        <button class="quote">Get a Quote</button>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="about.html">About Us</a>
                     </li>
@@ -47,12 +51,12 @@
                         <a class="nav-link" href="services.html">Service</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="protfolio.html">Protfolio</a>
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item get-quote-bottom">
                         <button class="quote">Get a Quote</button>
                     </li>
                 </ul>
@@ -66,7 +70,7 @@
             <div class="banner-description"> Projects, Questions, Feedback? <br /> We are here for you, 24/7</div>
         </div>
     </section>
-    <section class="divine-section">
+    <section class="constant-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -118,7 +122,7 @@
             </div>
         </div>
     </section>
-    <section class="divine-section info-section pt-5 pb-5">
+    <section class="constant-section info-section pt-5 pb-5">
         <div class="container pt-5 pb-5">
             <div class="row">
                 <div class="col-md-12">
@@ -221,6 +225,9 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
     <script src="icons/fontawesome/js/all.js"></script>
     <script src="scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/helha.js"></script>
+    <script src="scripts/light-box.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 

@@ -1,0 +1,18 @@
+@media only screen and (max-width: 991px) {
+    .navbar-nav {
+        margin-top: 30px;
+        gap: 10px !important;
+    }
+    .get-quote-top {
+        display: flex !important;
+    }
+    .get-quote-bottom {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 703px) {
+    .gird-caption {
+        display: none;
+    }
+}

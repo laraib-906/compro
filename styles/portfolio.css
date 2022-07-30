@@ -1,0 +1,127 @@
+/* all portfolio css */
+
+.constant-section {
+    margin-top: 100px;
+}
+
+.constant-section .section-header {
+    font-size: 62px;
+    font-family: "Roboto Bold";
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: masonry;
+    align-tracks: start;
+    justify-tracks: start;
+}
+
+.grid-container .item {
+    background: transparent;
+    position: relative;
+    display: flex;
+}
+
+.grid-container .item a {
+    display: flex;
+    width: 100%;
+}
+
+.gird-caption {
+    font-family: "Inter Regular";
+    font-size: 72px;
+    color: #171e41;
+    opacity: 0.3;
+}
+
+.turn-upwards {
+    position: absolute;
+    transform: rotate(90deg);
+    left: -250px;
+}
+
+.turn-downwards {
+    position: absolute;
+    transform: rotate(-90deg);
+    right: -250px;
+}
+
+.complete-relative {
+    position: relative;
+}
+
+.grid-vital-column {
+    position: relative;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container .item .image-hover-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1030;
+    display: none;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.grid-container .item:hover .image-hover-content {
+    display: flex;
+}
+
+.grid-container .item:hover img {
+    mix-blend-mode: normal !important;
+}
+
+.grid-container .item .image-hover-content button {
+    position: absolute;
+    background: transparent;
+    border: 3px solid white;
+    padding: 10px;
+    border-radius: 50px;
+    color: white;
+    font-weight: bolder;
+}
+
+.grid-container .item .image-hover-content::after {
+    content: "";
+    border: 3px solid white;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-container .item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    mix-blend-mode: luminosity !important;
+}
+
+.filter-buttons {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    gap: 4rem;
+    padding: 1rem;
+}
+
+.filter-buttons button {
+    border: none;
+    outline: none;
+    font-size: 22px;
+    font-family: "Inter Medium";
+    margin-bottom: 5rem;
+    background: transparent;
+}
+
+.filter-buttons button:focus {
+    background: transparent;
+    outline: none;
+    color: #3a79f9;
+}

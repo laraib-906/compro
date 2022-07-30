@@ -2,11 +2,11 @@
   all contact page styles
 ***********************************/
 
-.divine-section {
+.constant-section {
     margin-top: 100px;
 }
 
-.divine-section .section-header {
+.constant-section .section-header {
     font-family: 'Roboto Medium';
     text-align: center;
     font-size: 30px;
