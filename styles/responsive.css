@@ -74,7 +74,7 @@
     .about-overview-image-section .image-overlay {
         width: 440px !important;
         height: 515px !important;
-        top: 40px !important;
+        top: 29px !important;
         left: 100px !important;
     }
     .about-overview-image-section .main-image {
@@ -86,6 +86,15 @@
     }
     .about-overview-image-section .image-dotted-bottom {
         height: 25% !important;
+    }
+    .about-grow .title {
+        width: 60% !important;
+    }
+    .about-grow .tag-line {
+        width: 75% !important;
+    }
+    .creative-heads .subtitle {
+        width: 65% !important;
     }
     /* about end */
 }
@@ -165,7 +174,7 @@
     .about-overview-image-section .image-overlay {
         width: 386px !important;
         height: 485px !important;
-        top: 45px !important;
+        top: 26px !important;
         left: 80px !important;
     }
     .about-overview-image-section .main-image {
@@ -181,6 +190,24 @@
         height: 22% !important;
         bottom: 0 !important;
         right: -48px !important;
+    }
+    .about-grow .title {
+        width: 70% !important;
+    }
+    .about-grow .tag-line {
+        width: 88% !important;
+    }
+    .past-growth .past-growth-year {
+        font-size: 37px !important;
+    }
+    .past-growth .past-growth-content {
+        font-size: 14px !important;
+    }
+    .creative-heads .title {
+        font-size: 38px !important;
+    }
+    .creative-heads .subtitle {
+        width: 75% !important;
     }
     /* about end */
 }
@@ -294,6 +321,11 @@
         width: 360px !important;
         height: 400px !important;
     }
+    .about-overview-image-section .main-image-wrapper::after {
+        width: 361px !important;
+        height: 401px !important;
+        top: 99px !important;
+    }
     .about-overview-image-section .image-dotted-top {
         height: 15% !important;
         top: 46px !important;
@@ -301,8 +333,8 @@
     }
     .about-overview-image-section .image-dotted-bottom {
         height: 15% !important;
-        bottom: 232px !important;
-        right: -48px !important;
+        bottom: 142px !important;
+        right: -61px !important;
     }
     .about-vision-container {
         text-align: center;
@@ -314,12 +346,52 @@
     .about-vision-container span {
         font-size: 14px !important;
     }
+    .about-grow .title {
+        font-size: 50px !important;
+        width: 80% !important;
+    }
+    .about-grow .tag-line {
+        font-size: 18px !important;
+        width: 100% !important;
+    }
+    .past-growth .past-growth-year {
+        font-size: 37px !important;
+    }
+    .past-growth .past-growth-content {
+        font-size: 14px !important;
+    }
+    .about-programs-section .about-programs .title {
+        font-size: 24px !important;
+    }
+    .about-programs-section .about-programs .description {
+        font-size: 14px !important;
+        line-height: 2rem !important;
+    }
+    .creative-heads .title {
+        font-size: 32px !important;
+    }
+    .creative-heads .subtitle {
+        width: 100% !important;
+    }
+    .creative-heads .description {
+        font-size: 18px !important;
+    }
+    .creativitiy-info {
+        gap: 10px;
+    }
+    .creativitiy-info .info-title {
+        font-size: 22px !important;
+    }
+    .creativitiy-info .content {
+        font-size: 14px !important;
+    }
     /* about end */
 }
 
 @media only screen and (max-width: 767px) {
     /* services */
-    .past-services {
+    .past-services,
+    .past-growth-exp {
         flex-direction: column !important;
     }
     .reverse-row {
@@ -406,25 +478,76 @@
         margin-bottom: 40px;
     }
     .about-overview-image-section .image-overlay {
-        width: 324px !important;
-        height: 420px !important;
+        width: 323px !important;
+        height: 432px !important;
         top: -16px !important;
-        left: 132px !important;
+        left: 106px !important;
     }
     .about-overview-image-section .main-image {
         margin-top: 0;
-        width: 70% !important;
-        height: 90% !important;
+        width: 85% !important;
+        height: none !important;
+    }
+    .about-overview-image-section .main-image-wrapper::after {
+        width: 85% !important;
+        height: 401px !important;
+        top: 0 !important;
     }
     .about-overview-image-section .image-dotted-top {
         height: 25% !important;
-        top: -52px !important;
-        left: 20px !important;
+        top: -61px !important;
+        left: -29px !important;
     }
     .about-overview-image-section .image-dotted-bottom {
         height: 25% !important;
-        bottom: -12px !important;
-        right: 26px !important;
+        bottom: 38px !important;
+        right: 46px !important;
+    }
+    .about-grow .title {
+        font-size: 40px !important;
+        width: 100% !important;
+    }
+    .about-grow .tag-line {
+        font-size: 16px !important;
+        width: 100% !important;
+    }
+    .past-growth-exp .past-growth-year {
+        font-size: 28px !important;
+    }
+    .past-growth-exp .past-growth-content {
+        font-size: 20px !important;
+    }
+    .past-growth-exp {
+        margin-top: 1rem !important;
+    }
+    .grow-section-bg {
+        background-repeat: repeat !important;
+    }
+    .creative-heads .title {
+        font-size: 30px !important;
+    }
+    .creative-heads .subtitle {
+        font-size: 16px !important;
+        width: 100% !important;
+    }
+    .creative-heads .description {
+        text-align: center !important;
+        font-size: 22px !important;
+        padding-bottom: 40px;
+    }
+    .creativitiy-info {
+        gap: 10px;
+    }
+    .creativitiy-info .info-title {
+        text-align: center !important;
+        font-size: 22px !important;
+    }
+    .creativitiy-info .content {
+        text-align: center !important;
+        font-size: 14px !important;
+    }
+    .creator-sub-image img {
+        width: 100% !important;
     }
     /* about end */
 }
@@ -481,25 +604,36 @@
     /* service end */
     /* about  */
     .about-overview-image-section .image-overlay {
-        width: 302px !important;
-        height: 394px !important;
-        top: -16px !important;
-        left: 120px !important;
+        width: 318px !important;
+        height: 349px !important;
+        top: -14px !important;
+        left: 101px !important;
+        border-radius: 10px !important;
     }
     .about-overview-image-section .main-image {
         margin-top: 0;
-        width: 70% !important;
+        width: 74% !important;
         height: 90% !important;
+        margin-left: 50px;
+    }
+    .about-overview-image-section .main-image-wrapper::after {
+        width: 74% !important;
+        height: 320px !important;
+        top: 0 !important;
+        left: 49px !important;
     }
     .about-overview-image-section .image-dotted-top {
         height: 22% !important;
-        top: -44px !important;
-        left: 29px !important;
+        top: -43px !important;
+        left: 0px !important;
     }
     .about-overview-image-section .image-dotted-bottom {
         height: 22% !important;
-        bottom: -3px !important;
-        right: 28px !important;
+        bottom: 52px !important;
+        right: 27px !important;
+    }
+    .creative-heads .description {
+        font-size: 20px !important;
     }
     /* about end */
 }

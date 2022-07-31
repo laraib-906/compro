@@ -1,5 +1,8 @@
 /* all about page css */
 
+
+/* overview section */
+
 .constant-section {
     margin-top: 60px;
     margin-bottom: 100px;
@@ -13,12 +16,12 @@
 
 .about-overview-section .subtitle {
     font-family: "Roboto Medium";
-    font-size: 30px;
+    font-size: 26px;
 }
 
 .about-overview-section .title {
     font-family: "Roboto Bold";
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .about-overview-section .description {
@@ -54,27 +57,239 @@
     height: 540px;
     border: 2px solid #3a79f9;
     border-radius: 25px;
-    top: 20px;
+    top: 8px;
     left: 123px;
     z-index: 1;
 }
 
 .about-overview-image-section .main-image {
+    position: relative;
     width: 530px;
     height: 500px;
     z-index: 2;
 }
 
+.about-overview-image-section .main-image-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.about-overview-image-section .main-image-wrapper::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(rgba(58, 121, 249, 0.2), rgba(58, 121, 249, 0.2));
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    border-radius: 15px;
+}
+
 .about-overview-image-section .image-dotted-top {
     position: absolute;
     height: 30%;
-    top: -7px;
+    top: -16px;
     left: -62px;
 }
 
 .about-overview-image-section .image-dotted-bottom {
     position: absolute;
     height: 30%;
-    bottom: -10px;
-    right: -32px;
+    bottom: -18px;
+    right: -22px;
 }
+
+
+/* overview section closed */
+
+
+/* about programs section */
+
+.about-programs-section {
+    background: linear-gradient(90deg, #3a79f9, #171e41);
+    padding: 40px;
+}
+
+.about-programs-section .about-programs {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-programs-section .about-programs .title {
+    font-family: "Roboto Bold";
+    font-size: 36px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.about-programs-section .about-programs .description {
+    font-family: "Inter Regular";
+    font-size: 18px;
+    line-height: 2.5rem;
+    color: white;
+}
+
+
+/* about programs section closed */
+
+
+/* about grow section */
+
+.grow-section-bg {
+    background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../assets/images/about/about-grow-section-image.png);
+    height: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    /* background-size: contain;
+    background-origin: content-box; */
+    text-align: center;
+}
+
+.past-growth-exp {
+    padding-bottom: 5rem;
+}
+
+.about-grow {
+    padding-top: 10rem;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+}
+
+.about-grow .title {
+    font-family: "Roboto Bold";
+    font-size: 50px;
+    width: 50%;
+}
+
+.about-grow .tag-line {
+    font-family: "Inter Regular";
+    width: 60%;
+    font-size: 20px;
+}
+
+.past-growth .past-growth-year {
+    font-family: "Inter Bold";
+    font-size: 40px;
+    color: #3a79f9;
+}
+
+.past-growth .past-growth-content {
+    font-family: "Inter Regular";
+    font-size: 18px;
+}
+
+
+/* about grow section closed */
+
+
+/* about creatives section */
+
+.about-creatives-section {
+    margin-top: 8rem;
+    background: linear-gradient(#e0e8fa, #f5f7ff);
+}
+
+.creative-heads {
+    padding-top: 5.5rem;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.creative-heads .title {
+    font-family: "Roboto Bold";
+    font-size: 42px;
+}
+
+.creative-heads .subtitle {
+    font-family: "Inter Regular";
+    font-size: 18px;
+    width: 55%;
+}
+
+.creative-heads .gallery .sub-images {
+    gap: 25px;
+    justify-content: space-between;
+    flex: 1;
+    height: 100%;
+}
+
+.creative-heads .description {
+    font-family: "Roboto Bold";
+    font-size: 26px;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.creativitiy-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.creativitiy-info .info-title {
+    font-family: "Roboto Bold";
+    font-size: 26px;
+    text-align: left;
+}
+
+.creativitiy-info .content {
+    font-family: "Inter Regular";
+    font-size: 20px;
+    text-align: left;
+}
+
+.creative-heads .creator1-image {
+    display: inline-block;
+    position: relative;
+}
+
+.creative-heads .creator1-image::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(23, 30, 65, .2), rgba(23, 30, 65, .2));
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+}
+
+.creative-heads .creator-sub-image {
+    display: inline-block;
+    position: relative;
+}
+
+.creative-heads .creator-sub-image img,
+.creative-heads .creator1-image img {
+    border-radius: 20px;
+}
+
+.creative-heads .creator-sub-image::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(23, 30, 65, .2), rgba(23, 30, 65, .2));
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+}
+
+
+/* about creatives section closed */
