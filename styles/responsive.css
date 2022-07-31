@@ -25,6 +25,7 @@
 }
 
 @media only screen and (max-width: 1399px) {
+    /* service */
     .sevices-left-images .sevices-left-images-dottedImage,
     .sevices-right-images .sevices-right-images-dottedImage {
         width: 33% !important;
@@ -68,9 +69,29 @@
     .services-section-header-image {
         width: 50px;
     }
+    /* services end */
+    /* about */
+    .about-overview-image-section .image-overlay {
+        width: 440px !important;
+        height: 515px !important;
+        top: 40px !important;
+        left: 100px !important;
+    }
+    .about-overview-image-section .main-image {
+        width: 500px !important;
+        height: 480px !important;
+    }
+    .about-overview-image-section .image-dotted-top {
+        height: 25% !important;
+    }
+    .about-overview-image-section .image-dotted-bottom {
+        height: 25% !important;
+    }
+    /* about end */
 }
 
 @media only screen and (max-width: 1199px) {
+    /* service */
     .sevices-details .sevices-details-header {
         font-size: 32px !important;
     }
@@ -133,9 +154,39 @@
     .services-section-header-image {
         width: 50px;
     }
+    /* service end */
+    /* about */
+    .about-vision-container span {
+        font-size: 16px !important;
+    }
+    .about-overview-section .description {
+        font-size: 16px !important;
+    }
+    .about-overview-image-section .image-overlay {
+        width: 386px !important;
+        height: 485px !important;
+        top: 45px !important;
+        left: 80px !important;
+    }
+    .about-overview-image-section .main-image {
+        width: 440px !important;
+        height: 450px !important;
+    }
+    .about-overview-image-section .image-dotted-top {
+        height: 22% !important;
+        top: 25px !important;
+        left: -55px !important;
+    }
+    .about-overview-image-section .image-dotted-bottom {
+        height: 22% !important;
+        bottom: 0 !important;
+        right: -48px !important;
+    }
+    /* about end */
 }
 
 @media only screen and (max-width: 991px) {
+    /* service */
     .sevices-details .sevices-details-header {
         font-size: 28px !important;
     }
@@ -209,9 +260,65 @@
     .services-section-header-image {
         width: 40px;
     }
+    /* service end */
+    /* about */
+    .col-space {
+        margin: 0 !important;
+    }
+    .about-overview-section {
+        margin-top: 90px !important;
+    }
+    .about-overview-section .subtitle {
+        font-size: 18px !important;
+    }
+    .about-overview-section .title {
+        font-size: 36px !important;
+    }
+    .about-overview-section .description {
+        font-size: 15px !important;
+    }
+    .about-overview-image-section {
+        align-items: flex-start !important;
+    }
+    .about-vision-container {
+        flex-direction: column !important;
+    }
+    .about-overview-image-section .image-overlay {
+        width: 315px !important;
+        height: 433px !important;
+        top: 84px !important;
+        left: 49px !important;
+    }
+    .about-overview-image-section .main-image {
+        margin-top: 100px;
+        width: 360px !important;
+        height: 400px !important;
+    }
+    .about-overview-image-section .image-dotted-top {
+        height: 15% !important;
+        top: 46px !important;
+        left: -72px !important;
+    }
+    .about-overview-image-section .image-dotted-bottom {
+        height: 15% !important;
+        bottom: 232px !important;
+        right: -48px !important;
+    }
+    .about-vision-container {
+        text-align: center;
+        gap: 20px !important;
+    }
+    .about-vision-container img {
+        width: 30px;
+    }
+    .about-vision-container span {
+        font-size: 14px !important;
+    }
+    /* about end */
 }
 
 @media only screen and (max-width: 767px) {
+    /* services */
     .past-services {
         flex-direction: column !important;
     }
@@ -266,9 +373,64 @@
     .services-section-header-image {
         width: 40px;
     }
+    /* service end */
+    /* about */
+    .about-overview-section .subtitle,
+    .about-overview-section .title,
+    .about-overview-section .description {
+        text-align: center;
+    }
+    .about-overview-section {
+        margin-top: 20px !important;
+    }
+    .about-overview-section .subtitle {
+        font-size: 22px !important;
+    }
+    .about-overview-section .title {
+        font-size: 46px !important;
+    }
+    .about-overview-section .description {
+        font-size: 15px !important;
+    }
+    .about-vision-container {
+        gap: 30px !important;
+    }
+    .about-vision-container img {
+        width: 70px;
+    }
+    .about-vision-container span {
+        font-size: 20px !important;
+    }
+    .about-overview-image-section {
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+    .about-overview-image-section .image-overlay {
+        width: 324px !important;
+        height: 420px !important;
+        top: -16px !important;
+        left: 132px !important;
+    }
+    .about-overview-image-section .main-image {
+        margin-top: 0;
+        width: 70% !important;
+        height: 90% !important;
+    }
+    .about-overview-image-section .image-dotted-top {
+        height: 25% !important;
+        top: -52px !important;
+        left: 20px !important;
+    }
+    .about-overview-image-section .image-dotted-bottom {
+        height: 25% !important;
+        bottom: -12px !important;
+        right: 26px !important;
+    }
+    /* about end */
 }
 
 @media only screen and (max-width: 538px) {
+    /* service */
     .sevices-left-images,
     .sevices-right-images {
         gap: 20px !important;
@@ -316,4 +478,28 @@
     .services-section-header-image {
         width: 30px;
     }
+    /* service end */
+    /* about  */
+    .about-overview-image-section .image-overlay {
+        width: 302px !important;
+        height: 394px !important;
+        top: -16px !important;
+        left: 120px !important;
+    }
+    .about-overview-image-section .main-image {
+        margin-top: 0;
+        width: 70% !important;
+        height: 90% !important;
+    }
+    .about-overview-image-section .image-dotted-top {
+        height: 22% !important;
+        top: -44px !important;
+        left: 29px !important;
+    }
+    .about-overview-image-section .image-dotted-bottom {
+        height: 22% !important;
+        bottom: -3px !important;
+        right: 28px !important;
+    }
+    /* about end */
 }

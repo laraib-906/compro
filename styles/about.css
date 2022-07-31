@@ -1,0 +1,80 @@
+/* all about page css */
+
+.constant-section {
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.about-overview-section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.about-overview-section .subtitle {
+    font-family: "Roboto Medium";
+    font-size: 30px;
+}
+
+.about-overview-section .title {
+    font-family: "Roboto Bold";
+    font-size: 60px;
+}
+
+.about-overview-section .description {
+    font-family: "Inter Regular";
+    font-size: 19px;
+}
+
+.about-vision-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-vision-container span {
+    font-size: "Inter Regular";
+    font-size: 18px;
+}
+
+.about-overview-image-section {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.about-overview-image-section .image-overlay {
+    position: absolute;
+    width: 480px;
+    height: 540px;
+    border: 2px solid #3a79f9;
+    border-radius: 25px;
+    top: 20px;
+    left: 123px;
+    z-index: 1;
+}
+
+.about-overview-image-section .main-image {
+    width: 530px;
+    height: 500px;
+    z-index: 2;
+}
+
+.about-overview-image-section .image-dotted-top {
+    position: absolute;
+    height: 30%;
+    top: -7px;
+    left: -62px;
+}
+
+.about-overview-image-section .image-dotted-bottom {
+    position: absolute;
+    height: 30%;
+    bottom: -10px;
+    right: -32px;
+}
