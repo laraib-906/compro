@@ -385,7 +385,32 @@
     .creativitiy-info .content {
         font-size: 14px !important;
     }
+    .team-member-image-container .team-member-name {
+        font-size: 18px !important;
+    }
+    .team-member-image-container .team-member-title {
+        font-size: 14px !important;
+    }
     /* about end */
+    /* footer */
+    .footer .heading {
+        font-size: 24px !important;
+    }
+    .footer .description {
+        font-size: 16px !important;
+        width: 260px !important;
+    }
+    .footer .information {
+        gap: 30px !important;
+        font-size: 16px !important;
+    }
+    .footer .contact-info {
+        gap: 30px !important;
+    }
+    .footer .contact-info .contact-info-item {
+        font-size: 16px !important;
+    }
+    /* footer end */
 }
 
 @media only screen and (max-width: 767px) {
@@ -549,7 +574,35 @@
     .creator-sub-image img {
         width: 100% !important;
     }
+    .team-container {
+        margin: 0 !important;
+    }
+    .team-member-image-container .team-member-name {
+        font-size: 24px !important;
+    }
     /* about end */
+    /* footer */
+    .footer .heading {
+        font-size: 36px !important;
+    }
+    .footer .description {
+        font-size: 18px !important;
+        width: 100% !important;
+    }
+    .footer .information {
+        gap: 30px !important;
+        font-size: 18px !important;
+    }
+    .footer .contact-info {
+        gap: 30px !important;
+    }
+    .footer .contact-info .contact-info-item {
+        font-size: 18px !important;
+    }
+    #top-button {
+        bottom: 98px !important;
+    }
+    /* footer end */
 }
 
 @media only screen and (max-width: 538px) {

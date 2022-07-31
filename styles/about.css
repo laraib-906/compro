@@ -293,3 +293,146 @@
 
 
 /* about creatives section closed */
+
+
+/* about team section */
+
+.about-team-section {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.about-team-section .section-team-title {
+    font-family: "Roboto Bold";
+    font-size: 40px;
+    text-align: center;
+}
+
+.about-team-section .section-team-subtitle {
+    font-family: "Inter Regular";
+    font-size: 20px;
+    text-align: center;
+}
+
+.section-team-more {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-team-more .section-team-more-button {
+    background: transparent;
+    border: 1px solid #3A79F9;
+    color: #3A79F9;
+    padding: 15px 80px;
+    border-radius: 30px;
+    font-family: "Inter Medium";
+    font-size: 18px;
+}
+
+
+/* about team section closed */
+
+
+/* about team section */
+
+.team-member-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.team-member-image-hover-overlay {
+    position: relative;
+}
+
+.team-member-image-container img {
+    mix-blend-mode: luminosity !important;
+}
+
+.team-member-image-hover-overlay:hover .team-member-image-hover-effect {
+    display: flex;
+}
+
+.team-member-image-hover-overlay:hover img {
+    mix-blend-mode: normal !important;
+}
+
+.team-member-image-hover-effect button {
+    background: transparent;
+    border: none;
+    z-index: 1;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 8px 20px;
+}
+
+.team-member-image-hover-effect .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.team-member-image-hover-effect .icons .icon {
+    cursor: pointer;
+}
+
+.team-member-image-hover-effect {
+    position: absolute;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(58, 121, 249, .5), rgba(58, 121, 249, .5));
+    border-radius: 20px;
+    display: none;
+    -webkit-animation: fadeIn .3s;
+    animation: fadeIn .3s;
+}
+
+.team-member-image-container .team-member-name {
+    font-family: "Inter Semi Bold";
+    font-size: 24px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.team-member-image-container .team-member-title {
+    font-family: "Inter Regular";
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/* about team section closed */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

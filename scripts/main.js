@@ -1,5 +1,25 @@
 ("use strict",
     () => {
+
+        // load content on scroll
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            let reveals = document.querySelectorAll('.reveal-loaded');
+
+            for (let i = 0; i < reveals.length; i++) {
+                let windowHeight = window.innerHeight;
+                let revealTop = reveals[i].getBoundingClientRect().top;
+                let revealPoint = 200;
+
+                if (revealTop < windowHeight - revealPoint) {
+                    reveals[i].classList.add('reveal-active');
+                }
+            }
+
+        }
+
+
         // handle loader
 
         const loader = document.getElementById("preloader");
@@ -34,10 +54,6 @@
         });
 
         // masonry gird filter and preview options
-
         mixitup(".filter-container");
-        lightbox.option({
-            resizeDuration: 200,
-            wrapAround: true,
-        });
+
     })();
