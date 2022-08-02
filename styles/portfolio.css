@@ -120,8 +120,8 @@
     background: transparent;
 }
 
-.filter-buttons button:focus {
+.mixitup-control-active {
     background: transparent;
     outline: none;
-    color: #3a79f9;
+    color: #3A79F9;
 }

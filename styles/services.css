@@ -37,9 +37,14 @@
     border-radius: 50px;
 }
 
-.services-section-header img {
+.services-section-header .services-section-header-image {
+    opacity: 0.45;
     cursor: pointer;
     width: 60px;
+}
+
+.services-section-header .active {
+    opacity: 1 !important;
 }
 
 .sevices-details {

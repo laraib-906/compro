@@ -337,6 +337,25 @@
 
 /* about team section */
 
+.team-member-image-hover-effect {
+    position: absolute;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(58, 121, 249, .5), rgba(58, 121, 249, .5));
+    border-radius: 20px;
+    display: none;
+    -webkit-animation: fadeIn .3s;
+    animation: fadeIn .3s;
+}
+
 .team-member-image-container {
     display: flex;
     flex-direction: column;
@@ -349,7 +368,7 @@
     position: relative;
 }
 
-.team-member-image-container img {
+.team-member-image-container .team-member-image-hover-overlay img {
     mix-blend-mode: luminosity !important;
 }
 
@@ -380,25 +399,6 @@
 
 .team-member-image-hover-effect .icons .icon {
     cursor: pointer;
-}
-
-.team-member-image-hover-effect {
-    position: absolute;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(rgba(58, 121, 249, .5), rgba(58, 121, 249, .5));
-    border-radius: 20px;
-    display: none;
-    -webkit-animation: fadeIn .3s;
-    animation: fadeIn .3s;
 }
 
 .team-member-image-container .team-member-name {

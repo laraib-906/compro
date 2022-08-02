@@ -31,6 +31,22 @@ body {
     border-radius: 50px;
 }
 
+.navbar .navbar-nav .active .nav-link {
+    color: #3A79F9;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.nav-link {
+    text-underline-offset: 0;
+}
+
+.nav-link:hover {
+    color: #3A79F9;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
 .splitter {
     height: 66px;
     width: 100px;
@@ -132,25 +148,40 @@ body {
 .footer .description {
     font-family: "Inter Light BETA";
     font-size: 18px;
-    color: #e1e4eb !important;
+    color: #E1E4EB !important;
     width: 380px;
     font-weight: lighter;
 }
 
+.footer .contact-info,
+.footer .information {
+    gap: 2.5rem;
+}
+
 .footer .contact-info-item {
-    color: #e2e6ef;
+    color: #E1E4EB;
     font-family: "Inter Light BETA";
     font-size: 18px;
 }
 
-.footer .contact-info-item .icon {
-    width: 26px;
+.footer .contact-info-item .icon1 {
+    width: 20px;
+    height: 25px;
+}
+
+.footer .contact-info-item .icon2 {
+    height: 20px;
+}
+
+.footer .contact-info-item .icon3 {
+    width: 25px;
+    height: 30px;
 }
 
 .footer .information {
     font-family: "Inter Light BETA";
     font-size: 18px;
-    color: #e2e6ef;
+    color: #E1E4EB;
 }
 
 .footer-bottom {
@@ -198,7 +229,7 @@ body {
 }
 
 .reveal-active {
-    transform: translateY(0px);
+    transform: none;
     opacity: 1 !important;
 }
 

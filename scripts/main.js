@@ -1,6 +1,16 @@
 ("use strict",
     () => {
 
+        $(function() {
+            let url = window.location.href;
+            $(".nav-item a").each(function() {
+                if (url == (this.href)) {
+                    $(this).closest("li").addClass("active");
+                    $(this).closest("li").parent().parent().addClass("active");
+                }
+            });
+        });
+
         // load content on scroll
         window.addEventListener('scroll', reveal);
 
@@ -19,6 +29,77 @@
 
         }
 
+        function checkIncludeActiceClass(string) {
+            let classList = $(string).attr("class");
+            let classArr = classList.split(/\s+/);
+            return classArr.includes('active')
+        }
+
+        // handle change service click
+        $('#services_development').click(() => {
+            if (checkIncludeActiceClass("#services_development")) {
+                return;
+            }
+            $('#services_development').addClass('active');
+
+            if (checkIncludeActiceClass('#services_designing')) {
+                $('#services_designing').removeClass('active');
+            }
+            if (checkIncludeActiceClass('#services_writting')) {
+                $('#services_writting').removeClass('active');
+            }
+            if (checkIncludeActiceClass('#services_marketing')) {
+                $('#services_marketing').removeClass('active');
+            }
+        })
+        $('#services_designing').click(() => {
+            if (checkIncludeActiceClass("#services_designing")) {
+                return;
+            }
+            $('#services_designing').addClass('active');
+
+            if (checkIncludeActiceClass('#services_development')) {
+                $('#services_development').removeClass('active');
+            }
+            if (checkIncludeActiceClass('#services_writting')) {
+                $('#services_writting').removeClass('active');
+            }
+            if (checkIncludeActiceClass('#services_marketing')) {
+                $('#services_marketing').removeClass('active');
+            }
+        })
+        $('#services_writting').click(() => {
+            if (checkIncludeActiceClass("#services_writting")) {
+                return;
+            }
+            $('#services_writting').addClass('active');
+
+            if (checkIncludeActiceClass('#services_designing')) {
+                $('#services_designing').removeClass('active');
+            }
+            if (checkIncludeActiceClass('#services_development')) {
+                $('#services_development').removeClass('active')
+            }
+            if (checkIncludeActiceClass('#services_marketing')) {
+                $('#services_marketing').removeClass('active');
+            }
+        })
+        $('#services_marketing').click(() => {
+            if (checkIncludeActiceClass("#services_marketing")) {
+                return;
+            }
+            $('#services_marketing').addClass('active');
+
+            if (checkIncludeActiceClass('#services_designing')) {
+                $('#services_designing').removeClass('active');
+            }
+            if (checkIncludeActiceClass('#services_writting')) {
+                $('#services_writting').removeClass('active');
+            }
+            if (checkIncludeActiceClass('#services_development')) {
+                $('#services_development').removeClass('active');
+            }
+        })
 
         // handle loader
 

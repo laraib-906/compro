@@ -15,22 +15,37 @@
 .input,
 .select,
 .text-area {
-    padding: 10px;
+    padding: 15px;
     width: 100%;
     border: none;
-    border: 1px solid #84858b !important;
-    border-radius: .375rem;
+    border: 1px solid #595d70 !important;
+    border-radius: 10px;
+    color: #5B5B5B !important;
     outline: none;
+}
+
+.input::placeholder {
+    color: #868686 !important;
+}
+
+.select {
+    color: #939393 !important;
+}
+
+.textarea-label {
+    color: #939393 !important;
 }
 
 .submit-button {
     border: none;
-    background: #3A79F9;
-    padding: 10px 60px;
-    border-radius: 50px;
+    width: 226px;
+    height: 59px;
+    background: #3A79F9 0% 0% no-repeat padding-box;
+    border-radius: 25px;
     color: white;
     font-size: 18px;
     font-family: 'Inter Medium';
+    letter-spacing: 0px;
 }
 
 .info-section {
@@ -50,7 +65,7 @@
 .contact-info-content .main-subheading {
     text-align: center;
     font-family: 'Inter Medium';
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500 !important;
     color: #CFCFCF !important;
 }
@@ -58,6 +73,7 @@
 .contact-info-content .icon-text {
     text-align: center;
     font-family: 'Inter Regular';
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500 !important;
+    color: #FFFFFF !important;
 }
