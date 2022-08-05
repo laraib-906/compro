@@ -410,6 +410,9 @@
     .footer .contact-info .contact-info-item {
         font-size: 16px !important;
     }
+    .clients .home-clients img {
+        width: 110px;
+    }
     /* footer end */
 }
 
@@ -601,6 +604,9 @@
     }
     #top-button {
         bottom: 98px !important;
+    }
+    .clients .home-clients img {
+        width: 50px;
     }
     /* footer end */
 }

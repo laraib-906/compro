@@ -1,0 +1,115 @@
+/* All home css goes in here */
+
+.header {
+    background: linear-gradient(rgba(50, 58, 81, .5), rgba(50, 58, 81, .5)), url(../assets/images/home/header_image.png);
+    height: 100vh;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header::after {
+    position: absolute;
+    content: "";
+    height: 100vh;
+    width: 60vw;
+    background: #171E41;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0%, 100% 0, 76% 100%, 100% 100%, 0% 100%, 0 100%, 0% 0%);
+}
+
+.clients {
+    background: #171E41;
+}
+
+.clients .home-clients {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    opacity: .5;
+}
+
+.support {
+    margin-top: 6rem;
+    margin-bottom: 8rem;
+}
+
+.support .section-heading {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.support .section-title {
+    font-family: "Roboto Bold";
+    font-size: 50px;
+    text-align: center;
+}
+
+.support .section-subtitle {
+    font-family: "Inter Regular";
+    font-size: 24px;
+    width: 77%;
+    text-align: center;
+}
+
+.support .support-content-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.support .support-content-container .content-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background: rgba(58, 121, 249, .4);
+}
+
+.support .support-content-container .content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.support .support-content-container .content .title {
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.support .support-content-container .content .description {
+    font-family: "Inter Regular";
+    font-size: 20px;
+    text-align: center;
+}
+
+.home-services {
+    position: relative;
+    background: linear-gradient(rgba(58, 121, 249, .28), rgba(255, 255, 255, 0.03));
+    height: 100vh;
+}
+
+.header-content {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
