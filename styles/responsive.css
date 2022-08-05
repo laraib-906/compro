@@ -25,6 +25,21 @@
 }
 
 @media only screen and (max-width: 1399px) {
+    /* home */
+    .left-plane {
+        width: 56vw !important;
+    }
+    .header-content .header-slogun {
+        font-size: 22px !important;
+    }
+    .header-content .header-title {
+        font-size: 72px !important;
+    }
+    .header-content .header-subtitle {
+        font-size: 15px !important;
+        width: 51% !important;
+    }
+    /* home end */
     /* service */
     .sevices-left-images .sevices-left-images-dottedImage,
     .sevices-right-images .sevices-right-images-dottedImage {
@@ -100,6 +115,30 @@
 }
 
 @media only screen and (max-width: 1199px) {
+    /* home */
+    .left-plane {
+        width: 49vw !important;
+    }
+    .header-content .header-title {
+        font-size: 56px !important;
+        line-height: 5rem !important;
+        width: 50% !important;
+    }
+    .header-content .header-subtitle {
+        font-size: 14px !important;
+        width: 42% !important;
+    }
+    .header-content-container .header-buttons {
+        gap: 10px !important;
+        /* flex-direction: column; */
+    }
+    .header-content-container .header-buttons .header-buttons-work {
+        font-size: 14px !important;
+    }
+    .header-content-container .header-buttons .header-buttons-quote {
+        font-size: 14px !important;
+    }
+    /* home end */
     /* service */
     .sevices-details .sevices-details-header {
         font-size: 32px !important;
@@ -213,6 +252,46 @@
 }
 
 @media only screen and (max-width: 991px) {
+    /* home */
+    .header {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/home/header_image.png);
+        background-size: cover !important;
+        background-position: center !important;
+        text-align: center;
+    }
+    .left-plane {
+        display: none;
+    }
+    .header-content-container {
+        flex: 1;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .header-content .header-slogun {
+        margin-left: 0 !important;
+        width: 100%;
+        font-size: 26px !important;
+    }
+    .header-content .header-title {
+        font-size: 85px !important;
+        line-height: 7rem !important;
+        width: 100% !important;
+    }
+    .header-content .header-subtitle {
+        width: 100% !important;
+        font-size: 26px !important;
+    }
+    .header-content-container .header-buttons {
+        gap: 40px !important;
+    }
+    .header-content-container .header-buttons .header-buttons-work {
+        font-size: 18px !important;
+    }
+    .header-content-container .header-buttons .header-buttons-quote {
+        font-size: 18px !important;
+    }
+    /* home end */
     /* service */
     .sevices-details .sevices-details-header {
         font-size: 28px !important;
@@ -417,6 +496,29 @@
 }
 
 @media only screen and (max-width: 767px) {
+    /* home */
+    .header-content .header-slogun {
+        font-size: 22px !important;
+    }
+    .header-content .header-title {
+        font-size: 56px !important;
+        line-height: 5rem !important;
+        width: 100% !important;
+    }
+    .header-content .header-subtitle {
+        width: 100% !important;
+        font-size: 22px !important;
+    }
+    .header-content-container .header-buttons {
+        gap: 40px !important;
+    }
+    .header-content-container .header-buttons .header-buttons-work {
+        font-size: 16px !important;
+    }
+    .header-content-container .header-buttons .header-buttons-quote {
+        font-size: 16px !important;
+    }
+    /* home end */
     /* services */
     .past-services,
     .past-growth-exp {
