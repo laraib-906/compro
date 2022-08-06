@@ -198,5 +198,106 @@
 .home-services {
     position: relative;
     background: linear-gradient( rgba(58, 121, 249, 0.28), rgba(255, 255, 255, 0.03));
-    height: 100vh;
+    height: 100%;
+    margin-top: 5rem;
+}
+
+.home-services .curved_image {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.home-services_main_title {
+    display: flex;
+    flex: 1;
+    margin-top: 18rem;
+    gap: 80px;
+}
+
+.home-services_main_title .main_title_text {
+    font-family: "Roboto Bold";
+    font-size: 70px;
+    width: 50%;
+    line-height: 5rem;
+    margin-top: 15px;
+}
+
+.home-services_main_title .sub_main_title_text {
+    font-family: "Inter Regular";
+    font-size: 24px;
+}
+
+.home-services .home-service-ul {
+    list-style: none;
+    padding: 90px;
+}
+
+.home-services .home-service-ul .home-service-li {
+    border-bottom: 1px solid #3A79F9;
+    padding: 50px;
+}
+
+.home-services .home-service-ul .home-service-li .home-service-container {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.home-services .home-service-ul .home-service-li .home-service-container .service_number_and_image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    min-width: none;
+}
+
+.home-services .home-service-ul .home-service-li .home-service-container .service_number_and_image .service_number {
+    font-family: "Inter Bold";
+    font-size: 70px;
+    color: #5B5B5B;
+}
+
+.home-services .home-service-ul .home-service-li .home-service-container .service_number_and_image .service_hr {
+    height: 250px;
+    width: 1px;
+    background: #3A79F9;
+}
+
+.home-services .home-service-ul .home-service-li .home-service-container .service_number_and_image .service_img {}
+
+.home-services .home-service-ul .home-service-li .home-service-container .service_content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.home-services .home-service-ul .home-service-li .home-service-container .service_content .service_heading {
+    font-family: "Roboto Bold";
+    font-size: 40px;
+}
+
+.home-services .home-service-ul .home-service-li .home-service-container .service_content .service_subheading {
+    font-family: "Inter Regular";
+    font-size: 20px;
+    line-height: 3rem;
+}
+
+.service_button button {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border: 1px solid #3A79F9;
+    color: #3A79F9;
+    font-family: "Inter Medium";
+    font-size: 18px;
+    border-radius: 30px;
+    width: 225px;
+    padding: 15px;
+}
+
+.service_button button i {
+    color: #3A79F9 !important;
 }
