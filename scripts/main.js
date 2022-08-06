@@ -1,10 +1,9 @@
 ("use strict",
     () => {
-
         $(function() {
             let url = window.location.href;
             $(".nav-item a").each(function() {
-                if (url == (this.href)) {
+                if (url == this.href) {
                     $(this).closest("li").addClass("active");
                     $(this).closest("li").parent().parent().addClass("active");
                 }
@@ -12,10 +11,10 @@
         });
 
         // load content on scroll
-        window.addEventListener('scroll', reveal);
+        window.addEventListener("scroll", reveal);
 
         function reveal() {
-            let reveals = document.querySelectorAll('.reveal-loaded');
+            let reveals = document.querySelectorAll(".reveal-loaded");
 
             for (let i = 0; i < reveals.length; i++) {
                 let windowHeight = window.innerHeight;
@@ -23,83 +22,82 @@
                 let revealPoint = 200;
 
                 if (revealTop < windowHeight - revealPoint) {
-                    reveals[i].classList.add('reveal-active');
+                    reveals[i].classList.add("reveal-active");
                 }
             }
-
         }
 
         function checkIncludeActiceClass(string) {
             let classList = $(string).attr("class");
             let classArr = classList.split(/\s+/);
-            return classArr.includes('active')
+            return classArr.includes("active");
         }
 
         // handle change service click
-        $('#services_development').click(() => {
+        $("#services_development").on("click", () => {
             if (checkIncludeActiceClass("#services_development")) {
                 return;
             }
-            $('#services_development').addClass('active');
+            $("#services_development").addClass("active");
 
-            if (checkIncludeActiceClass('#services_designing')) {
-                $('#services_designing').removeClass('active');
+            if (checkIncludeActiceClass("#services_designing")) {
+                $("#services_designing").removeClass("active");
             }
-            if (checkIncludeActiceClass('#services_writting')) {
-                $('#services_writting').removeClass('active');
+            if (checkIncludeActiceClass("#services_writting")) {
+                $("#services_writting").removeClass("active");
             }
-            if (checkIncludeActiceClass('#services_marketing')) {
-                $('#services_marketing').removeClass('active');
+            if (checkIncludeActiceClass("#services_marketing")) {
+                $("#services_marketing").removeClass("active");
             }
-        })
-        $('#services_designing').click(() => {
+        });
+        $("#services_designing").on("click", () => {
             if (checkIncludeActiceClass("#services_designing")) {
                 return;
             }
-            $('#services_designing').addClass('active');
+            $("#services_designing").addClass("active");
 
-            if (checkIncludeActiceClass('#services_development')) {
-                $('#services_development').removeClass('active');
+            if (checkIncludeActiceClass("#services_development")) {
+                $("#services_development").removeClass("active");
             }
-            if (checkIncludeActiceClass('#services_writting')) {
-                $('#services_writting').removeClass('active');
+            if (checkIncludeActiceClass("#services_writting")) {
+                $("#services_writting").removeClass("active");
             }
-            if (checkIncludeActiceClass('#services_marketing')) {
-                $('#services_marketing').removeClass('active');
+            if (checkIncludeActiceClass("#services_marketing")) {
+                $("#services_marketing").removeClass("active");
             }
-        })
-        $('#services_writting').click(() => {
+        });
+        $("#services_writting").on("click", () => {
             if (checkIncludeActiceClass("#services_writting")) {
                 return;
             }
-            $('#services_writting').addClass('active');
+            $("#services_writting").addClass("active");
 
-            if (checkIncludeActiceClass('#services_designing')) {
-                $('#services_designing').removeClass('active');
+            if (checkIncludeActiceClass("#services_designing")) {
+                $("#services_designing").removeClass("active");
             }
-            if (checkIncludeActiceClass('#services_development')) {
-                $('#services_development').removeClass('active')
+            if (checkIncludeActiceClass("#services_development")) {
+                $("#services_development").removeClass("active");
             }
-            if (checkIncludeActiceClass('#services_marketing')) {
-                $('#services_marketing').removeClass('active');
+            if (checkIncludeActiceClass("#services_marketing")) {
+                $("#services_marketing").removeClass("active");
             }
-        })
-        $('#services_marketing').click(() => {
+        });
+        $("#services_marketing").on("click", () => {
             if (checkIncludeActiceClass("#services_marketing")) {
                 return;
             }
-            $('#services_marketing').addClass('active');
+            $("#services_marketing").addClass("active");
 
-            if (checkIncludeActiceClass('#services_designing')) {
-                $('#services_designing').removeClass('active');
+            if (checkIncludeActiceClass("#services_designing")) {
+                $("#services_designing").removeClass("active");
             }
-            if (checkIncludeActiceClass('#services_writting')) {
-                $('#services_writting').removeClass('active');
+            if (checkIncludeActiceClass("#services_writting")) {
+                $("#services_writting").removeClass("active");
             }
-            if (checkIncludeActiceClass('#services_development')) {
-                $('#services_development').removeClass('active');
+            if (checkIncludeActiceClass("#services_development")) {
+                $("#services_development").removeClass("active");
             }
-        })
+        });
 
         // handle loader
 

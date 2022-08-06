@@ -301,3 +301,73 @@
 .service_button button i {
     color: #3A79F9 !important;
 }
+
+.testinomials {
+    background: linear-gradient(rgba(23, 30, 65, .8), rgba(23, 30, 65, .8)), url(../assets/images/home/testimonials/testimo_bg.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.testimonials-container {
+    padding: 5rem 0;
+}
+
+.testinomials .testimonial-title {
+    font-family: "Roboto Bold";
+    font-size: 40px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.carouselContainer .carousel-image-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100%;
+    padding: 30px;
+}
+
+.carouselContainer .carousel-image-hr {
+    height: 100%;
+    width: 1px;
+    background: #3A79F9;
+}
+
+.carouselContainer .carousel-image-user {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-width: 135px;
+}
+
+.carouselContainer .carousel-image-user img {
+    border: 8px solid #3A79F9;
+    border-radius: 50px;
+    height: 65px;
+    width: 65px;
+}
+
+.carouselContainer .carousel-user-name {
+    font-family: "Roboto Regular";
+    font-size: 22px;
+    color: white;
+    width: 100%;
+}
+
+.carouselContainer .carousel-user-designation {
+    font-family: "Inter Regular";
+    font-size: 14px;
+    color: #727272;
+}
+
+.carouselContainer .carousel-image-content {
+    font-family: "Inter Regular";
+    font-size: 22px;
+    line-height: 2rem;
+    color: white;
+}

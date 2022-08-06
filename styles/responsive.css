@@ -55,6 +55,10 @@
     .home-services .home-service-li {
         padding: 30px !important;
     }
+    .carouselImage {
+        width: 50% !important;
+        margin-right: 5rem !important;
+    }
     /* home end */
     /* service */
     .sevices-left-images .sevices-left-images-dottedImage,
@@ -128,6 +132,13 @@
         width: 65% !important;
     }
     /* about end */
+}
+
+@media only screen and (max-width: 1299px) {
+    .carouselImage {
+        width: 55% !important;
+        margin-right: 9rem !important;
+    }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -355,6 +366,10 @@
     .home-services .home-service-ul .home-service-li .home-service-container .service_number_and_image .service_hr {
         display: none;
     }
+    .carouselImage {
+        width: 80% !important;
+        margin-right: 3rem !important;
+    }
     /* home end */
     /* service */
     .sevices-details .sevices-details-header {
@@ -581,6 +596,31 @@
     }
     .header-content-container .header-buttons .header-buttons-quote {
         font-size: 16px !important;
+    }
+    .flickity-viewport {
+        min-height: 400px !important;
+        margin-bottom: none !important;
+    }
+    .carouselImage {
+        width: 90% !important;
+        margin-right: 3rem !important;
+    }
+    .carouselContainer .carousel-image-container {
+        flex-direction: column !important;
+        gap: 10px !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center;
+    }
+    .carouselContainer .carousel-image-container {
+        flex-direction: column !important;
+        gap: 10px !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center;
+    }
+    .carouselContainer .carousel-image-container .carousel-image-hr {
+        display: none;
     }
     /* home end */
     /* services */
