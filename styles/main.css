@@ -32,7 +32,7 @@ body {
 }
 
 .navbar .navbar-nav .active .nav-link {
-    color: #3A79F9;
+    color: #3a79f9;
     text-decoration: underline;
     text-underline-offset: 6px;
 }
@@ -42,7 +42,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #3A79F9;
+    color: #3a79f9;
     text-decoration: underline;
     text-underline-offset: 6px;
 }
@@ -148,7 +148,7 @@ body {
 .footer .description {
     font-family: "Inter Light BETA";
     font-size: 18px;
-    color: #E1E4EB !important;
+    color: #e1e4eb !important;
     width: 380px;
     font-weight: lighter;
 }
@@ -159,7 +159,7 @@ body {
 }
 
 .footer .contact-info-item {
-    color: #E1E4EB;
+    color: #e1e4eb;
     font-family: "Inter Light BETA";
     font-size: 18px;
 }
@@ -181,7 +181,7 @@ body {
 .footer .information {
     font-family: "Inter Light BETA";
     font-size: 18px;
-    color: #E1E4EB;
+    color: #e1e4eb;
 }
 
 .footer-bottom {
@@ -233,5 +233,10 @@ body {
     opacity: 1 !important;
 }
 
+.qoute-container-slides q {
+    font-style: italic;
+}
 
-/* handle lazy load content end */
+.qoute-container-slides .author {
+    color: cornflowerblue;
+}
