@@ -148,6 +148,13 @@
     gap: 40px;
 }
 
+.home_bussiness_side_bg {
+    background: url(../assets/images/home/home_business_side_img.png);
+    background-position: center;
+    background-size: cover;
+    min-width: 600px;
+}
+
 .support .support-content-container .content-image {
     width: 80px;
     height: 80px;
@@ -567,7 +574,7 @@
     flex: 1;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 0;
+    padding: 2rem 0;
     border-bottom: 1px solid #707070;
 }
 
