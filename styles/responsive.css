@@ -59,6 +59,15 @@
         width: 50% !important;
         margin-right: 5rem !important;
     }
+    .home-qoute .review-batch-container .review-batch-item .review-batch-item-year {
+        font-size: 36px !important;
+    }
+    .home-qoute .review-batch-container .review-batch-item .review-batch-item-content {
+        font-size: 18px !important;
+    }
+    .home-qoute .review-batch-container {
+        min-height: 200px !important;
+    }
     /* home end */
     /* service */
     .sevices-left-images .sevices-left-images-dottedImage,
@@ -186,6 +195,15 @@
         font-size: 16px !important;
         width: 180px !important;
         padding: 12px !important;
+    }
+    .home-qoute .review-batch-container .review-batch-item .review-batch-item-year {
+        font-size: 32px !important;
+    }
+    .home-qoute .review-batch-container .review-batch-item .review-batch-item-content {
+        font-size: 14px !important;
+    }
+    .home-qoute .review-batch-container {
+        min-height: 187px !important;
     }
     /* home end */
     /* service */
@@ -369,6 +387,17 @@
     .carouselImage {
         width: 80% !important;
         margin-right: 3rem !important;
+    }
+    .home-qoute .review-batch-container .review-batch-item .review-batch-item-year {
+        font-size: 28px !important;
+    }
+    .home-qoute .review-batch-container .review-batch-item .review-batch-item-content {
+        font-size: 12px !important;
+    }
+    .home-qoute .review-batch-container {
+        min-height: 172px !important;
+        padding: 2rem 1rem !important;
+        border-radius: 20px !important;
     }
     /* home end */
     /* service */
@@ -626,6 +655,18 @@
         font-size: 42px !important;
         text-align: center;
     }
+    .home-qoute .review-batch-container .review-batch-item .review-batch-item-year {
+        font-size: 24px !important;
+    }
+    .home-qoute .review-batch-container .review-batch-item .review-batch-item-content {
+        font-size: 10px !important;
+    }
+    .home-qoute .review-batch-container {
+        min-height: 170px !important;
+    }
+    .home-review .review_container {
+        padding: 5rem 0 7rem 0 !important;
+    }
     /* home end */
     /* services */
     .past-services,
@@ -829,6 +870,15 @@
     }
     .home-services .home-service-ul {
         padding: 0 !important;
+    }
+    .home-qoute .review-batch-container {
+        margin-top: -130px !important;
+    }
+    .home-qoute {
+        padding: 3rem 0 5rem 0 !important;
+    }
+    .home-review .review_container {
+        padding: 5rem 0 5rem 0 !important;
     }
     /* home end */
     /* service */

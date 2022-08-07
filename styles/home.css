@@ -481,6 +481,7 @@
 }
 
 .home-qoute {
+    position: relative;
     background: #171E41;
     height: 100%;
     padding: 10rem 0 5rem 0;
@@ -488,12 +489,37 @@
 
 .home-qoute .content {
     font-family: "Poppins";
-    font-size: 46px;
+    font-size: 45px;
     color: white;
 }
 
 .home-qoute .content span {
     color: #3A79F9;
+}
+
+.home-qoute .review-batch-container {
+    height: 100%;
+    color: white;
+    background: #3A79F9;
+    border-radius: 25px;
+    padding: 2rem 5rem;
+    margin-top: -260px;
+    margin-bottom: 5rem;
+    min-height: 220px;
+}
+
+.home-qoute .review-batch-container .review-batch-item {
+    height: 100%;
+}
+
+.home-qoute .review-batch-container .review-batch-item .review-batch-item-year {
+    font-family: "Inter Semi Bold";
+    font-size: 40px;
+}
+
+.home-qoute .review-batch-container .review-batch-item .review-batch-item-content {
+    font-family: "Inter Regular";
+    font-size: 22px;
 }
 
 .home-review {
@@ -715,4 +741,54 @@
     padding: 10px 80px;
     color: #3A79F9;
     border-radius: 30px;
+}
+
+.home-review .helped_clients {
+    background: #3A79F9;
+    color: white;
+    height: 187px;
+    width: 235px;
+    border-radius: 20px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-review .helped_clients .calculation {
+    font-family: "Inter Semi Bold";
+    font-size: 40px;
+    text-align: center;
+}
+
+.home-review .helped_clients .text {
+    font-family: "Inter Medium";
+    font-size: 24px;
+    text-align: center;
+}
+
+.help_images_container {
+    margin-top: 6rem;
+}
+
+.help_images_container .upper_images {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+.lower_image {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.lower_image img {
+    margin-top: -85px;
+    margin-left: -67px;
 }
