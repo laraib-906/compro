@@ -146,7 +146,7 @@ body {
 }
 
 .footer .description {
-    font-family: "Inter Light BETA";
+    font-family: "Inter Light";
     font-size: 18px;
     color: #e1e4eb !important;
     width: 380px;
@@ -160,7 +160,7 @@ body {
 
 .footer .contact-info-item {
     color: #e1e4eb;
-    font-family: "Inter Light BETA";
+    font-family: "Inter Light";
     font-size: 18px;
 }
 
@@ -179,7 +179,7 @@ body {
 }
 
 .footer .information {
-    font-family: "Inter Light BETA";
+    font-family: "Inter Light";
     font-size: 18px;
     color: #e1e4eb;
 }
