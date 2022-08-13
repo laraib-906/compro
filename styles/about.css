@@ -115,7 +115,7 @@
     display: flex;
     flex: 1;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -168,25 +168,25 @@
 
 .about-grow .title {
     font-family: "Roboto Bold";
-    font-size: 50px;
+    font-size: 60px;
     width: 50%;
 }
 
 .about-grow .tag-line {
     font-family: "Inter Regular";
-    width: 60%;
-    font-size: 20px;
+    width: 70%;
+    font-size: 24px;
 }
 
 .past-growth .past-growth-year {
     font-family: "Inter Bold";
-    font-size: 40px;
+    font-size: 50px;
     color: #3a79f9;
 }
 
 .past-growth .past-growth-content {
     font-family: "Inter Regular";
-    font-size: 18px;
+    font-size: 22px;
 }
 
 
@@ -212,13 +212,13 @@
 
 .creative-heads .title {
     font-family: "Roboto Bold";
-    font-size: 42px;
+    font-size: 50px;
 }
 
 .creative-heads .subtitle {
     font-family: "Inter Regular";
-    font-size: 18px;
-    width: 55%;
+    font-size: 24px;
+    width: 70%;
 }
 
 .creative-heads .gallery .sub-images {
@@ -230,9 +230,9 @@
 
 .creative-heads .description {
     font-family: "Roboto Bold";
-    font-size: 26px;
+    font-size: 30px;
     text-align: left;
-    line-height: 1.8;
+    line-height: 2,8rem;
 }
 
 .creativitiy-info {
@@ -244,7 +244,7 @@
 
 .creativitiy-info .info-title {
     font-family: "Roboto Bold";
-    font-size: 26px;
+    font-size: 30px;
     text-align: left;
 }
 
@@ -304,13 +304,13 @@
 
 .about-team-section .section-team-title {
     font-family: "Roboto Bold";
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
 }
 
 .about-team-section .section-team-subtitle {
     font-family: "Inter Regular";
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
 }
 

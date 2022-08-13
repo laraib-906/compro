@@ -38,6 +38,9 @@ body {
 }
 
 .nav-link {
+    font-family: "Inter Regular";
+    font-size: 18px;
+    color: #171E41;
     text-underline-offset: 0;
 }
 
@@ -103,19 +106,19 @@ body {
 }
 
 .about-banner {
-    background-image: linear-gradient( rgba(50, 58, 81, 0.6), rgba(50, 58, 81, 0.6)), url(../assets/images/banners/about_banner.png);
+    background-image: linear-gradient( rgba(50, 58, 81, 0.75), rgba(50, 58, 81, 0.75)), url(../assets/images/banners/about_banner.png);
 }
 
 .services-banner {
-    background-image: linear-gradient( rgba(50, 58, 81, 0.6), rgba(50, 58, 81, 0.6)), url(../assets/images/banners/services_banner.png);
+    background-image: linear-gradient( rgba(50, 58, 81, 0.75), rgba(50, 58, 81, 0.75)), url(../assets/images/banners/services_banner.png);
 }
 
 .portfolio-banner {
-    background-image: linear-gradient( rgba(50, 58, 81, 0.6), rgba(50, 58, 81, 0.6)), url(../assets/images/banners/portfolio_banner.png);
+    background-image: linear-gradient( rgba(50, 58, 81, 0.75), rgba(50, 58, 81, 0.75)), url(../assets/images/banners/portfolio_banner.png);
 }
 
 .contact-banner {
-    background-image: linear-gradient( rgba(50, 58, 81, 0.6), rgba(50, 58, 81, 0.6)), url(../assets/images/banners/contact_banner.png);
+    background-image: linear-gradient( rgba(50, 58, 81, 0.75), rgba(50, 58, 81, 0.75)), url(../assets/images/banners/contact_banner.png);
 }
 
 
@@ -239,4 +242,9 @@ body {
 
 .qoute-container-slides .author {
     color: cornflowerblue;
+}
+
+.break-word-line {
+    word-wrap: break-word;
+    overflow: hidden;
 }

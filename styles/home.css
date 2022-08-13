@@ -130,6 +130,7 @@
     font-family: "Roboto Bold";
     font-size: 50px;
     text-align: center;
+    text-transform: capitalize;
 }
 
 .support .section-subtitle {
@@ -191,9 +192,8 @@
 }
 
 .support .support-content-container .content .title {
-    font-family: "Roboto Regular";
+    font-family: "Roboto Medium";
     font-size: 30px;
-    font-weight: 500;
 }
 
 .support .support-content-container .content .description {
@@ -228,11 +228,14 @@
     width: 50%;
     line-height: 5rem;
     margin-top: 15px;
+    text-transform: capitalize;
 }
 
 .home-services_main_title .sub_main_title_text {
     font-family: "Inter Regular";
     font-size: 24px;
+    color: #5B5B5B;
+    line-height: 2.8rem;
 }
 
 .home-services .home-service-ul {
@@ -362,6 +365,7 @@
     font-size: 22px;
     color: white;
     width: 100%;
+    text-align: center;
 }
 
 .carouselContainer .carousel-user-designation {
@@ -489,16 +493,18 @@
     position: relative;
     background: #171E41;
     height: 100%;
+    border-top: 1px solid rgba(255,255,255,.1);
     padding: 10rem 0 5rem 0;
 }
 
 .home-qoute .content {
-    font-family: "Poppins";
-    font-size: 45px;
+    font-family: "Poppins Regular";
+    font-size: 46px;
     color: white;
 }
 
 .home-qoute .content span {
+    font-family: "Poppins Bold";
     color: #3A79F9;
 }
 
@@ -553,6 +559,7 @@
     font-size: 70px;
     color: white;
     line-height: 5rem;
+    text-transform: capitalize;
 }
 
 .review_container .heading_review .subtitle {
@@ -657,8 +664,8 @@
 }
 
 .gird-caption {
-    font-family: "Inter Regular";
-    font-size: 72px;
+    font-family: "Inter Black";
+    font-size: 90px;
     color: #171e41;
     opacity: 0.3;
 }
@@ -666,13 +673,13 @@
 .turn-upwards {
     position: absolute;
     transform: rotate(90deg);
-    left: -250px;
+    left: -330px;
 }
 
 .turn-downwards {
     position: absolute;
     transform: rotate(-90deg);
-    right: -250px;
+    right: -330px;
 }
 
 .complete-relative {

@@ -29,8 +29,8 @@
 }
 
 .gird-caption {
-    font-family: "Inter Regular";
-    font-size: 72px;
+    font-family: "Inter Black";
+    font-size: 90px;
     color: #171e41;
     opacity: 0.3;
 }
@@ -38,13 +38,13 @@
 .turn-upwards {
     position: absolute;
     transform: rotate(90deg);
-    left: -250px;
+    left: -330px;
 }
 
 .turn-downwards {
     position: absolute;
     transform: rotate(-90deg);
-    right: -250px;
+    right: -330px;
 }
 
 .complete-relative {

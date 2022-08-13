@@ -30,20 +30,54 @@
     }
 }
 
-@media only screen and (max-width: 1527px) {
+@media only screen and (max-width: 1588px) {
     .grid-container .item {
         width: 400px !important;
     }
     .complete-relative .turn-upwards {
-        left: -212px !important;
+        left: -280px !important;
     }
     .complete-relative .turn-downwards {
-        right: -211px !important;
+        right: -280px !important;
+    }
+}
+
+@media only screen and (max-width: 1488px) {
+    .grid-container .item {
+        width: 380px !important;
+    }
+    .complete-relative .turn-upwards {
+        left: -250px !important;
+    }
+    .complete-relative .turn-downwards {
+        right: -250px !important;
+    }
+}
+
+@media only screen and (max-width: 1428px) {
+    .grid-container .item {
+        width: 360px !important;
+    }
+    .complete-relative .turn-upwards {
+        left: -210px !important;
+    }
+    .complete-relative .turn-downwards {
+        right: -210px !important;
+    }
+
+    .gird-caption {
+        font-size: 85px !important;
     }
 }
 
 @media only screen and (max-width: 1399px) {
     /* home */
+    .complete-relative .turn-upwards {
+        left: -300px !important;
+    }
+    .complete-relative .turn-downwards {
+        right: -300px !important;
+    }
     .home-review .review_container .heading_review .title {
         font-size: 65px !important;
     }
@@ -174,15 +208,18 @@
     /* about end */
 }
 
-@media only screen and (max-width: 1342px) {
+@media only screen and (max-width: 1348px) {
     .grid-container .item {
-        width: 350px !important;
+        width: 340px !important;
     }
     .complete-relative .turn-upwards {
-        left: -212px !important;
+        left: -250px !important;
     }
     .complete-relative .turn-downwards {
-        right: -211px !important;
+        right: -250px !important;
+    }
+    .gird-caption {
+        font-size: 80px !important;
     }
 }
 
@@ -193,20 +230,50 @@
     }
 }
 
+@media only screen and (max-width: 1290px) {
+    .grid-container .item {
+        width: 330px !important;
+    }
+    .complete-relative .turn-upwards {
+        left: -200px !important;
+    }
+    .complete-relative .turn-downwards {
+        right: -200px !important;
+    }
+    .gird-caption {
+        font-size: 72px !important;
+    }
+}
+
 @media only screen and (max-width: 1265px) {
     .grid-container .item {
         width: 320px !important;
     }
     .complete-relative .turn-upwards {
-        left: -167px !important;
+        left: -170px !important;
     }
     .complete-relative .turn-downwards {
-        right: -165px !important;
+        right: -170px !important;
+    }
+    .gird-caption {
+        font-size: 68px !important;
     }
 }
 
 @media only screen and (max-width: 1199px) {
     /* home */
+    .grid-container .item {
+        width: 300px !important;
+    }
+    .complete-relative .turn-upwards {
+        left: -200px !important;
+    }
+    .complete-relative .turn-downwards {
+        right: -200px !important;
+    }
+    .gird-caption {
+        font-size: 62px !important;
+    }
     .review_container .heading_review .title {
         font-size: 56px !important;
     }
@@ -408,25 +475,25 @@
 
 @media only screen and (max-width: 1162px) {
     .grid-container .item {
-        width: 300px !important;
+        width: 280px !important;
     }
     .complete-relative .turn-upwards {
-        left: -226px !important;
+        left: -180px !important;
     }
     .complete-relative .turn-downwards {
-        right: -226px !important;
+        right: -180px !important;
     }
 }
 
 @media only screen and (max-width: 1142px) {
     .grid-container .item {
-        width: 280px !important;
+        width: 260px !important;
     }
     .complete-relative .turn-upwards {
-        left: -198px !important;
+        left: -160px !important;
     }
     .complete-relative .turn-downwards {
-        right: -198px !important;
+        right: -160px !important;
     }
 }
 
@@ -441,7 +508,6 @@
         right: -120px !important;
     }
 }
-
 @media only screen and (max-width: 991px) {
     /* home */
     .grid-container .item {
