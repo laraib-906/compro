@@ -271,8 +271,6 @@
     background: #3A79F9;
 }
 
-.home-services .home-service-ul .home-service-li .home-service-container .service_number_and_image .service_img {}
-
 .home-services .home-service-ul .home-service-li .home-service-container .service_content {
     display: flex;
     flex-direction: column;
