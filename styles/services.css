@@ -24,8 +24,43 @@
 
 .current-services-section {
     background: linear-gradient(#f0f6ff, #ffffff 100%);
+    position: relative;
     /* padding: 100px; */
 }
+
+.sticky_services_nav {
+    position: fixed;
+    top: 66px;
+    width: 77%;
+    z-index: 3;
+ }
+
+
+@media (min-width: 576px) {
+    .sticky_services_nav {
+      width: 96% !important;
+    }
+  }
+  @media (min-width: 768px) {
+    .sticky_services_nav {
+      width: 720px !important;
+    }
+  }
+  @media (min-width: 992px) {
+    .sticky_services_nav {
+      width: 960px !important;
+    }
+  }
+  @media (min-width: 1200px) {
+    .sticky_services_nav {
+      width: 1140px !important;
+    }
+  }
+  @media (min-width: 1400px) {
+    .sticky_services_nav {
+      width: 1320px !important;
+    }
+  }
 
 .services-section-header {
     display: flex;
