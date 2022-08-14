@@ -133,7 +133,6 @@
             document.documentElement.scrollTop = 0;
         });
 
-
         function scrollServices() {
             const serviceContainer = document.getElementById('services_header_fixed');
             const top = serviceContainer.getBoundingClientRect().top;
@@ -143,7 +142,11 @@
 
             const serviceSection = document.getElementById('service_nav_Sections');
             const sectionTop = serviceSection.getBoundingClientRect().top;
-            if (sectionTop > 66) {
+            const serviceSection1container = document.getElementById('services_development_key');
+            if (sectionTop <= 66) {
+                serviceSection1container.classList.add('p-t-6-r-e-m');
+            } else {
+                serviceSection1container.classList.remove('p-t-6-r-e-m');
                 serviceContainer.classList.remove('sticky_services_nav');
             }
             

@@ -35,6 +35,10 @@
     z-index: 3;
  }
 
+ .p-t-6-r-e-m {
+   padding-top: 6rem;
+ }
+
 
 @media (min-width: 576px) {
     .sticky_services_nav {
@@ -58,7 +62,7 @@
   }
   @media (min-width: 1400px) {
     .sticky_services_nav {
-      width: 1320px !important;
+      width: 1300px !important;
     }
   }
 
