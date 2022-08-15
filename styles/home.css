@@ -131,6 +131,7 @@
     font-size: 50px;
     text-align: center;
     text-transform: capitalize;
+    color: #050817;
 }
 
 .support .section-subtitle {
@@ -138,6 +139,7 @@
     font-size: 24px;
     width: 77%;
     text-align: center;
+    color:#001427;
 }
 
 .support .support-content-container {
@@ -194,12 +196,14 @@
 .support .support-content-container .content .title {
     font-family: "Roboto Medium";
     font-size: 30px;
+    color: #050817;
 }
 
 .support .support-content-container .content .description {
     font-family: "Inter Regular";
     font-size: 20px;
     text-align: center;
+    color: #001427;
 }
 
 .home-services {
@@ -229,6 +233,7 @@
     line-height: 5rem;
     margin-top: 15px;
     text-transform: capitalize;
+    color: #050817;
 }
 
 .home-services_main_title .sub_main_title_text {
@@ -283,12 +288,14 @@
 .home-services .home-service-ul .home-service-li .home-service-container .service_content .service_heading {
     font-family: "Roboto Bold";
     font-size: 40px;
+    color: #050817;
 }
 
 .home-services .home-service-ul .home-service-li .home-service-container .service_content .service_subheading {
     font-family: "Inter Regular";
     font-size: 20px;
     line-height: 3rem;
+    color: #001427;
 }
 
 .service_button button {
@@ -673,11 +680,13 @@
 .home_our_work .work_section_header_container .main_heading {
     font-family: "Roboto Bold";
     font-size: 70px;
+    color: #050817;
 }
 
 .home_our_work .work_section_header_container .main_subheading {
     font-family: "Inter Regular";
     font-size: 24px;
+    color: #001427;
 }
 
 .grid-container {

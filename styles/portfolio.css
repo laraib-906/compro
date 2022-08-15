@@ -5,8 +5,9 @@
 }
 
 .constant-section .section-header {
-    font-size: 62px;
+    font-size: 70px;
     font-family: "Roboto Bold";
+    color:#050817;
 }
 
 .grid-container {
@@ -118,6 +119,7 @@
     font-family: "Inter Medium";
     margin-bottom: 5rem;
     background: transparent;
+    color: #171E41;
 }
 
 .mixitup-control-active {

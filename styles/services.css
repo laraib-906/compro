@@ -15,11 +15,13 @@
 .past-history-year {
     font-family: "Inter Semi Bold";
     font-size: 40px;
+    color: #171E41;
 }
 
 .past-history-content {
     font-family: "Inter Regular";
     font-size: 22px;
+    color: #171E41;
 }
 
 .current-services-section {
