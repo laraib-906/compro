@@ -18,7 +18,7 @@
     background: #171e41;
     top: 0;
     left: 0;
-    clip-path: polygon( 0 0, 100% 0%, 100% 0, 76% 100%, 100% 100%, 0% 100%, 0 100%, 0% 0%);
+    clip-path: polygon( 0 0, 100% 0%, 95% 0, 68% 100%, 100% 100%, 0% 100%, 0 100%, 0% 0%);
 }
 
 .header-content-container {
