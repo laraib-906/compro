@@ -18,7 +18,7 @@
     background: #171e41;
     top: 0;
     left: 0;
-    clip-path: polygon( 0 0, 100% 0%, 100% 0, 76% 100%, 100% 100%, 0% 100%, 0 100%, 0% 0%);
+    clip-path: polygon( 0 0, 100% 0%, 96% 0, 76% 100%, 100% 100%, 0% 100%, 0 100%, 0% 0%);
 }
 
 .header-content-container {
@@ -51,7 +51,8 @@
     color: white;
     font-size: 90px;
     z-index: 1;
-    width: 55%;
+    width: 70%;
+    letter-spacing: 4px;
     line-height: 7rem;
 }
 
@@ -544,6 +545,7 @@
     background: linear-gradient(rgba(23, 30, 65, .9), rgba(23, 30, 65, .9)), url(../assets/images/home/reviews/reviwes_bg.png);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .home-review .review_container {

@@ -14,13 +14,13 @@
 
 .past-history-year {
     font-family: "Inter Semi Bold";
-    font-size: 40px;
+    font-size: 50px;
     color: #171E41;
 }
 
 .past-history-content {
     font-family: "Inter Regular";
-    font-size: 22px;
+    font-size: 18px;
     color: #171E41;
 }
 
@@ -84,7 +84,10 @@
     width: 60px;
 }
 
-.services-section-header .active {
+/* .services-section-header .active {
+    opacity: 1 !important;
+} */
+.active {
     opacity: 1 !important;
 }
 
