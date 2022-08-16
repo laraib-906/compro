@@ -114,7 +114,6 @@
 
         window.onscroll = function() {
             scrollFunction();
-            scrollServices();
         };
 
         function scrollFunction() {
@@ -132,25 +131,6 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         });
-
-        function scrollServices() {
-            const serviceContainer = document.getElementById('services_header_fixed');
-            const top = serviceContainer.getBoundingClientRect().top;
-            if(top <= 66) {
-                serviceContainer.classList.add("sticky_services_nav");
-            }
-
-            const serviceSection = document.getElementById('service_nav_Sections');
-            const sectionTop = serviceSection.getBoundingClientRect().top;
-            const serviceSection1container = document.getElementById('services_development_key');
-            if (sectionTop <= 66) {
-                serviceSection1container.classList.add('p-t-6-r-e-m');
-            } else {
-                serviceSection1container.classList.remove('p-t-6-r-e-m');
-                serviceContainer.classList.remove('sticky_services_nav');
-            }
-            
-        }
 
         // masonry gird filter and preview options
         mixitup(".filter-container");
