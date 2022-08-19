@@ -127,3 +127,52 @@
     outline: none;
     color: #3A79F9;
 }
+.model-header {
+    font-family: 'Roboto Medium';
+    text-align: center;
+    font-size: 30px;
+    color: #050817;
+    margin-top: 50px;
+    text-transform: capitalize;
+    
+}
+
+.model_dialog_innner{
+    width: 1320px;
+    padding:10px;
+}
+.input,
+.select,
+.text-area {
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border: 1px solid #595d70 !important;
+    border-radius: 10px;
+    color: #5B5B5B !important;
+    outline: none;
+    font-size: 22px;
+    font-family: "Inter Regular";
+}
+.input::placeholder {
+    color: #5B5B5B !important;
+}
+
+.text-area::placeholder{
+    color: #5B5B5B !important;
+    font-size: 22px;
+    font-family: "Inter Regular";
+
+}
+
+.submit-button {
+    border: none;
+    width: 226px;
+    height: 59px;
+    background: #3A79F9 0% 0% no-repeat padding-box;
+    border-radius: 25px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Inter Medium';
+    letter-spacing: 0px;
+}
