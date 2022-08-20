@@ -1,1256 +1,946 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/favicon.ico" />
-    <title>Compro Ventures</title>
-    <link rel="stylesheet" href="icons/fontawesome/css/all.css" />
-    <link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="fonts/open-sans/style.css" />
-    <link rel="stylesheet" href="fonts/roboto/style.css" />
-    <link rel="stylesheet" href="fonts/inter/style.css" />
-    <link rel="stylesheet" href="fonts/poppins/style.css" />
-    <link rel="stylesheet" href="vendors/lightbox/dist/css/lightbox.css" />
-    <link rel="stylesheet" href="styles/responsive.css" />
-    <link rel="stylesheet" href="styles/flickity.css" />
-    <link rel="stylesheet" href="styles/home.css" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/loader.css" />
-  </head>
 
-  <body>
-    <!-- pre loader -->
-    <div id="preloader">
-      <div class="loader">
-        <div class="loader__bar"></div>
-        <div class="loader__bar"></div>
-        <div class="loader__bar"></div>
-        <div class="loader__bar"></div>
-        <div class="loader__bar"></div>
-        <div class="loader__ball"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/favicon.ico" />
+  <title>Compro Ventures</title>
+  <link rel="stylesheet" href="icons/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="fonts/open-sans/style.css" />
+  <link rel="stylesheet" href="fonts/roboto/style.css" />
+  <link rel="stylesheet" href="fonts/inter/style.css" />
+  <link rel="stylesheet" href="fonts/poppins/style.css" />
+  <link rel="stylesheet" href="vendors/lightbox/dist/css/lightbox.css" />
+  <link rel="stylesheet" href="styles/responsive.css" />
+  <link rel="stylesheet" href="styles/flickity.css" />
+  <link rel="stylesheet" href="styles/home.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/loader.css" />
+</head>
+
+<body>
+  <!-- pre loader -->
+  <div id="preloader">
+    <div class="loader">
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__ball"></div>
+    </div>
+  </div>
+  <!-- navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg bg-light custom-nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.png" alt="logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav ms-auto navbar-nav-scroll d-flex gap-5">
+          <li class="nav-item get-quote-top">
+            <button type="button" id="myModal" class="quote" data-bs-toggle="modal" data-bs-target="#exampleModal"> Get
+              a Quote </button>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item get-quote-bottom">
+            <button type="button" id="myModal" class="quote" data-bs-toggle="modal" data-bs-target="#exampleModal"> Get
+              a Quote </button>
+          </li>
+        </ul>
       </div>
     </div>
-    <!-- navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg bg-light custom-nav">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/images/logo.png" alt="logo" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav ms-auto navbar-nav-scroll d-flex gap-5">
-            <li class="nav-item get-quote-top">
-              <button
-                type="button"
-                id="myModal"
-                href="#"
-                class="quote"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                Get a Quote
+  </nav>
+  <!-- header -->
+  <section class="header">
+    <div class="left-plane"></div>
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-md-12 h-100">
+          <div class="header-content-container h-100 w-100">
+            <div class="header-content">
+              <div class="header-slogun ml-2"> We are global creative agency with </div>
+              <div class="header-title"> Design Expertise <br /> & Technology </div>
+              <div class="header-subtitle"> As global leaders in technology, and business solutions, we partner with
+                clients to simplify, strengthen and transform their businesses. </div>
+            </div>
+            <div class="header-buttons">
+              <button class="header-buttons-work">
+                <a href="services.html" style="text-decoration: none; color: white"> Our Work <i class="fa-solid fa-right-long" style="margin-left: 10px;"></i>
+                </a>
               </button>
+              <button class="header-buttons-quote" type="button" id="myModal" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Get a Quote</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- header end -->
+  <!-- header client -->
+  <section class="clients p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="home-clients">
+            <img src="assets/images/home/headerClients/Thrive-Global-Logo.png" alt="" />
+            <img src="assets/images/home/headerClients/yahoo-news-logo.png" alt="" />
+            <img src="assets/images/home/headerClients/goodfirms-white-logo.png" alt="" />
+            <img src="assets/images/home/headerClients/asian.png" alt="" />
+            <img src="assets/images/home/headerClients/ceo.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- header client end -->
+  <!-- support home -->
+  <div class="support">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading reveal-loaded">
+            <div class="section-title">Save your valuable time</div>
+            <div class="section-subtitle"> Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt soluta nobis assumenda labore quod maxime. </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-4 mt-5">
+          <div class="support-content-container reveal-loaded">
+            <div class="content-image">
+              <img class="content-image-icon-1" src="assets/images/home/clients/icon1.png" alt="client_icon_1" />
+            </div>
+            <div class="content">
+              <div class="title">Always Available</div>
+              <div class="description"> Lorem ipsum dolor sit amet consectetur adipiscing elit, </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-5">
+          <div class="support-content-container reveal-loaded">
+            <div class="content-image">
+              <img class="content-image-icon-2" src="assets/images/home/clients/icon2.png" alt="client_icon_2" />
+            </div>
+            <div class="content">
+              <div class="title">Professional Support</div>
+              <div class="description"> Lorem ipsum dolor sit amet consectetur adipiscing elit, </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-5">
+          <div class="support-content-container reveal-loaded">
+            <div class="content-image">
+              <img class="content-image-icon-3" src="assets/images/home/clients/icon3.png" alt="client_icon_3" />
+            </div>
+            <div class="content">
+              <div class="title">High Experience</div>
+              <div class="description"> Lorem ipsum dolor sit amet consectetur adipiscing elit, </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- support home end -->
+  <!-- services home -->
+  <section class="home-services">
+    <img class="curved_image" src="assets/images/home/home_curved.svg" alt="home_curved" />
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="home-services_main_title">
+            <div class="main_title_text reveal-loaded"> We Just Offer The Best Services </div>
+            <div class="sub_main_title_text reveal-loaded"> We Present the best digital Services carried out
+              professionally. </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row mt-3">
+        <div class="col-md-12">
+          <ul class="home-service-ul">
+            <li class="home-service-li">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="home-service-container reveal-loaded">
+                      <div class="service_number_and_image">
+                        <div class="service_number" style="margin-left: 10px"> 01 </div>
+                        <div class="service_hr"></div>
+                        <div class="service_img">
+                          <img src="assets/images/home/services/service_1.png" alt="service 1" />
+                        </div>
+                      </div>
+                      <div class="service_content">
+                        <div class="service_heading"> Software Development </div>
+                        <div class="service_subheading"> Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
+                          eiusmod tempor incididunt soluta nobis assumenda labore quod maxime. </div>
+                      </div>
+                      <div class="service_button">
+                        <a href="services.html#services_development_key" style="text-decoration: none"><button> More
+                            Details <i class="fa-solid fa-right-long"></i></button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="about.html"
-                >About Us</a
-              >
+            <li class="home-service-li">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="home-service-container reveal-loaded">
+                      <div class="service_number_and_image">
+                        <div class="service_number">02</div>
+                        <div class="service_hr"></div>
+                        <div class="service_img">
+                          <img src="assets/images/home/services/service_2.png" alt="service 1" />
+                        </div>
+                      </div>
+                      <div class="service_content">
+                        <div class="service_heading">Graphics Design</div>
+                        <div class="service_subheading"> Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
+                          eiusmod tempor incididunt soluta nobis assumenda labore quod maxime. </div>
+                      </div>
+                      <div class="service_button">
+                        <a href=" services.html#services_designing_key" style="text-decoration: none"><button> More
+                            Details <i class="fa-solid fa-right-long"></i></button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
+            <li class="home-service-li">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="home-service-container reveal-loaded">
+                      <div class="service_number_and_image">
+                        <div class="service_number">03</div>
+                        <div class="service_hr"></div>
+                        <div class="service_img">
+                          <img src="assets/images/home/services/service_3.png" alt="service 1" />
+                        </div>
+                      </div>
+                      <div class="service_content">
+                        <div class="service_heading">Content Writting</div>
+                        <div class="service_subheading"> Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
+                          eiusmod tempor incididunt soluta nobis assumenda labore quod maxime. </div>
+                      </div>
+                      <div class="service_button">
+                        <a href=" services.html#services_writting_key" style="text-decoration: none"><button> More
+                            Details <i class="fa-solid fa-right-long"></i></button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item get-quote-bottom">
-              <button
-                type="button"
-                id="myModal"
-                class="quote"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                Get a Quote
-              </button>
+            <li class="home-service-li">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="home-service-container reveal-loaded">
+                      <div class="service_number_and_image">
+                        <div class="service_number">04</div>
+                        <div class="service_hr"></div>
+                        <div class="service_img">
+                          <img src="assets/images/home/services/service_4.png" alt="service 1" />
+                        </div>
+                      </div>
+                      <div class="service_content">
+                        <div class="service_heading">Digital Marketing</div>
+                        <div class="service_subheading"> Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
+                          eiusmod tempor incididunt soluta nobis assumenda labore quod maxime. </div>
+                      </div>
+                      <div class="service_button">
+                        <a href="services.html#services_marketing_key" style="text-decoration: none"><button> More
+                            Details <i class="fa-solid fa-right-long"></i></button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
-    <!-- header -->
-    <section class="header">
-      <div class="left-plane"></div>
-      <div class="container h-100">
-        <div class="row h-100">
-          <div class="col-md-12 h-100">
-            <div class="header-content-container h-100 w-100">
-              <div class="header-content">
-                <div class="header-slogun ml-2">
-                  We are global creative agency with
-                </div>
-                <div class="header-title">
-                  Design Expertise <br />
-                  & Technology
-                </div>
-                <div class="header-subtitle">
-                  As global leaders in technology, and business solutions, we
-                  partner with clients to simplify, strengthen and transform
-                  their businesses.
+    </div>
+  </section>
+  <!-- services home end -->
+  <!-- home testinomials -->
+  <section class="home-review mt-5">
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-md-5 mt-5">
+          <div class="review_container">
+            <div class="heading_review">
+              <div class="title">We aim to help busy peoples</div>
+              <div class="subtitle"> Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt soluta nobis assumenda labore quod maxime. </div>
+            </div>
+            <div class="accordion review_ul" id="accordionID">
+              <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="review_ul_li border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <div class="text" style="text-align: left;">How to get started</div>
+                    <i class="fa-solid fa-plus" style="color: white; font-size: 24px"></i>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionID">
+                  <div class="accordion-body text-light"> Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt soluta nobis assumenda labore quod maxime. </div>
                 </div>
               </div>
-              <div class="header-buttons">
-                <button class="header-buttons-work">
-                  Our Work <i class="fa-solid fa-right-long"></i>
-                </button>
-                <button class="header-buttons-quote">Get a Quote</button>
+              <div class="accordion-item bg-transparent border-0">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="review_ul_li border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div class="text" style="text-align: left;">What are the services you provide?</div>
+                    <i class="fa-solid fa-plus" style="color: white; font-size: 24px"></i>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionID">
+                  <div class="accordion-body text-light"> Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt soluta nobis assumenda labore quod maxime. </div>
+                </div>
               </div>
+              <div class="accordion-item bg-transparent border-0">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="review_ul_li border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <div class="text" style="text-align: left;">Do you provide support</div>
+                    <i class="fa-solid fa-plus" style="color: white; font-size: 24px"></i>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionID">
+                  <div class="accordion-body text-light"> Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt soluta nobis assumenda labore quod maxime. </div>
+                </div>
+              </div>
+            </div>
+            <div class="qoute"> "Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus
+              id quod maxime placeat facere possimus." </div>
+            <div class="profile">
+              <img src="assets/images/home/help/Ellipse 20.png" alt="profile Image" />
+              <div class="profile_details">
+                <div class="name">Melissa Norwood</div>
+                <div class="design">Co-founder</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 mt-5">
+          <div class="help_images_container">
+            <div class="upper_images">
+              <div class="helped_clients">
+                <div class="calculation">300 +</div>
+                <div class="text">Happy Client Worldwide</div>
+              </div>
+              <img src="assets/images/home/help/client1.png" alt="helped_clients" />
+            </div>
+            <div class="lower_image">
+              <img src="assets/images/home/help/client2.png" alt="helped_clients" />
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- header end -->
-    <!-- header client -->
-    <section class="clients p-3">
+    </div>
+  </section>
+  <section class="home-qoute">
+    <div class="review-batch">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="home-clients">
-              <img
-                src="assets/images/home/headerClients/Thrive-Global-Logo.png"
-                alt=""
-              />
-              <img
-                src="assets/images/home/headerClients/yahoo-news-logo.png"
-                alt=""
-              />
-              <img
-                src="assets/images/home/headerClients/goodfirms-white-logo.png"
-                alt=""
-              />
-              <img src="assets/images/home/headerClients/asian.png" alt="" />
-              <img src="assets/images/home/headerClients/ceo.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- header client end -->
-    <!-- support home -->
-    <div class="support">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading reveal-loaded">
-              <div class="section-title">Save your valuable time</div>
-              <div class="section-subtitle">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt soluta nobis assumenda labore quod
-                maxime.
+            <div class="review-batch-container d-flex flex-row align-items-center justify-content-between gap-4">
+              <div class="review-batch-item text-center d-flex flex-column gap-4">
+                <div class="review-batch-item-year">2012</div>
+                <div class="review-batch-item-content"> The year we started our services </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-md-4 mt-5">
-            <div class="support-content-container reveal-loaded">
-              <div class="content-image">
-                <img
-                  class="content-image-icon-1"
-                  src="assets/images/home/clients/icon1.png"
-                  alt="client_icon_1"
-                />
+              <div class="review-batch-item text-center d-flex flex-column gap-4">
+                <div class="review-batch-item-year">06</div>
+                <div class="review-batch-item-content"> Pro awards won for lorem amet </div>
               </div>
-              <div class="content">
-                <div class="title">Always Available</div>
-                <div class="description">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit,
+              <div class="review-batch-item text-center d-flex flex-column gap-5 justify-content-center">
+                <div class="review-batch-item-year review-batch-item-year-reviewText"> Review </div>
+                <div class="review-batch-item-content d-flex flex-row gap-2">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-4 mt-5">
-            <div class="support-content-container reveal-loaded">
-              <div class="content-image">
-                <img
-                  class="content-image-icon-2"
-                  src="assets/images/home/clients/icon2.png"
-                  alt="client_icon_2"
-                />
+              <div class="review-batch-item text-center d-flex flex-column gap-4">
+                <div class="review-batch-item-year">5K</div>
+                <div class="review-batch-item-content"> Business customers serviced in 2020 </div>
               </div>
-              <div class="content">
-                <div class="title">Professional Support</div>
-                <div class="description">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit,
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mt-5">
-            <div class="support-content-container reveal-loaded">
-              <div class="content-image">
-                <img
-                  class="content-image-icon-3"
-                  src="assets/images/home/clients/icon3.png"
-                  alt="client_icon_3"
-                />
-              </div>
-              <div class="content">
-                <div class="title">High Experience</div>
-                <div class="description">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit,
-                </div>
+              <div class="review-batch-item text-center d-flex flex-column gap-4">
+                <div class="review-batch-item-year">300</div>
+                <div class="review-batch-item-content"> Client satisfied order completed </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- support home end -->
-    <!-- services home -->
-    <section class="home-services">
-      <img
-        class="curved_image"
-        src="assets/images/home/home_curved.svg"
-        alt="home_curved"
-      />
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="home-services_main_title">
-              <div class="main_title_text reveal-loaded">
-                We Just Offer The Best Services
-              </div>
-              <div class="sub_main_title_text reveal-loaded">
-                We Present the best digital Services carried out professionally.
-              </div>
-            </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="content reveal-loaded"> Our <span>aim</span> is to highlight your <span>brand</span> on each
+            social media platform in every <span>possible way</span> and to keep engaging the audience with your brand.
           </div>
         </div>
       </div>
-      <div class="container-fluid">
-        <div class="row mt-3">
-          <div class="col-md-12">
-            <ul class="home-service-ul">
-              <li class="home-service-li">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="home-service-container reveal-loaded">
-                        <div class="service_number_and_image">
-                          <div class="service_number" style="margin-left: 10px">
-                            01
-                          </div>
-                          <div class="service_hr"></div>
-                          <div class="service_img">
-                            <img
-                              src="assets/images/home/services/service_1.png"
-                              alt="service 1"
-                            />
-                          </div>
-                        </div>
-                        <div class="service_content">
-                          <div class="service_heading">
-                            Software Development
-                          </div>
-                          <div class="service_subheading">
-                            Lorem ipsum dolor sit amet consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt soluta nobis
-                            assumenda labore quod maxime.
-                          </div>
-                        </div>
-                        <div class="service_button">
-                          <a
-                            href="services.html#services_development_key"
-                            style="text-decoration: none"
-                            ><button>
-                              More Details
-                              <i class="fa-solid fa-right-long"></i></button
-                          ></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="home-service-li">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="home-service-container reveal-loaded">
-                        <div class="service_number_and_image">
-                          <div class="service_number">02</div>
-                          <div class="service_hr"></div>
-                          <div class="service_img">
-                            <img
-                              src="assets/images/home/services/service_2.png"
-                              alt="service 1"
-                            />
-                          </div>
-                        </div>
-                        <div class="service_content">
-                          <div class="service_heading">Graphics Design</div>
-                          <div class="service_subheading">
-                            Lorem ipsum dolor sit amet consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt soluta nobis
-                            assumenda labore quod maxime.
-                          </div>
-                        </div>
-                        <div class="service_button">
-                          <a
-                            href=" services.html#services_designing_key"
-                            style="text-decoration: none"
-                            ><button>
-                              More Details
-                              <i class="fa-solid fa-right-long"></i></button
-                          ></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="home-service-li">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="home-service-container reveal-loaded">
-                        <div class="service_number_and_image">
-                          <div class="service_number">03</div>
-                          <div class="service_hr"></div>
-                          <div class="service_img">
-                            <img
-                              src="assets/images/home/services/service_3.png"
-                              alt="service 1"
-                            />
-                          </div>
-                        </div>
-                        <div class="service_content">
-                          <div class="service_heading">Content Writting</div>
-                          <div class="service_subheading">
-                            Lorem ipsum dolor sit amet consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt soluta nobis
-                            assumenda labore quod maxime.
-                          </div>
-                        </div>
-                        <div class="service_button">
-                          <a
-                            href=" services.html#services_writting_key"
-                            style="text-decoration: none"
-                            ><button>
-                              More Details
-                              <i class="fa-solid fa-right-long"></i></button
-                          ></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="home-service-li">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="home-service-container reveal-loaded">
-                        <div class="service_number_and_image">
-                          <div class="service_number">04</div>
-                          <div class="service_hr"></div>
-                          <div class="service_img">
-                            <img
-                              src="assets/images/home/services/service_4.png"
-                              alt="service 1"
-                            />
-                          </div>
-                        </div>
-                        <div class="service_content">
-                          <div class="service_heading">Digital Marketing</div>
-                          <div class="service_subheading">
-                            Lorem ipsum dolor sit amet consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt soluta nobis
-                            assumenda labore quod maxime.
-                          </div>
-                        </div>
-                        <div class="service_button">
-                          <a
-                            href="services.html#services_marketing_key"
-                            style="text-decoration: none"
-                            ><button>
-                              More Details
-                              <i class="fa-solid fa-right-long"></i></button
-                          ></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- services home end -->
-    <!-- home testinomials -->
-    <section class="home-review mt-5">
-      <div class="container">
-        <div class="row mt-5">
-          <div class="col-md-5 mt-5">
-            <div class="review_container">
-              <div class="heading_review">
-                <div class="title">We aim to help busy peoples</div>
-                <div class="subtitle">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt soluta nobis assumenda labore quod
-                  maxime.
-                </div>
+    </div>
+  </section>
+  <section class="testinomials">
+    <div class="testimonials-container">
+      <div class="testimonial-title reveal-loaded">What Our Clients Say</div>
+      <div class="carouselContainer reveal-loaded">
+        <div class="carouselOfImages">
+          <div class="carouselImage">
+            <div class="carousel-image-container">
+              <div class="carousel-image-user">
+                <img src="assets/images/home/testimonials/Ellipse 2.png" alt="" class="img-fluid img-thumbnail" />
+                <div class="carousel-user-name">Jeff Hardy</div>
+                <div class="carousel-user-designation"> Co-Founder, <br /> Tyryx Worldwide </div>
               </div>
-              <div class="accordion review_ul" id="accordionID">
-                <div class="accordion-item border-0 bg-transparent">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button
-                      class="review_ul_li border-0"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-expanded="false"
-                      aria-controls="collapseOne"
-                    >
-                      <div class="text">How to get started</div>
-                      <i
-                        class="fa-solid fa-plus"
-                        style="color: white; font-size: 24px"
-                      ></i>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOne"
-                    class="accordion-collapse collapse show"
-                    aria-labelledby="headingOne"
-                    data-bs-parent="#accordionID"
-                  >
-                    <div class="accordion-body text-light">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt soluta nobis assumenda
-                      labore quod maxime.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item bg-transparent border-0">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button
-                      class="review_ul_li border-0"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      <div class="text">What are the services you provide?</div>
-                      <i
-                        class="fa-solid fa-plus"
-                        style="color: white; font-size: 24px"
-                      ></i>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionID"
-                  >
-                    <div class="accordion-body text-light">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt soluta nobis assumenda
-                      labore quod maxime.
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item bg-transparent border-0">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button
-                      class="review_ul_li border-0"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      <div class="text">Do you provide support</div>
-                      <i
-                        class="fa-solid fa-plus"
-                        style="color: white; font-size: 24px"
-                      ></i>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseThree"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingThree"
-                    data-bs-parent="#accordionID"
-                  >
-                    <div class="accordion-body text-light">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt soluta nobis assumenda
-                      labore quod maxime.
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="qoute">
-                "Nam libero tempore cum soluta nobis est eligendi optio cumque
-                nihil impedit quo minus id quod maxime placeat facere possimus."
-              </div>
-              <div class="profile">
-                <img
-                  src="assets/images/home/help/Ellipse 20.png"
-                  alt="profile Image"
-                />
-                <div class="profile_details">
-                  <div class="name">Melissa Norwood</div>
-                  <div class="design">Co-founder</div>
-                </div>
-              </div>
+              <div class="carousel-image-hr"></div>
+              <div class="carousel-image-content"> “Within 3 months, We have seen amazing results and overall increase
+                of our website traffic. Highly recommended!” </div>
             </div>
           </div>
-          <div class="col-md-7 mt-5">
-            <div class="help_images_container">
-              <div class="upper_images">
-                <div class="helped_clients">
-                  <div class="calculation">300 +</div>
-                  <div class="text">Happy Client Worldwide</div>
-                </div>
-                <img
-                  src="assets/images/home/help/client1.png"
-                  alt="helped_clients"
-                />
+          <div class="carouselImage">
+            <div class="carousel-image-container">
+              <div class="carousel-image-user">
+                <img src="assets/images/home/testimonials/Ellipse 6.png" alt="" class="img-fluid img-thumbnail" />
+                <div class="carousel-user-name">Courtney Vox</div>
+                <div class="carousel-user-designation"> Marketing Manager, <br /> Broadcast Media </div>
               </div>
-              <div class="lower_image">
-                <img
-                  src="assets/images/home/help/client2.png"
-                  alt="helped_clients"
-                />
-              </div>
+              <div class="carousel-image-hr"></div>
+              <div class="carousel-image-content"> “Within 3 months, We have seen amazing results and overall increase
+                of our website traffic. Highly recommended!” </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="home-qoute">
-      <div class="review-batch">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div
-                class="review-batch-container d-flex flex-row align-items-center justify-content-between gap-4"
-              >
-                <div
-                  class="review-batch-item text-center d-flex flex-column gap-4"
-                >
-                  <div class="review-batch-item-year">2012</div>
-                  <div class="review-batch-item-content">
-                    The year we started our services
-                  </div>
-                </div>
-                <div
-                  class="review-batch-item text-center d-flex flex-column gap-4"
-                >
-                  <div class="review-batch-item-year">06</div>
-                  <div class="review-batch-item-content">
-                    Pro awards won for lorem amet
-                  </div>
-                </div>
-                <div
-                  class="review-batch-item text-center d-flex flex-column gap-5 justify-content-center"
-                >
-                  <div
-                    class="review-batch-item-year review-batch-item-year-reviewText"
-                  >
-                    Review
-                  </div>
-                  <div class="review-batch-item-content d-flex flex-row gap-2">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-                <div
-                  class="review-batch-item text-center d-flex flex-column gap-4"
-                >
-                  <div class="review-batch-item-year">5K</div>
-                  <div class="review-batch-item-content">
-                    Business customers serviced in 2020
-                  </div>
-                </div>
-                <div
-                  class="review-batch-item text-center d-flex flex-column gap-4"
-                >
-                  <div class="review-batch-item-year">300</div>
-                  <div class="review-batch-item-content">
-                    Client satisfied order completed
-                  </div>
-                </div>
+          <div class="carouselImage">
+            <div class="carousel-image-container">
+              <div class="carousel-image-user">
+                <img src="assets/images/home/testimonials/Ellipse 2.png" alt="" class="img-fluid img-thumbnail" />
+                <div class="carousel-user-name">Jeff Hardy</div>
+                <div class="carousel-user-designation"> Co-Founder, <br /> Tyryx Worldwide </div>
               </div>
+              <div class="carousel-image-hr"></div>
+              <div class="carousel-image-content"> “Within 3 months, We have seen amazing results and overall increase
+                of our website traffic. Highly recommended!” </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="content reveal-loaded">
-              Our <span>aim</span> is to highlight your <span>brand</span> on
-              each social media platform in every <span>possible way</span> and
-              to keep engaging the audience with your brand.
+          <div class="carouselImage">
+            <div class="carousel-image-container">
+              <div class="carousel-image-user">
+                <img src="assets/images/home/testimonials/Ellipse 6.png" alt="" class="img-fluid img-thumbnail" />
+                <div class="carousel-user-name">Courtney Vox</div>
+                <div class="carousel-user-designation"> Marketing Manager, <br /> Broadcast Media </div>
+              </div>
+              <div class="carousel-image-hr"></div>
+              <div class="carousel-image-content"> “Within 3 months, We have seen amazing results and overall increase
+                of our website traffic. Highly recommended!” </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="testinomials">
-      <div class="testimonials-container">
-        <div class="testimonial-title reveal-loaded">What Our Clients Say</div>
-        <div class="carouselContainer reveal-loaded">
-          <div class="carouselOfImages">
-            <div class="carouselImage">
-              <div class="carousel-image-container">
-                <div class="carousel-image-user">
-                  <img
-                    src="assets/images/home/testimonials/Ellipse 2.png"
-                    alt=""
-                    class="img-fluid img-thumbnail"
-                  />
-                  <div class="carousel-user-name">Jeff Hardy</div>
-                  <div class="carousel-user-designation">
-                    Co-Founder, <br />
-                    Tyryx Worldwide
-                  </div>
-                </div>
-                <div class="carousel-image-hr"></div>
-                <div class="carousel-image-content">
-                  “Within 3 months, We have seen amazing results and overall
-                  increase of our website traffic. Highly recommended!”
-                </div>
+          <div class="carouselImage">
+            <div class="carousel-image-container">
+              <div class="carousel-image-user">
+                <img src="assets/images/home/testimonials/Ellipse 2.png" alt="" class="img-fluid img-thumbnail" />
+                <div class="carousel-user-name">Jeff Hardy</div>
+                <div class="carousel-user-designation"> Co-Founder, <br /> Tyryx Worldwide </div>
               </div>
-            </div>
-            <div class="carouselImage">
-              <div class="carousel-image-container">
-                <div class="carousel-image-user">
-                  <img
-                    src="assets/images/home/testimonials/Ellipse 6.png"
-                    alt=""
-                    class="img-fluid img-thumbnail"
-                  />
-                  <div class="carousel-user-name">Courtney Vox</div>
-                  <div class="carousel-user-designation">
-                    Marketing Manager, <br />
-                    Broadcast Media
-                  </div>
-                </div>
-                <div class="carousel-image-hr"></div>
-                <div class="carousel-image-content">
-                  “Within 3 months, We have seen amazing results and overall
-                  increase of our website traffic. Highly recommended!”
-                </div>
-              </div>
-            </div>
-            <div class="carouselImage">
-              <div class="carousel-image-container">
-                <div class="carousel-image-user">
-                  <img
-                    src="assets/images/home/testimonials/Ellipse 2.png"
-                    alt=""
-                    class="img-fluid img-thumbnail"
-                  />
-                  <div class="carousel-user-name">Jeff Hardy</div>
-                  <div class="carousel-user-designation">
-                    Co-Founder, <br />
-                    Tyryx Worldwide
-                  </div>
-                </div>
-                <div class="carousel-image-hr"></div>
-                <div class="carousel-image-content">
-                  “Within 3 months, We have seen amazing results and overall
-                  increase of our website traffic. Highly recommended!”
-                </div>
-              </div>
-            </div>
-            <div class="carouselImage">
-              <div class="carousel-image-container">
-                <div class="carousel-image-user">
-                  <img
-                    src="assets/images/home/testimonials/Ellipse 6.png"
-                    alt=""
-                    class="img-fluid img-thumbnail"
-                  />
-                  <div class="carousel-user-name">Courtney Vox</div>
-                  <div class="carousel-user-designation">
-                    Marketing Manager, <br />
-                    Broadcast Media
-                  </div>
-                </div>
-                <div class="carousel-image-hr"></div>
-                <div class="carousel-image-content">
-                  “Within 3 months, We have seen amazing results and overall
-                  increase of our website traffic. Highly recommended!”
-                </div>
-              </div>
-            </div>
-            <div class="carouselImage">
-              <div class="carousel-image-container">
-                <div class="carousel-image-user">
-                  <img
-                    src="assets/images/home/testimonials/Ellipse 2.png"
-                    alt=""
-                    class="img-fluid img-thumbnail"
-                  />
-                  <div class="carousel-user-name">Jeff Hardy</div>
-                  <div class="carousel-user-designation">
-                    Co-Founder, <br />
-                    Tyryx Worldwide
-                  </div>
-                </div>
-                <div class="carousel-image-hr"></div>
-                <div class="carousel-image-content">
-                  “Within 3 months, We have seen amazing results and overall
-                  increase of our website traffic. Highly recommended!”
-                </div>
-              </div>
+              <div class="carousel-image-hr"></div>
+              <div class="carousel-image-content"> “Within 3 months, We have seen amazing results and overall increase
+                of our website traffic. Highly recommended!” </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- home testinomials end -->
-    <section class="home_our_work">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="work_section_header_container">
-              <div class="main_heading reveal-loaded">Our Work</div>
-              <div class="main_subheading reveal-loaded">
-                This is our take on digital branding; high-end designs, video
-                animations, web and app development.
-                <a href="#" style="text-decoration: none">ComPro Ventures.</a>
-                successful designs are a direct result of our systemized design
-                and development process.
+          <div class="carouselImage">
+            <div class="carousel-image-container">
+              <div class="carousel-image-user">
+                <img src="assets/images/home/testimonials/Ellipse 6.png" alt="" class="img-fluid img-thumbnail" />
+                <div class="carousel-user-name">Courtney Vox</div>
+                <div class="carousel-user-designation"> Marketing Manager, <br /> Broadcast Media </div>
               </div>
+              <div class="carousel-image-hr"></div>
+              <div class="carousel-image-content"> “Within 3 months, We have seen amazing results and overall increase
+                of our website traffic. Highly recommended!” </div>
             </div>
           </div>
-        </div>
-        <div class="row complete-relative mt-5">
-          <div class="col-md-12 grid-vital-column mt-5">
-            <div class="gird-caption turn-upwards">PORTFOLIO</div>
-            <div class="grid-container filter-container">
-              <div class="item mix mobile">
-                <a
-                  href="assets/images/portfolio/image1.png"
-                  data-lightbox="ourportfolio"
-                  data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-                >
-                  <div class="image-hover-content">
-                    <button>View Details</button>
-                  </div>
-                  <img src="assets/images/portfolio/image1.png" />
-                </a>
+          <div class="carouselImage">
+            <div class="carousel-image-container">
+              <div class="carousel-image-user">
+                <img src="assets/images/home/testimonials/Ellipse 2.png" alt="" class="img-fluid img-thumbnail" />
+                <div class="carousel-user-name">Jeff Hardy</div>
+                <div class="carousel-user-designation"> Co-Founder, <br /> Tyryx Worldwide </div>
               </div>
-              <div class="item mix web">
-                <a
-                  href="assets/images/portfolio/image2.png"
-                  data-lightbox="ourportfolio"
-                  data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-                >
-                  <div class="image-hover-content">
-                    <button>View Details</button>
-                  </div>
-                  <img src="assets/images/portfolio/image2.png" />
-                </a>
-              </div>
-              <div class="item mix logos">
-                <a
-                  href="assets/images/portfolio/image3.png"
-                  data-lightbox="ourportfolio"
-                  data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-                >
-                  <div class="image-hover-content">
-                    <button>View Details</button>
-                  </div>
-                  <img src="assets/images/portfolio/image3.png" />
-                </a>
-              </div>
-              <div class="item mix logos">
-                <a
-                  href="assets/images/portfolio/image5.png"
-                  data-lightbox="ourportfolio"
-                  data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-                >
-                  <div class="image-hover-content">
-                    <button>View Details</button>
-                  </div>
-                  <img src="assets/images/portfolio/image5.png" />
-                </a>
-              </div>
-              <div class="item mix mobile">
-                <a
-                  href="assets/images/portfolio/image6.png"
-                  data-lightbox="ourportfolio"
-                  data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-                >
-                  <div class="image-hover-content">
-                    <button>View Details</button>
-                  </div>
-                  <img src="assets/images/portfolio/image6.png" />
-                </a>
-              </div>
-              <div class="item mix web">
-                <a
-                  href="assets/images/portfolio/image7.png"
-                  data-lightbox="ourportfolio"
-                  data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-                >
-                  <div class="image-hover-content">
-                    <button>View Details</button>
-                  </div>
-                  <img src="assets/images/portfolio/image7.png" />
-                </a>
-              </div>
-            </div>
-            <div class="gird-caption turn-downwards">PORTFOLIO</div>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-md-12 mt-5">
-            <div class="action_button_potfolio reveal-loaded">
-              <a href="portfolio.html" style="text-decoration: none"
-                ><button>View All</button></a
-              >
+              <div class="carousel-image-hr"></div>
+              <div class="carousel-image-content"> “Within 3 months, We have seen amazing results and overall increase
+                of our website traffic. Highly recommended!” </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- home business -->
-    <section class="home_business">
-      <div class="business_container h-100">
-        <div class="top_form h-100">
-          <div class="form_headings reveal-loaded">
-            <div class="form_headings_title">What is your business?</div>
-            <div class="form_headings_subtitle">
-              We will customize and design our business support services for
-              your lorem ipsum dolor sit amet incidid labore magna business
-              needs.
+          <div class="carouselImage">
+            <div class="carousel-image-container">
+              <div class="carousel-image-user">
+                <img src="assets/images/home/testimonials/Ellipse 6.png" alt="" class="img-fluid img-thumbnail" />
+                <div class="carousel-user-name">Courtney Vox</div>
+                <div class="carousel-user-designation"> Marketing Manager, <br /> Broadcast Media </div>
+              </div>
+              <div class="carousel-image-hr"></div>
+              <div class="carousel-image-content"> “Within 3 months, We have seen amazing results and overall increase
+                of our website traffic. Highly recommended!” </div>
             </div>
           </div>
-          <form class="mt-5 d-flex flex-column gap-2 reveal-loaded">
-            <div
-              class="d-flex flex-row gap-3 align-items-center justify-content-between mt-3"
-            >
-              <div class="mb-3 w-100">
-                <input
-                  class="input"
-                  type="text"
-                  class="form-control"
-                  placeholder="Your Name"
-                />
+          <div class="carouselImage">
+            <div class="carousel-image-container">
+              <div class="carousel-image-user">
+                <img src="assets/images/home/testimonials/Ellipse 2.png" alt="" class="img-fluid img-thumbnail" />
+                <div class="carousel-user-name">Jeff Hardy</div>
+                <div class="carousel-user-designation"> Co-Founder, <br /> Tyryx Worldwide </div>
               </div>
-              <div class="mb-3 w-100">
-                <input
-                  class="input"
-                  type="email"
-                  class="form-control"
-                  placeholder="Your E-mail"
-                />
-              </div>
-            </div>
-            <div
-              class="d-flex flex-row gap-3 align-items-center justify-content-between"
-            >
-              <div class="mb-3 w-100">
-                <input
-                  class="input"
-                  type="text"
-                  class="form-control"
-                  placeholder="I'm Looking For....."
-                />
-              </div>
-            </div>
-            <div class="form-floating">
-              <textarea
-                class="form-control text-area"
-                placeholder="Your Message"
-                rows="4"
-                style="height: 100%"
-                id="floatingTextarea"
-              ></textarea>
-              <label class="textarea-label" for="floatingTextarea"
-                >Your Message</label
-              >
-            </div>
-            <div class="mt-5 d-flex flex-1 align-items-end justify-content-end">
-              <button type="submit" class="submit-button mt-3">
-                Get Start Now
-              </button>
-            </div>
-          </form>
-        </div>
-        <div class="bottom_form h-100">
-          <div class="bottom_form_details">
-            <span class="bottom_form_details_percet">65%</span>
-            <span class="bottom_form_details_text"
-              >YEAR 2021 REVENUE GENERATED</span
-            >
-          </div>
-          <div class="bottom_form_hr"></div>
-          <div class="bottom_form_details">
-            <span class="bottom_form_details_percet">88%</span>
-            <span class="bottom_form_details_text">TOTAL ORDERS COMPLETED</span>
-          </div>
-        </div>
-      </div>
-      <div class="home_bussiness_side_bg"></div>
-      <!-- <img src="assets/images/home/home_business_side_img.png" alt="" class="img-fluid" /> -->
-    </section>
-    <!-- home business end -->
-    <!-- footer -->
-    <div class="footer pb-5">
-      <div class="container pb-4">
-        <div class="row">
-          <div class="col-md-12">
-            <img class="footer-logo" src="assets/images/footer-logo.png" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-5 d-flex flex-column gap-4 mt-5">
-            <div class="heading">Let's Get Started</div>
-
-            <div class="description">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt soluta nobis assumenda labore quod
-              maxime.
-            </div>
-            <div
-              class="social-icons d-flex flex-row align-items-center gap-5 mt-3"
-            >
-              <img
-                class="cursor-pointer"
-                class="img-responsive"
-                src="assets/images/facebook-footer.png"
-                alt=""
-              />
-              <img
-                class="cursor-pointer"
-                class="img-responsive"
-                src="assets/images/instagram-footer.png"
-                alt=""
-              />
-              <img
-                class="cursor-pointer"
-                class="img-responsive"
-                src="assets/images/twitter-footer.png"
-                alt=""
-              />
-              <img
-                class="cursor-pointer"
-                class="img-responsive"
-                src="assets/images/pinerset-footer.png"
-                alt=""
-              />
-              <img
-                class="cursor-pointer"
-                class="img-responsive"
-                src="assets/images/linkedin-footer.png"
-                alt=""
-              />
+              <div class="carousel-image-hr"></div>
+              <div class="carousel-image-content"> “Within 3 months, We have seen amazing results and overall increase
+                of our website traffic. Highly recommended!” </div>
             </div>
           </div>
-          <div class="col-md-4 d-flex flex-column gap-4 mt-5">
-            <div class="heading">More Information</div>
-            <div class="d-flex flex-column information">
-              <span class="information-item">Privacy Policy</span>
-              <span class="information-item">Terms & Condtions</span>
-              <span class="information-item">Accessibility</span>
-              <span class="information-item">Cookie Policy</span>
+          <div class="carouselImage">
+            <div class="carousel-image-container">
+              <div class="carousel-image-user">
+                <img src="assets/images/home/testimonials/Ellipse 6.png" alt="" class="img-fluid img-thumbnail" />
+                <div class="carousel-user-name">Courtney Vox</div>
+                <div class="carousel-user-designation"> Marketing Manager, <br /> Broadcast Media </div>
+              </div>
+              <div class="carousel-image-hr"></div>
+              <div class="carousel-image-content"> “Within 3 months, We have seen amazing results and overall increase
+                of our website traffic. Highly recommended!” </div>
             </div>
           </div>
-          <div class="col-md-3 d-flex flex-column gap-4 mt-5">
-            <div class="heading">Contact Info</div>
-            <div class="d-flex flex-column contact-info">
-              <div
-                class="d-flex flex-row gap-4 contact-info-item align-items-center"
-              >
-                <img
-                  class="icon1"
-                  src="assets/images/footer-phone.png"
-                  alt="footer phone"
-                />
-                <span>+13329006225</span>
+          <div class="carouselImage">
+            <div class="carousel-image-container">
+              <div class="carousel-image-user">
+                <img src="assets/images/home/testimonials/Ellipse 2.png" alt="" class="img-fluid img-thumbnail" />
+                <div class="carousel-user-name">Jeff Hardy</div>
+                <div class="carousel-user-designation"> Co-Founder, <br /> Tyryx Worldwide </div>
               </div>
-              <div
-                class="d-flex flex-row gap-4 contact-info-item align-items-center"
-              >
-                <img
-                  class="icon2"
-                  src="assets/images/footer-messaging.png"
-                  alt="footer messageing"
-                />
-                <span class="break-word-line">info@comproventures.com</span>
+              <div class="carousel-image-hr"></div>
+              <div class="carousel-image-content"> “Within 3 months, We have seen amazing results and overall increase
+                of our website traffic. Highly recommended!” </div>
+            </div>
+          </div>
+          <div class="carouselImage">
+            <div class="carousel-image-container">
+              <div class="carousel-image-user">
+                <img src="assets/images/home/testimonials/Ellipse 6.png" alt="" class="img-fluid img-thumbnail" />
+                <div class="carousel-user-name">Courtney Vox</div>
+                <div class="carousel-user-designation"> Marketing Manager, <br /> Broadcast Media </div>
               </div>
-              <div
-                class="d-flex flex-row gap-4 contact-info-item align-items-center"
-              >
-                <img
-                  class="icon3"
-                  src="assets/images/footer-location.png"
-                  alt="footer location"
-                />
-                <span>539 W COMMERCE ST 288 DALLAS TX 75208</span>
+              <div class="carousel-image-hr"></div>
+              <div class="carousel-image-content"> “Within 3 months, We have seen amazing results and overall increase
+                of our website traffic. Highly recommended!” </div>
+            </div>
+          </div>
+          <div class="carouselImage">
+            <div class="carousel-image-container">
+              <div class="carousel-image-user">
+                <img src="assets/images/home/testimonials/Ellipse 2.png" alt="" class="img-fluid img-thumbnail" />
+                <div class="carousel-user-name">Jeff Hardy</div>
+                <div class="carousel-user-designation"> Co-Founder, <br /> Tyryx Worldwide </div>
               </div>
+              <div class="carousel-image-hr"></div>
+              <div class="carousel-image-content"> “Within 3 months, We have seen amazing results and overall increase
+                of our website traffic. Highly recommended!” </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="d-flex flex-1 flex-row justify-content-between">
-              <span>
-                © Copyright
-                <script>
-                  document.write(new Date().getFullYear());
-                </script>
-                by Compro Ventures. All Rights Reserved.
-              </span>
-              <div class="d-flex gap-3">
-                <span>Terms of Use</span>
-                <span class="seprator"></span>
-                <span>Refund Policy</span>
-              </div>
+  </section>
+  <!-- home testinomials end -->
+  <section class="home_our_work">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="work_section_header_container">
+            <div class="main_heading reveal-loaded">Our Work</div>
+            <div class="main_subheading reveal-loaded"> This is our take on digital branding; high-end designs, video
+              animations, web and app development. <a href="#" style="text-decoration: none">ComPro Ventures.</a>
+              successful designs are a direct result of our systemized design and development process. </div>
+          </div>
+        </div>
+      </div>
+      <div class="row complete-relative mt-5">
+        <div class="col-md-12 grid-vital-column mt-5">
+          <div class="gird-caption turn-upwards">PORTFOLIO</div>
+          <div class="grid-container filter-container">
+            <div class="item mix mobile">
+              <a href="assets/images/portfolio/image1.png" data-lightbox="ourportfolio"
+                data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
+                <div class="image-hover-content">
+                  <button>View Details</button>
+                </div>
+                <img src="assets/images/portfolio/image1.png" />
+              </a>
+            </div>
+            <div class="item mix web">
+              <a href="assets/images/portfolio/image2.png" data-lightbox="ourportfolio"
+                data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
+                <div class="image-hover-content">
+                  <button>View Details</button>
+                </div>
+                <img src="assets/images/portfolio/image2.png" />
+              </a>
+            </div>
+            <div class="item mix logos">
+              <a href="assets/images/portfolio/image3.png" data-lightbox="ourportfolio"
+                data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
+                <div class="image-hover-content">
+                  <button>View Details</button>
+                </div>
+                <img src="assets/images/portfolio/image3.png" />
+              </a>
+            </div>
+            <div class="item mix logos">
+              <a href="assets/images/portfolio/image5.png" data-lightbox="ourportfolio"
+                data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
+                <div class="image-hover-content">
+                  <button>View Details</button>
+                </div>
+                <img src="assets/images/portfolio/image5.png" />
+              </a>
+            </div>
+            <div class="item mix mobile">
+              <a href="assets/images/portfolio/image6.png" data-lightbox="ourportfolio"
+                data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
+                <div class="image-hover-content">
+                  <button>View Details</button>
+                </div>
+                <img src="assets/images/portfolio/image6.png" />
+              </a>
+            </div>
+            <div class="item mix web">
+              <a href="assets/images/portfolio/image7.png" data-lightbox="ourportfolio"
+                data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
+                <div class="image-hover-content">
+                  <button>View Details</button>
+                </div>
+                <img src="assets/images/portfolio/image7.png" />
+              </a>
+            </div>
+          </div>
+          <div class="gird-caption turn-downwards">PORTFOLIO</div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-12 mt-5">
+          <div class="action_button_potfolio reveal-loaded">
+            <a href="portfolio.html" style="text-decoration: none"><button>View All</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- home business -->
+  <section class="home_business">
+    <div class="business_container h-100">
+      <div class="top_form h-100">
+        <div class="form_headings reveal-loaded">
+          <div class="form_headings_title">What is your business?</div>
+          <div class="form_headings_subtitle"> We will customize and design our business support services for your lorem
+            ipsum dolor sit amet incidid labore magna business needs. </div>
+        </div>
+        <form class="mt-5 d-flex flex-column gap-2 reveal-loaded">
+          <div class="d-flex flex-row gap-3 align-items-center justify-content-between mt-3">
+            <div class="mb-3 w-100">
+              <input class="input" type="text" class="form-control" placeholder="Your Name" />
+            </div>
+            <div class="mb-3 w-100">
+              <input class="input" type="email" class="form-control" placeholder="Your E-mail" />
+            </div>
+          </div>
+          <div class="d-flex flex-row gap-3 align-items-center justify-content-between">
+            <div class="mb-3 w-100">
+              <input class="input" type="text" class="form-control" placeholder="I'm Looking For....." />
+            </div>
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control text-area" placeholder="Your Message" rows="4" style="height: 100%"
+              id="floatingTextarea"></textarea>
+            <label class="textarea-label" for="floatingTextarea">Your Message</label>
+          </div>
+          <div class="mt-5 d-flex flex-1 align-items-end justify-content-end">
+            <button type="submit" class="submit-button mt-3"> Get Start Now </button>
+          </div>
+        </form>
+      </div>
+      <div class="bottom_form h-100">
+        <div class="bottom_form_details">
+          <span class="bottom_form_details_percet">65%</span>
+          <span class="bottom_form_details_text">YEAR 2021 REVENUE GENERATED</span>
+        </div>
+        <div class="bottom_form_hr"></div>
+        <div class="bottom_form_details">
+          <span class="bottom_form_details_percet">88%</span>
+          <span class="bottom_form_details_text">TOTAL ORDERS COMPLETED</span>
+        </div>
+      </div>
+    </div>
+    <div class="home_bussiness_side_bg"></div>
+    <!-- <img src="assets/images/home/home_business_side_img.png" alt="" class="img-fluid" /> -->
+  </section>
+  <!-- home business end -->
+  <!-- footer -->
+  <div class="footer pb-5">
+    <div class="container pb-4">
+      <div class="row">
+        <div class="col-md-12">
+          <img class="footer-logo" src="assets/images/footer-logo.png" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 d-flex flex-column gap-4 mt-5">
+          <div class="heading">Let's Get Started</div>
+          <div class="description"> Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt soluta nobis assumenda labore quod maxime. </div>
+          <div class="social-icons d-flex flex-row align-items-center gap-5 mt-3">
+            <img class="cursor-pointer" class="img-responsive" src="assets/images/facebook-footer.png" alt="" />
+            <img class="cursor-pointer" class="img-responsive" src="assets/images/instagram-footer.png" alt="" />
+            <img class="cursor-pointer" class="img-responsive" src="assets/images/twitter-footer.png" alt="" />
+            <img class="cursor-pointer" class="img-responsive" src="assets/images/pinerset-footer.png" alt="" />
+            <img class="cursor-pointer" class="img-responsive" src="assets/images/linkedin-footer.png" alt="" />
+          </div>
+        </div>
+        <div class="col-md-4 d-flex flex-column gap-4 mt-5">
+          <div class="heading">More Information</div>
+          <div class="d-flex flex-column information">
+            <span class="information-item">Privacy Policy</span>
+            <span class="information-item">Terms & Condtions</span>
+            <span class="information-item">Accessibility</span>
+            <span class="information-item">Cookie Policy</span>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex flex-column gap-4 mt-5">
+          <div class="heading">Contact Info</div>
+          <div class="d-flex flex-column contact-info">
+            <div class="d-flex flex-row gap-4 contact-info-item align-items-center">
+              <img class="icon1" src="assets/images/footer-phone.png" alt="footer phone" />
+              <span>+1 332 900 6225</span>
+            </div>
+            <div class="d-flex flex-row gap-4 contact-info-item align-items-center">
+              <img class="icon2" src="assets/images/footer-messaging.png" alt="footer messageing" />
+              <span class="break-word-line">info@comproventures.com</span>
+            </div>
+            <div class="d-flex flex-row gap-4 contact-info-item align-items-center">
+              <img class="icon3" src="assets/images/footer-location.png" alt="footer location" />
+              <span>539 W COMMERCE ST 288, DALLAS, TX, 75208</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- top button -->
-    <div id="top-button">
-      <i
-        class="fa-solid fa-arrow-up"
-        style="font-size: 18px; color: white; font-weight: bold"
-      ></i>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="d-flex flex-1 flex-row justify-content-between">
+            <span> © Copyright
+              <script>
+                document.write(new Date().getFullYear());
+              </script> by Compro Ventures. All Rights Reserved.
+            </span>
+            <div class="d-flex gap-3">
+              <span>Terms of Use</span>
+              <span class="seprator"></span>
+              <span>Refund Policy</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Modal -->
-    <div
-      class="modal fade mt-5 mx-5"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-      >
+  </div>
+  <!-- top button -->
+  <div id="top-button">
+    <i class="fa-solid fa-arrow-up" style="font-size: 18px; color: white; font-weight: bold"></i>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade mt-5 mx-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="mx-5">
       <div class="mx-5">
         <div class="mx-5">
           <div class="mx-5">
-            <div class="mx-5">
-              <div class="mx-3">
-                <div class="modal-dialog mx-5 mt-5">
-                  <div class="modal-content model_dialog_innner">
-                    <div class="model-header">
-                        We’re the full package. reach out and we'll see how we can help.
-                    </div>
-                    <div class="modal-body">
-                      <form class="mt-5 d-flex flex-column gap-2" action="https://formsubmit.co/917467e3d28b2878d0fd8381a942abd8" method="post">
-                          <div
-                            class="d-flex flex-row gap-5 align-items-center justify-content-between mt-3"
-                          >
-                          <input type="hidden" name="_captcha" value="false">
-                          <input type="hidden" name="_template" value="table">
-                          <input
-                              class="input"
-                              type="hidden"
-                              name="_subject"
-                              value="New Email From Compro Form"
-                            />
-                          <div class="w-100">
-                              <input
-                              class="input"
-                              type="text"
-                              class="form-control"
-                              name="Name"
-                              placeholder="Your Name"
-                              />
-                            </div>
-                            <div class="w-100">
-                              <input
-                                class="input"
-                                type="text"
-                                class="form-control"
-                                name="What company, or cause do you represent?"
-                                placeholder="What company, or cause do you represent?"
-                              />
-                            </div>
-                            </div>
-                            <div
-                            class="d-flex flex-row gap-5 align-items-center justify-content-between mt-3"
-                          >
-                            <div class=" w-100">
-                                <input
-                                  class="input"
-                                  type="email"
-                                  name="Email"
-                                  class="form-control"
-                                  placeholder="Email Address"
-                                />
-                            </div>
-                            <div class="w-100">
-                              <input
-                                class="input"
-                                type="text"
-                                name="Phone"
-                                class="form-control"
-                                placeholder="Phone Number"
-                              />
-                            </div>
-                          </div>
-                            <input
-                              class="input"
-                              type="hidden"
-                              name="_next"
-                              value="http://127.0.0.1:5500/index.html"
-                            />
-                          </div>
-                          <div class="px-3">
-                            <textarea
-                              class="form-control text-area"
-                              placeholder="Your Message"
-                              rows="4"
-                              style="height: 100%"
-                              id="floatingTextarea"
-                              name="Message"
-                              required
-                            ></textarea>
-                            <!-- <label class="textarea-label" for="floatingTextarea"
+            <div class="mx-3">
+              <div class="modal-dialog mx-5 mt-5">
+                <div class="modal-content model_dialog_innner">
+                  <div class="model-header"> We’re the full package. reach out and we'll see how we can help. </div>
+                  <div class="modal-body">
+                    <form class="mt-5 d-flex flex-column gap-2"
+                      action="https://formsubmit.co/917467e3d28b2878d0fd8381a942abd8" method="post">
+                      <div class="d-flex flex-row gap-5 align-items-center justify-content-between mt-3">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input class="input" type="hidden" name="_subject" value="New Email From Compro Form" />
+                        <div class="w-100">
+                          <input class="input" type="text" class="form-control" name="Name" placeholder="Your Name" />
+                        </div>
+                        <div class="w-100">
+                          <input class="input" type="text" class="form-control"
+                            name="What company, or cause do you represent?"
+                            placeholder="What company, or cause do you represent?" />
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row gap-5 align-items-center justify-content-between mt-3">
+                        <div class=" w-100">
+                          <input class="input" type="email" name="Email" class="form-control"
+                            placeholder="Email Address" />
+                        </div>
+                        <div class="w-100">
+                          <input class="input" type="text" name="Phone" class="form-control"
+                            placeholder="Phone Number" />
+                        </div>
+                      </div>
+                      <input class="input" type="hidden" name="_next" value="http://127.0.0.1:5500/index.html" />
+                  </div>
+                  <div class="px-3">
+                    <textarea class="form-control text-area" placeholder="Your Message" rows="4" style="height: 100%"
+                      id="floatingTextarea" name="Message" required></textarea>
+                    <!-- <label class="textarea-label" for="floatingTextarea"
                               >Your Message</label
                             > -->
-                          </div>
-                          <div
-                          class="mb-4 d-flex flex-1 align-items-center justify-content-center"
-                        >
-                          <button type="submit" class="submit-button mt-4">Submit</button>
-                        </div>
-                        </form>
-                    </div>
-                    </div>
-               </div>
+                  </div>
+                  <div class="mb-4 d-flex flex-1 align-items-center justify-content-center">
+                    <button type="submit" class="submit-button mt-4">Submit</button>
+                  </div>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- script -->
-    <script src="icons/fontawesome/js/all.js"></script>
-    <script src="scripts/bootstrap/bootstrap.min.js"></script>
-    <script src="scripts/mixitup.js"></script>
-    <script src="vendors/lightbox/dist/js/lightbox-plus-jquery.min.js"></script>
-    <script src="scripts/jquery.js"></script>
-    <script src="scripts/flickity.js"></script>
-    <script src="scripts/main.js"></script>
-    <script>
-      // testimonials coursoul
+  </div>
+  <!-- script -->
+  <script src="icons/fontawesome/js/all.js"></script>
+  <script src="scripts/bootstrap/bootstrap.min.js"></script>
+  <script src="scripts/mixitup.js"></script>
+  <script src="vendors/lightbox/dist/js/lightbox-plus-jquery.min.js"></script>
+  <script src="scripts/jquery.js"></script>
+  <script src="scripts/flickity.js"></script>
+  <script src="scripts/main.js"></script>
+  <script>
+    // testimonials coursoul
 
-      var $imagesCarousel = jQuery(".carouselOfImages").flickity({
-        accessibility: false,
-        autoPlay: false,
-        pauseAutoPlayOnHover: false,
-        cellAlign: "center",
-        contain: false,
-        draggable: true,
-        friction: 0.2,
-        initialIndex: 0,
-        lazyLoad: true,
-        adaptiveHeight: true,
-        percentPosition: true,
-        prevNextButtons: false,
-        freeScroll: true,
-        pageDots: false,
-        resize: true,
-        rightToLeft: false,
-        setGallerySize: false,
-        watchCSS: false,
-        wrapAround: true,
-      });
+    var $imagesCarousel = jQuery(".carouselOfImages").flickity({
+      accessibility: false,
+      autoPlay: false,
+      pauseAutoPlayOnHover: false,
+      cellAlign: "center",
+      contain: false,
+      draggable: true,
+      friction: 0.2,
+      initialIndex: 0,
+      lazyLoad: true,
+      adaptiveHeight: true,
+      percentPosition: true,
+      prevNextButtons: false,
+      freeScroll: true,
+      pageDots: false,
+      resize: true,
+      rightToLeft: false,
+      setGallerySize: false,
+      watchCSS: false,
+      wrapAround: true,
+    });
 
-      function resizeCells() {
-        var flkty = $imagesCarousel.data("flickity");
-        var $current = flkty.selectedIndex;
-        var $length = flkty.cells.length;
-        var $imageNumLimit = 5;
-        if ($length < $imageNumLimit) {
-          $imagesCarousel.flickity("destroy");
-        }
-        jQuery(".carouselOfImages .carouselImage").removeClass(
-          "nextToSelectedLeft"
-        );
-        jQuery(".carouselOfImages .carouselImage").removeClass(
-          "nextToSelectedRight"
-        );
-        jQuery(".carouselOfImages .carouselImage").removeClass(
-          "nextToSelectedLeft2"
-        );
-        jQuery(".carouselOfImages .carouselImage").removeClass(
-          "nextToSelectedRight2"
-        );
-        jQuery(".carouselOfImages .carouselImage")
-          .eq($current - 1)
-          .addClass("nextToSelectedLeft");
-        jQuery(".carouselOfImages .carouselImage")
-          .eq($current - 2)
-          .addClass("nextToSelectedLeft2");
-        var $endCell;
-        if ($current + 1 == $length) {
-          $endCell = "0";
-        } else {
-          $endCell = $current + 1;
-        }
-        jQuery(".carouselOfImages .carouselImage")
-          .eq($endCell)
-          .addClass("nextToSelectedRight");
-        if ($endCell + 1 < $imageNumLimit) {
-          jQuery(".carouselOfImages .carouselImage")
-            .eq($endCell + 1)
-            .addClass("nextToSelectedRight2");
-        } else {
-          jQuery(".carouselOfImages .carouselImage")
-            .eq(0)
-            .addClass("nextToSelectedRight2");
-        }
+    function resizeCells() {
+      var flkty = $imagesCarousel.data("flickity");
+      var $current = flkty.selectedIndex;
+      var $length = flkty.cells.length;
+      var $imageNumLimit = 5;
+      if ($length < $imageNumLimit) {
+        $imagesCarousel.flickity("destroy");
       }
+      jQuery(".carouselOfImages .carouselImage").removeClass(
+        "nextToSelectedLeft"
+      );
+      jQuery(".carouselOfImages .carouselImage").removeClass(
+        "nextToSelectedRight"
+      );
+      jQuery(".carouselOfImages .carouselImage").removeClass(
+        "nextToSelectedLeft2"
+      );
+      jQuery(".carouselOfImages .carouselImage").removeClass(
+        "nextToSelectedRight2"
+      );
+      jQuery(".carouselOfImages .carouselImage")
+        .eq($current - 1)
+        .addClass("nextToSelectedLeft");
+      jQuery(".carouselOfImages .carouselImage")
+        .eq($current - 2)
+        .addClass("nextToSelectedLeft2");
+      var $endCell;
+      if ($current + 1 == $length) {
+        $endCell = "0";
+      } else {
+        $endCell = $current + 1;
+      }
+      jQuery(".carouselOfImages .carouselImage")
+        .eq($endCell)
+        .addClass("nextToSelectedRight");
+      if ($endCell + 1 < $imageNumLimit) {
+        jQuery(".carouselOfImages .carouselImage")
+          .eq($endCell + 1)
+          .addClass("nextToSelectedRight2");
+      } else {
+        jQuery(".carouselOfImages .carouselImage")
+          .eq(0)
+          .addClass("nextToSelectedRight2");
+      }
+    }
+    resizeCells();
+
+    $imagesCarousel.on("scroll.flickity", function () {
       resizeCells();
+    });
 
-      $imagesCarousel.on("scroll.flickity", function () {
-        resizeCells();
-      });
-
-      $(".carouselImage").bind("mouseout", function () {
-        $imagesCarousel.flickity("pausePlayer");
-      });
+    $(".carouselImage").bind("mouseout", function () {
+      $imagesCarousel.flickity("pausePlayer");
+    });
 
       // testimonials coursoul end
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>

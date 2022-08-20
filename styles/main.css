@@ -160,6 +160,13 @@ body {
 .footer .information {
     gap: 2.5rem;
 }
+.footer .information .information-item {
+    cursor: pointer;
+}
+
+.footer .information .information-item:hover {
+    text-decoration: underline;
+}
 
 .footer .contact-info-item {
     color: #e1e4eb;
