@@ -45,10 +45,6 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarScroll">
         <ul class="navbar-nav ms-auto navbar-nav-scroll d-flex gap-5">
-          <li class="nav-item get-quote-top">
-            <button type="button" id="myModal" class="quote" data-bs-toggle="modal" data-bs-target="#exampleModal"> Get
-              a Quote </button>
-          </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="about.html">About Us</a>
           </li>
@@ -61,7 +57,7 @@
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
-          <li class="nav-item get-quote-bottom">
+          <li class="nav-item">
             <button type="button" id="myModal" class="quote" data-bs-toggle="modal" data-bs-target="#exampleModal"> Get
               a Quote </button>
           </li>
@@ -84,7 +80,8 @@
             </div>
             <div class="header-buttons">
               <button class="header-buttons-work">
-                <a href="services.html" style="text-decoration: none; color: white"> Our Work <i class="fa-solid fa-right-long" style="margin-left: 10px;"></i>
+                <a href="services.html" style="text-decoration: none; color: white"> Our Work <i
+                    class="fa-solid fa-right-long" style="margin-left: 10px;"></i>
                 </a>
               </button>
               <button class="header-buttons-quote" type="button" id="myModal" data-bs-toggle="modal"
@@ -388,7 +385,7 @@
                 <div class="review-batch-item-year">06</div>
                 <div class="review-batch-item-content"> Pro awards won for lorem amet </div>
               </div>
-              <div class="review-batch-item text-center d-flex flex-column gap-5 justify-content-center">
+              <div class="review-batch-item review-batch-item-year-reviewText-container text-center d-flex flex-column gap-5 justify-content-center align-items-centerc">
                 <div class="review-batch-item-year review-batch-item-year-reviewText"> Review </div>
                 <div class="review-batch-item-content d-flex flex-row gap-2">
                   <i class="fa-solid fa-star"></i>
@@ -671,52 +668,68 @@
     </div>
   </section>
   <!-- home business -->
-  <section class="home_business">
-    <div class="business_container h-100">
-      <div class="top_form h-100">
-        <div class="form_headings reveal-loaded">
-          <div class="form_headings_title">What is your business?</div>
-          <div class="form_headings_subtitle"> We will customize and design our business support services for your lorem
-            ipsum dolor sit amet incidid labore magna business needs. </div>
-        </div>
-        <form class="mt-5 d-flex flex-column gap-2 reveal-loaded">
-          <div class="d-flex flex-row gap-3 align-items-center justify-content-between mt-3">
-            <div class="mb-3 w-100">
-              <input class="input" type="text" class="form-control" placeholder="Your Name" />
+  <section class="home_business" id="home_business_id">
+    <div class="upper-container">
+      <div class="container">
+        <div class="row home_business_small_row">
+          <div class="col-md-8 home_business_small_col">
+            <div class="title_container reveal-loaded">
+              <div class="home_business_title">What is your business?</div>
+              <div class="home_business_subtitle"> We will customize and design our business support services for your
+                lorem ipsum dolor sit amet incidid labore magna business needs. </div>
             </div>
-            <div class="mb-3 w-100">
-              <input class="input" type="email" class="form-control" placeholder="Your E-mail" />
-            </div>
+            <form class="mt-5 d-flex flex-column gap-2 reveal-loaded">
+              <div class="d-flex flex-row gap-3 align-items-center justify-content-between mt-3">
+                <div class="mb-3 w-100">
+                  <input class="input" type="text" class="form-control" placeholder="Your Name" />
+                </div>
+                <div class="mb-3 w-100">
+                  <input class="input" type="email" class="form-control" placeholder="Your E-mail" />
+                </div>
+              </div>
+              <div class="d-flex flex-row gap-3 align-items-center justify-content-between">
+                <div class="mb-3 w-100">
+                  <input class="input" type="text" class="form-control" placeholder="I'm Looking For....." />
+                </div>
+              </div>
+              <div class="form-floating">
+                <textarea class="form-control text-area" placeholder="Your Message" rows="4" style="height: 100%"
+                  id="floatingTextarea1"></textarea>
+                <!-- <label class="textarea-label" for="floatingTextarea1">Your Message</label> -->
+              </div>
+              <div class="mt-5 d-flex flex-1 align-items-end justify-content-end">
+                <button type="submit" class="submit-button mt-3"> Get Start Now </button>
+              </div>
+            </form>
           </div>
-          <div class="d-flex flex-row gap-3 align-items-center justify-content-between">
-            <div class="mb-3 w-100">
-              <input class="input" type="text" class="form-control" placeholder="I'm Looking For....." />
-            </div>
-          </div>
-          <div class="form-floating">
-            <textarea class="form-control text-area" placeholder="Your Message" rows="4" style="height: 100%"
-              id="floatingTextarea"></textarea>
-            <label class="textarea-label" for="floatingTextarea">Your Message</label>
-          </div>
-          <div class="mt-5 d-flex flex-1 align-items-end justify-content-end">
-            <button type="submit" class="submit-button mt-3"> Get Start Now </button>
-          </div>
-        </form>
-      </div>
-      <div class="bottom_form h-100">
-        <div class="bottom_form_details">
-          <span class="bottom_form_details_percet">65%</span>
-          <span class="bottom_form_details_text">YEAR 2021 REVENUE GENERATED</span>
-        </div>
-        <div class="bottom_form_hr"></div>
-        <div class="bottom_form_details">
-          <span class="bottom_form_details_percet">88%</span>
-          <span class="bottom_form_details_text">TOTAL ORDERS COMPLETED</span>
+          <div class="col-md-4 home_business_small_next_col"></div>
         </div>
       </div>
     </div>
-    <div class="home_bussiness_side_bg"></div>
-    <!-- <img src="assets/images/home/home_business_side_img.png" alt="" class="img-fluid" /> -->
+    <div class="lower-container">
+      <div class="container">
+        <div class="row home_business_small_row">
+          <div class="col-md-8 home_business_small_col">
+            <div class="row">
+              <div class="lower-main-container">
+                <div class="text-container">
+                  <span class="details_percet">65%</span>
+                  <span class="details_text">YEAR 2021 REVENUE GENERATED</span>
+                </div>
+                <div class="lower_hr"></div>
+                <div class="text-container">
+                  <span class="details_percet">88%</span>
+                  <span class="details_text">TOTAL ORDERS COMPLETED</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 home_business_small_next_col"></div>
+        </div>
+      </div>
+    </div>
+    <img src="assets/images/home/home_business_side_img.png" alt="" class="img-fluid"
+      id="home_business_section_image" />
   </section>
   <!-- home business end -->
   <!-- footer -->
@@ -732,7 +745,7 @@
           <div class="heading">Let's Get Started</div>
           <div class="description"> Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor
             incididunt soluta nobis assumenda labore quod maxime. </div>
-          <div class="social-icons d-flex flex-row align-items-center gap-5 mt-3">
+          <div class="social-icons d-flex flex-row align-items-center flex-wrap gap-5 mt-3">
             <img class="cursor-pointer" class="img-responsive" src="assets/images/facebook-footer.png" alt="" />
             <img class="cursor-pointer" class="img-responsive" src="assets/images/instagram-footer.png" alt="" />
             <img class="cursor-pointer" class="img-responsive" src="assets/images/twitter-footer.png" alt="" />
@@ -773,16 +786,16 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="d-flex flex-1 flex-row justify-content-between">
+          <div class="foot-bo-contain">
             <span> © Copyright
               <script>
                 document.write(new Date().getFullYear());
               </script> by Compro Ventures. All Rights Reserved.
             </span>
-            <div class="d-flex gap-3">
-              <span>Terms of Use</span>
+            <div class="foot-bo-contain-under d-flex gap-3">
+              <span class="foot-bo-contain-under-span">Terms of Use</span>
               <span class="seprator"></span>
-              <span>Refund Policy</span>
+              <span class="foot-bo-contain-under-span">Refund Policy</span>
             </div>
           </div>
         </div>
@@ -938,6 +951,15 @@
     $(".carouselImage").bind("mouseout", function () {
       $imagesCarousel.flickity("pausePlayer");
     });
+
+    window.onload = function () {
+      const home_buss = $('#home_business_id').height();
+      $('#home_business_section_image').css("height", home_buss);
+    }
+    window.addEventListener('resize', () => {
+      const home_buss = $('#home_business_id').height();
+      $('#home_business_section_image').css("height", home_buss);
+    })
 
       // testimonials coursoul end
   </script>

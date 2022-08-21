@@ -1,919 +1,566 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/favicon.ico" />
-    <title>Compro Ventures</title>
-    <link rel="stylesheet" href="icons/fontawesome/css/all.css" />
-    <link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="fonts/open-sans/style.css" />
-    <link rel="stylesheet" href="fonts/roboto/style.css" />
-    <link rel="stylesheet" href="fonts/inter/style.css" />
-    <link rel="stylesheet" href="styles/responsive.css" />
-    <link rel="stylesheet" href="styles/about.css" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/loader.css" />
-  </head>
 
-  <body>
-    <!-- pre loader -->
-    <div id="preloader">
-      <div class="loader">
-        <div class="loader__bar"></div>
-        <div class="loader__bar"></div>
-        <div class="loader__bar"></div>
-        <div class="loader__bar"></div>
-        <div class="loader__bar"></div>
-        <div class="loader__ball"></div>
-      </div>
-    </div>
-    <!-- navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg bg-light custom-nav">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/images/logo.png" alt="logo" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav ms-auto navbar-nav-scroll d-flex gap-5">
-            <li class="nav-item get-quote-top">
-              <button
-                type="button"
-                id="myModal"
-                href="#"
-                class="quote"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                Get a Quote
-              </button>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="about.html"
-                >About Us</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item get-quote-bottom">
-              <button
-                type="button"
-                id="myModal"
-                class="quote"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                Get a Quote
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Banner -->
-    <section class="about-banner banner">
-      <div class="banner-content">
-        <h1 class="banner-heading">Your True Partner in Digital.</h1>
-        <div class="banner-description">
-          We specialize in providing robust digital solutions to businesses
-          <br />
-          that are meant to set them apart
-        </div>
-      </div>
-    </section>
-    <!-- Banner closed -->
-    <!-- overview section -->
-    <section class="constant-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 mt-5 col-space">
-            <div class="about-overview-section mt-4 reveal-loaded">
-              <div class="subtitle">company</div>
-              <div class="title">Overview</div>
-              <p class="description mt-2">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt soluta nobis assumenda labore quod
-                maxime.Lorem ipsum dolor sit amet consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt soluta nobis assumenda labore
-                quod maxime.
-              </p>
-              <p class="description">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt soluta nobis assumenda labore quod
-                maxime.Lorem ipsum dolor sit.
-              </p>
-              <div class="row mt-3">
-                <div class="col-md-6 mt-3">
-                  <div class="about-vision-container">
-                    <img
-                      src="assets/images/about/overview-icon1.png"
-                      alt="overview-icon1"
-                    />
-                    <span>Diverse Business Units</span>
-                  </div>
-                </div>
-                <div class="col-md-6 mt-3">
-                  <div class="about-vision-container">
-                    <img
-                      src="assets/images/about/overview-icon2.png"
-                      alt="overview-icon2"
-                    />
-                    <span>Solution Based Approach</span>
-                  </div>
-                </div>
-              </div>
-              <div class="row mt-4">
-                <div class="col-md-6 mt-3">
-                  <div class="about-vision-container">
-                    <img
-                      src="assets/images/about/overview-icon3.png"
-                      alt="overview-icon3"
-                    />
-                    <span>Committed Workforce</span>
-                  </div>
-                </div>
-                <div class="col-md-6 mt-3">
-                  <div class="about-vision-container">
-                    <img
-                      src="assets/images/about/overview-icon4.png"
-                      alt="overview-icon4"
-                    />
-                    <span>Global Clientele</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mt-5 col-space">
-            <div class="about-overview-image-section reveal-loaded">
-              <img
-                class="image-dotted-top"
-                src="assets/images/about/dotted-image.png"
-                alt="dotted-image-top"
-                class="img-fluid"
-              />
-              <div class="image-overlay"></div>
-              <div class="main-image-wrapper">
-                <img
-                  class="main-image"
-                  src="assets/images/about/overview-image.png"
-                  alt="overview-image"
-                  class="img-fluid"
-                />
-              </div>
-              <img
-                class="image-dotted-bottom"
-                src="assets/images/about/dotted-image.png"
-                alt="dotted-image-bottom"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- overview section closed -->
-    <!-- about programs section -->
-    <section class="about-programs-section mt-4">
-      <div class="container">
-        <div class="row reveal-loaded">
-          <div class="col-md-4 mt-3 mb-3">
-            <div class="about-programs">
-              <div class="title">Startup partner program™</div>
-              <div class="description">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt soluta nobis assumenda labore quod
-                maxime.Lorem ipsum dolor sit.
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mt-3 mb-3">
-            <div class="about-programs">
-              <div class="title">Rapid strategy workshop™</div>
-              <div class="description">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt soluta nobis assumenda labore quod
-                maxime.Lorem ipsum dolor sit.
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mt-3 mb-3">
-            <div class="about-programs">
-              <div class="title">Rapid mvp development™</div>
-              <div class="description">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt soluta nobis assumenda labore quod
-                maxime.Lorem ipsum dolor sit.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- about programs section closed -->
-    <!-- about grow section -->
-    <section class="about-grow-section mb-5">
-      <div class="container-fluid grow-section-bg">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="about-grow reveal-loaded">
-                <div class="title">Grow Up Your Workflow Speed</div>
-                <div class="tag-line">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt soluta nobis assumenda labore quod
-                  maxime.
-                </div>
-                <div
-                  class="past-growth-exp d-flex flex-1 flex-row align-items-center justify-content-between gap-4 mt-5"
-                >
-                  <div class="past-growth text-center d-flex flex-column gap-4">
-                    <div class="past-growth-year">2012</div>
-                    <div class="past-growth-content">
-                      The year we started our services
-                    </div>
-                  </div>
-                  <div class="past-growth text-center d-flex flex-column gap-4">
-                    <div class="past-growth-year">06</div>
-                    <div class="past-growth-content">
-                      Pro awards won for lorem amet
-                    </div>
-                  </div>
-                  <div class="past-growth text-center d-flex flex-column gap-4">
-                    <div class="past-growth-year">20</div>
-                    <div class="past-growth-content">
-                      Years of professional experience
-                    </div>
-                  </div>
-                  <div class="past-growth text-center d-flex flex-column gap-4">
-                    <div class="past-growth-year">5K</div>
-                    <div class="past-growth-content">
-                      Business customers serviced in 2020
-                    </div>
-                  </div>
-                  <div class="past-growth text-center d-flex flex-column gap-4">
-                    <div class="past-growth-year">300</div>
-                    <div class="past-growth-content">
-                      Client satisfied order completed
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- about grow section closed -->
-    <!-- about creatives section -->
-    <section class="about-creatives-section">
-      <div class="container pb-5">
-        <div class="row">
-          <div class="col-md-12 pb-5">
-            <div class="creative-heads reveal-loaded">
-              <div class="title">
-                Our creative heads build beautiful digital products.
-              </div>
-              <div class="subtitle mt-4">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt soluta nobis assumenda labore quod
-                maxime.
-              </div>
-              <div class="gallery mt-5">
-                <div class="row">
-                  <div class="col-md-8 mt-5">
-                    <div class="creator1-image">
-                      <img
-                        src="assets/images/about/creators/creater1.png"
-                        alt="creater1"
-                        class="img-fluid"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-4 mt-5">
-                    <div class="d-flex flex-column sub-images">
-                      <div class="creator-sub-image">
-                        <img
-                          src="assets/images/about/creators/creater2.png"
-                          alt="creater2"
-                          class="img-fluid"
-                        />
-                      </div>
-                      <div class="creator-sub-image">
-                        <img
-                          src="assets/images/about/creators/creater3.png"
-                          alt="creater3"
-                          class="img-fluid"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row mt-5">
-                <div class="col-md-4">
-                  <div class="description">
-                    We are proud to have <br />
-                    the best team of creative <br />
-                    thinkers and fantastic clients <br />
-                    from across the world, trusting <br />
-                    our developing, designing, <br />
-                    and branding.
-                  </div>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-3">
-                  <div class="vision creativitiy-info">
-                    <div class="info-title">Our Vision</div>
-                    <p class="content">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt soluta nobis assumenda
-                      labore quod maxime.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-3">
-                  <div class="mission creativitiy-info">
-                    <div class="info-title">Our Mission</div>
-                    <p class="content">
-                      Lorem ipsum dolor sit amet consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt soluta nobis assumenda
-                      labore quod maxime.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- about creatives section closed -->
-    <!-- about team section -->
-    <section class="about-team-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-team-title">Some of our tech experts</div>
-            <div class="section-team-subtitle mt-3">
-              Talent wins games, but teamwork and intelligence win
-              championships.
-            </div>
-            <div class="row mt-5 team-container">
-              <div class="col-md-3 mt-5">
-                <div class="team-member-image-container">
-                  <div class="team-member-image-hover-overlay">
-                    <div class="team-member-image-hover-effect">
-                      <button>Learn More</button>
-                      <div class="icons">
-                        <i
-                          class="icon fa-brands fa-twitter"
-                          style="color: white; font-size: 18px"
-                        ></i>
-                        <i
-                          class="icon fa-brands fa-linkedin-in"
-                          style="color: white; font-size: 18px"
-                        ></i>
-                      </div>
-                    </div>
-                    <img
-                      src="assets/images/about/team/team1.png"
-                      alt="team 1"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div
-                    class="d-flex flex-column justify-content-center align-items-center"
-                  >
-                    <span class="team-member-name" title="Austin Lovvorn"
-                      >Austin Lovvorn</span
-                    >
-                    <span
-                      class="team-member-title mt-2"
-                      title="AVP - North America"
-                      >AVP - North America</span
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 mt-5">
-                <div class="team-member-image-container">
-                  <div class="team-member-image-hover-overlay">
-                    <div class="team-member-image-hover-effect">
-                      <button>Learn More</button>
-                      <div class="icons">
-                        <i
-                          class="icon fa-brands fa-twitter"
-                          style="color: white; font-size: 18px"
-                        ></i>
-                        <i
-                          class="icon fa-brands fa-linkedin-in"
-                          style="color: white; font-size: 18px"
-                        ></i>
-                      </div>
-                    </div>
-                    <img
-                      src="assets/images/about/team/team2.png"
-                      alt="team 2"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div
-                    class="d-flex flex-column justify-content-center align-items-center"
-                  >
-                    <span class="team-member-name" title="Carrie Kerpen"
-                      >Carrie Kerpen</span
-                    >
-                    <span
-                      class="team-member-title mt-2"
-                      title="Managing Director"
-                      >Managing Director</span
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 mt-5">
-                <div class="team-member-image-container">
-                  <div class="team-member-image-hover-overlay">
-                    <div class="team-member-image-hover-effect">
-                      <button>Learn More</button>
-                      <div class="icons">
-                        <i
-                          class="icon fa-brands fa-twitter"
-                          style="color: white; font-size: 18px"
-                        ></i>
-                        <i
-                          class="icon fa-brands fa-linkedin-in"
-                          style="color: white; font-size: 18px"
-                        ></i>
-                      </div>
-                    </div>
-                    <img
-                      src="assets/images/about/team/team3.png"
-                      alt="team 3"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div
-                    class="d-flex flex-column justify-content-center align-items-center"
-                  >
-                    <span class="team-member-name" title="Sarah Roderus"
-                      >Sarah Roderus</span
-                    >
-                    <span
-                      class="team-member-title mt-2"
-                      title="VP of Testing Services"
-                      >VP of Testing Services</span
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 mt-5">
-                <div class="team-member-image-container">
-                  <div class="team-member-image-hover-overlay">
-                    <div class="team-member-image-hover-effect">
-                      <button>Learn More</button>
-                      <div class="icons">
-                        <i
-                          class="icon fa-brands fa-twitter"
-                          style="color: white; font-size: 18px"
-                        ></i>
-                        <i
-                          class="icon fa-brands fa-linkedin-in"
-                          style="color: white; font-size: 18px"
-                        ></i>
-                      </div>
-                    </div>
-                    <img
-                      src="assets/images/about/team/team4.png"
-                      alt="team 4"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div
-                    class="d-flex flex-column justify-content-center align-items-center"
-                  >
-                    <span class="team-member-name" title="Peter Hesse"
-                      >Peter Hesse</span
-                    >
-                    <span class="team-member-title mt-2" title="EVP & CSO"
-                      >EVP & CSO</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row mb-5">
-              <div class="col-md-3 mt-5">
-                <div class="team-member-image-container">
-                  <div class="team-member-image-hover-overlay">
-                    <div class="team-member-image-hover-effect">
-                      <button>Learn More</button>
-                      <div class="icons">
-                        <i
-                          class="icon fa-brands fa-twitter"
-                          style="color: white; font-size: 18px"
-                        ></i>
-                        <i
-                          class="icon fa-brands fa-linkedin-in"
-                          style="color: white; font-size: 18px"
-                        ></i>
-                      </div>
-                    </div>
-                    <img
-                      src="assets/images/about/team/team5.png"
-                      alt="team 5"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div
-                    class="d-flex flex-column justify-content-center align-items-center"
-                  >
-                    <span class="team-member-name" title="Asher Epstein"
-                      >Asher Epstein</span
-                    >
-                    <span class="team-member-title mt-2" title="COO">COO</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 mt-5">
-                <div class="team-member-image-container">
-                  <div class="team-member-image-hover-overlay">
-                    <img
-                      src="assets/images/about/team/team6.png"
-                      alt="team 6"
-                      class="img-fluid"
-                    />
-                    <div class="team-member-image-hover-effect">
-                      <button>Learn More</button>
-                      <div class="icons">
-                        <i
-                          class="icon fa-brands fa-twitter"
-                          style="color: white; font-size: 18px"
-                        ></i>
-                        <i
-                          class="icon fa-brands fa-linkedin-in"
-                          style="color: white; font-size: 18px"
-                        ></i>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="d-flex flex-column justify-content-center align-items-center"
-                  >
-                    <span class="team-member-name" title="Marley Huckabee"
-                      >Marley Huckabee</span
-                    >
-                    <span
-                      class="team-member-title mt-2"
-                      title="Director of People Success"
-                      >Director of People Success</span
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 mt-5">
-                <div class="team-member-image-container">
-                  <div class="team-member-image-hover-overlay">
-                    <div class="team-member-image-hover-effect">
-                      <button>Learn More</button>
-                      <div class="icons">
-                        <i
-                          class="icon fa-brands fa-twitter"
-                          style="color: white; font-size: 18px"
-                        ></i>
-                        <i
-                          class="icon fa-brands fa-linkedin-in"
-                          style="color: white; font-size: 18px"
-                        ></i>
-                      </div>
-                    </div>
-                    <img
-                      src="assets/images/about/team/team7.png"
-                      alt="team 7"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div
-                    class="d-flex flex-column justify-content-center align-items-center"
-                  >
-                    <span class="team-member-name" title="Dan Zipper"
-                      >Dan Zipper</span
-                    >
-                    <span
-                      class="team-member-title mt-2"
-                      title="VP of Client Solutions"
-                      >VP of Client Solutions</span
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3 mt-5">
-                <div class="team-member-image-container">
-                  <div class="team-member-image-hover-overlay">
-                    <div class="team-member-image-hover-effect">
-                      <button>Learn More</button>
-                      <div class="icons">
-                        <i
-                          class="icon fa-brands fa-twitter"
-                          style="color: white; font-size: 18px"
-                        ></i>
-                        <i
-                          class="icon fa-brands fa-linkedin-in"
-                          style="color: white; font-size: 18px"
-                        ></i>
-                      </div>
-                    </div>
-                    <img
-                      src="assets/images/about/team/team8.png"
-                      alt="team 8"
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div
-                    class="d-flex flex-column justify-content-center align-items-center"
-                  >
-                    <span class="team-member-name" title="María Clara Valencia"
-                      >María Clara Valencia</span
-                    >
-                    <span
-                      class="team-member-title mt-2"
-                      title="Talent Director, Colombia"
-                      >Talent Director, Colombia</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="section-team-more mt-5">
-              <button class="section-team-more-button">Load More</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- about team section closed -->
-    <!-- footer -->
-    <div class="footer pb-5">
-      <div class="container pb-4">
-        <div class="row">
-          <div class="col-md-12">
-            <img class="footer-logo" src="assets/images/footer-logo.png" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-5 d-flex flex-column gap-4 mt-5">
-            <div class="heading">Let's Get Started</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/favicon.ico" />
+  <title>Compro Ventures</title>
+  <link rel="stylesheet" href="icons/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="fonts/open-sans/style.css" />
+  <link rel="stylesheet" href="fonts/roboto/style.css" />
+  <link rel="stylesheet" href="fonts/inter/style.css" />
+  <link rel="stylesheet" href="styles/responsive.css" />
+  <link rel="stylesheet" href="styles/about.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/loader.css" />
+</head>
 
-            <div class="description">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt soluta nobis assumenda labore quod
-              maxime.
-            </div>
-            <div
-              class="social-icons d-flex flex-row align-items-center gap-5 mt-3"
-            >
-              <img
-                class="cursor-pointer"
-                class="img-responsive"
-                src="assets/images/facebook-footer.png"
-                alt=""
-              />
-              <img
-                class="cursor-pointer"
-                class="img-responsive"
-                src="assets/images/instagram-footer.png"
-                alt=""
-              />
-              <img
-                class="cursor-pointer"
-                class="img-responsive"
-                src="assets/images/twitter-footer.png"
-                alt=""
-              />
-              <img
-                class="cursor-pointer"
-                class="img-responsive"
-                src="assets/images/pinerset-footer.png"
-                alt=""
-              />
-              <img
-                class="cursor-pointer"
-                class="img-responsive"
-                src="assets/images/linkedin-footer.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="col-md-4 d-flex flex-column gap-4 mt-5">
-            <div class="heading">More Information</div>
-            <div class="d-flex flex-column information">
-              <span class="information-item">Privacy Policy</span>
-              <span class="information-item">Terms & Condtions</span>
-              <span class="information-item">Accessibility</span>
-              <span class="information-item">Cookie Policy</span>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex flex-column gap-4 mt-5">
-            <div class="heading">Contact Info</div>
-            <div class="d-flex flex-column contact-info">
-              <div
-                class="d-flex flex-row gap-4 contact-info-item align-items-center"
-              >
-                <img
-                  class="icon1"
-                  src="assets/images/footer-phone.png"
-                  alt="footer phone"
-                />
-                <span>+1 332 900 6225</span>
+<body>
+  <!-- pre loader -->
+  <div id="preloader">
+    <div class="loader">
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__ball"></div>
+    </div>
+  </div>
+  <!-- navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg bg-light custom-nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.png" alt="logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav ms-auto navbar-nav-scroll d-flex gap-5">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" id="myModal" class="quote" data-bs-toggle="modal" data-bs-target="#exampleModal"> Get
+              a Quote </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Banner -->
+  <section class="about-banner banner">
+    <div class="banner-content">
+      <h1 class="banner-heading">Your True Partner in Digital.</h1>
+      <div class="banner-description"> We specialize in providing robust digital solutions to businesses <br /> that are
+        meant to set them apart </div>
+    </div>
+  </section>
+  <!-- Banner closed -->
+  <!-- overview section -->
+  <section class="constant-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mt-5 col-space">
+          <div class="about-overview-section mt-4 reveal-loaded">
+            <div class="subtitle">company</div>
+            <div class="title">Overview</div>
+            <p class="description mt-2"> Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt soluta nobis assumenda labore quod maxime.Lorem ipsum dolor sit amet consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt soluta nobis assumenda labore quod maxime. </p>
+            <p class="description"> Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt soluta nobis assumenda labore quod maxime.Lorem ipsum dolor sit. </p>
+            <div class="row mt-3">
+              <div class="col-md-6 mt-3">
+                <div class="about-vision-container">
+                  <img src="assets/images/about/overview-icon1.png" alt="overview-icon1" />
+                  <span>Diverse Business Units</span>
+                </div>
               </div>
-              <div
-                class="d-flex flex-row gap-4 contact-info-item align-items-center"
-              >
-                <img
-                  class="icon2"
-                  src="assets/images/footer-messaging.png"
-                  alt="footer messageing"
-                />
-                <span class="break-word-line">info@comproventures.com</span>
+              <div class="col-md-6 mt-3">
+                <div class="about-vision-container">
+                  <img src="assets/images/about/overview-icon2.png" alt="overview-icon2" />
+                  <span>Solution Based Approach</span>
+                </div>
               </div>
-              <div
-                class="d-flex flex-row gap-4 contact-info-item align-items-center"
-              >
-                <img
-                  class="icon3"
-                  src="assets/images/footer-location.png"
-                  alt="footer location"
-                />
-                <span>539 W COMMERCE ST 288, DALLAS, TX, 75208</span>
+            </div>
+            <div class="row mt-4">
+              <div class="col-md-6 mt-3">
+                <div class="about-vision-container">
+                  <img src="assets/images/about/overview-icon3.png" alt="overview-icon3" />
+                  <span>Committed Workforce</span>
+                </div>
+              </div>
+              <div class="col-md-6 mt-3">
+                <div class="about-vision-container">
+                  <img src="assets/images/about/overview-icon4.png" alt="overview-icon4" />
+                  <span>Global Clientele</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="col-md-6 mt-5 col-space">
+          <div class="about-overview-image-section reveal-loaded">
+            <img class="image-dotted-top" src="assets/images/about/dotted-image.png" alt="dotted-image-top"
+              class="img-fluid" />
+            <div class="image-overlay"></div>
+            <div class="main-image-wrapper">
+              <img class="main-image" src="assets/images/about/overview-image.png" alt="overview-image"
+                class="img-fluid" />
+            </div>
+            <img class="image-dotted-bottom" src="assets/images/about/dotted-image.png" alt="dotted-image-bottom"
+              class="img-fluid" />
+          </div>
+        </div>
       </div>
     </div>
-    <div class="footer-bottom">
+  </section>
+  <!-- overview section closed -->
+  <!-- about programs section -->
+  <section class="about-programs-section mt-4">
+    <div class="container">
+      <div class="row reveal-loaded">
+        <div class="col-md-4 mt-3 mb-3">
+          <div class="about-programs">
+            <div class="title">Startup partner program™</div>
+            <div class="description"> Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt soluta nobis assumenda labore quod maxime.Lorem ipsum dolor sit. </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3 mb-3">
+          <div class="about-programs">
+            <div class="title">Rapid strategy workshop™</div>
+            <div class="description"> Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt soluta nobis assumenda labore quod maxime.Lorem ipsum dolor sit. </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-3 mb-3">
+          <div class="about-programs">
+            <div class="title">Rapid mvp development™</div>
+            <div class="description"> Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt soluta nobis assumenda labore quod maxime.Lorem ipsum dolor sit. </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- about programs section closed -->
+  <!-- about grow section -->
+  <section class="about-grow-section mb-5">
+    <div class="container-fluid grow-section-bg">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="d-flex flex-1 flex-row justify-content-between">
-              <span>
-                © Copyright
-                <script>
-                  document.write(new Date().getFullYear());
-                </script>
-                by Compro Ventures. All Rights Reserved.
-              </span>
-              <div class="d-flex gap-3">
-                <span>Terms of Use</span>
-                <span class="seprator"></span>
-                <span>Refund Policy</span>
+            <div class="about-grow reveal-loaded">
+              <div class="title">Grow Up Your Workflow Speed</div>
+              <div class="tag-line"> Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt soluta nobis assumenda labore quod maxime. </div>
+              <div class="past-growth-exp d-flex flex-1 flex-row align-items-center justify-content-between gap-4 mt-5">
+                <div class="past-growth text-center d-flex flex-column gap-4">
+                  <div class="past-growth-year">2012</div>
+                  <div class="past-growth-content"> The year we started our services </div>
+                </div>
+                <div class="past-growth text-center d-flex flex-column gap-4">
+                  <div class="past-growth-year">06</div>
+                  <div class="past-growth-content"> Pro awards won for lorem amet </div>
+                </div>
+                <div class="past-growth text-center d-flex flex-column gap-4">
+                  <div class="past-growth-year">20</div>
+                  <div class="past-growth-content"> Years of professional experience </div>
+                </div>
+                <div class="past-growth text-center d-flex flex-column gap-4">
+                  <div class="past-growth-year">5K</div>
+                  <div class="past-growth-content"> Business customers serviced in 2020 </div>
+                </div>
+                <div class="past-growth text-center d-flex flex-column gap-4">
+                  <div class="past-growth-year">300</div>
+                  <div class="past-growth-content"> Client satisfied order completed </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- top button -->
-    <div id="top-button">
-      <i
-        class="fa-solid fa-arrow-up"
-        style="font-size: 18px; color: white; font-weight: bold"
-      ></i>
-    </div>
-<!-- Modal -->
-<!-- Modal -->
-<div
-class="modal fade mt-5 mx-5"
-id="exampleModal"
-tabindex="-1"
-aria-labelledby="exampleModalLabel"
-aria-hidden="true"
->
-<div class="mx-5">
-  <div class="mx-5">
-    <div class="mx-5">
-      <div class="mx-5">
-        <div class="mx-3">
-          <div class="modal-dialog mx-5 mt-5">
-            <div class="modal-content model_dialog_innner">
-              <div class="model-header">
-                  We’re the full package. reach out and we'll see how we can help.
-              </div>
-              <div class="modal-body">
-                <form class="mt-5 d-flex flex-column gap-2" action="https://formsubmit.co/917467e3d28b2878d0fd8381a942abd8" method="post">
-                    <div
-                      class="d-flex flex-row gap-5 align-items-center justify-content-between mt-3"
-                    >
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_template" value="table">
-                    <input
-                        class="input"
-                        type="hidden"
-                        name="_subject"
-                        value="New Email From Compro Form"
-                      />
-                    <div class="w-100">
-                        <input
-                        class="input"
-                        type="text"
-                        class="form-control"
-                        name="Name"
-                        placeholder="Your Name"
-                        />
-                      </div>
-                      <div class="w-100">
-                        <input
-                          class="input"
-                          type="text"
-                          class="form-control"
-                          name="What company, or cause do you represent?"
-                          placeholder="What company, or cause do you represent?"
-                        />
-                      </div>
-                      </div>
-                      <div
-                      class="d-flex flex-row gap-5 align-items-center justify-content-between mt-3"
-                    >
-                      <div class=" w-100">
-                          <input
-                            class="input"
-                            type="email"
-                            name="Email"
-                            class="form-control"
-                            placeholder="Email Address"
-                          />
-                      </div>
-                      <div class="w-100">
-                        <input
-                          class="input"
-                          type="text"
-                          name="Phone"
-                          class="form-control"
-                          placeholder="Phone Number"
-                        />
-                      </div>
-                    </div>
-                      <input
-                        class="input"
-                        type="hidden"
-                        name="_next"
-                        value="http://127.0.0.1:5500/index.html"
-                      />
-                    </div>
-                    <div class="px-3">
-                      <textarea
-                        class="form-control text-area"
-                        placeholder="Your Message"
-                        rows="4"
-                        style="height: 100%"
-                        id="floatingTextarea"
-                        name="Message"
-                        required
-                      ></textarea>
-                      <!-- <label class="textarea-label" for="floatingTextarea"
-                        >Your Message</label
-                      > -->
-                    </div>
-                    <div
-                    class="mb-4 d-flex flex-1 align-items-center justify-content-center"
-                  >
-                    <button type="submit" class="submit-button mt-4">Submit</button>
+  </section>
+  <!-- about grow section closed -->
+  <!-- about creatives section -->
+  <section class="about-creatives-section">
+    <div class="container pb-5">
+      <div class="row">
+        <div class="col-md-12 pb-5">
+          <div class="creative-heads reveal-loaded">
+            <div class="title"> Our creative heads build beautiful digital products. </div>
+            <div class="subtitle mt-4"> Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt soluta nobis assumenda labore quod maxime. </div>
+            <div class="gallery mt-5">
+              <div class="row">
+                <div class="col-md-8 mt-5">
+                  <div class="creator1-image">
+                    <img src="assets/images/about/creators/creater1.png" alt="creater1" class="img-fluid" />
                   </div>
-                  </form>
+                </div>
+                <div class="col-md-4 mt-5">
+                  <div class="d-flex flex-column sub-images">
+                    <div class="creator-sub-image">
+                      <img src="assets/images/about/creators/creater2.png" alt="creater2" class="img-fluid" />
+                    </div>
+                    <div class="creator-sub-image">
+                      <img src="assets/images/about/creators/creater3.png" alt="creater3" class="img-fluid" />
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col-md-4">
+                <div class="description"> We are proud to have <br /> the best team of creative <br /> thinkers and
+                  fantastic clients <br /> from across the world, trusting <br /> our developing, designing, <br /> and
+                  branding. </div>
               </div>
-         </div>
+              <div class="col-md-1"></div>
+              <div class="col-md-3">
+                <div class="vision creativitiy-info">
+                  <div class="info-title">Our Vision</div>
+                  <p class="content"> Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt soluta nobis assumenda labore quod maxime. </p>
+                </div>
+              </div>
+              <div class="col-md-1"></div>
+              <div class="col-md-3">
+                <div class="mission creativitiy-info">
+                  <div class="info-title">Our Mission</div>
+                  <p class="content"> Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt soluta nobis assumenda labore quod maxime. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- about creatives section closed -->
+  <!-- about team section -->
+  <section class="about-team-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-team-title">Some of our tech experts</div>
+          <div class="section-team-subtitle mt-3"> Talent wins games, but teamwork and intelligence win championships.
+          </div>
+          <div class="row mt-5 team-container">
+            <div class="col-md-3 mt-5">
+              <div class="team-member-image-container">
+                <div class="team-member-image-hover-overlay">
+                  <div class="team-member-image-hover-effect">
+                    <button>Learn More</button>
+                    <div class="icons">
+                      <i class="icon fa-brands fa-twitter" style="color: white; font-size: 18px"></i>
+                      <i class="icon fa-brands fa-linkedin-in" style="color: white; font-size: 18px"></i>
+                    </div>
+                  </div>
+                  <img src="assets/images/about/team/team1.png" alt="team 1" class="img-fluid" />
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span class="team-member-name" title="Austin Lovvorn">Austin Lovvorn</span>
+                  <span class="team-member-title mt-2" title="AVP - North America">AVP - North America</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mt-5">
+              <div class="team-member-image-container">
+                <div class="team-member-image-hover-overlay">
+                  <div class="team-member-image-hover-effect">
+                    <button>Learn More</button>
+                    <div class="icons">
+                      <i class="icon fa-brands fa-twitter" style="color: white; font-size: 18px"></i>
+                      <i class="icon fa-brands fa-linkedin-in" style="color: white; font-size: 18px"></i>
+                    </div>
+                  </div>
+                  <img src="assets/images/about/team/team2.png" alt="team 2" class="img-fluid" />
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span class="team-member-name" title="Carrie Kerpen">Carrie Kerpen</span>
+                  <span class="team-member-title mt-2" title="Managing Director">Managing Director</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mt-5">
+              <div class="team-member-image-container">
+                <div class="team-member-image-hover-overlay">
+                  <div class="team-member-image-hover-effect">
+                    <button>Learn More</button>
+                    <div class="icons">
+                      <i class="icon fa-brands fa-twitter" style="color: white; font-size: 18px"></i>
+                      <i class="icon fa-brands fa-linkedin-in" style="color: white; font-size: 18px"></i>
+                    </div>
+                  </div>
+                  <img src="assets/images/about/team/team3.png" alt="team 3" class="img-fluid" />
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span class="team-member-name" title="Sarah Roderus">Sarah Roderus</span>
+                  <span class="team-member-title mt-2" title="VP of Testing Services">VP of Testing Services</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mt-5">
+              <div class="team-member-image-container">
+                <div class="team-member-image-hover-overlay">
+                  <div class="team-member-image-hover-effect">
+                    <button>Learn More</button>
+                    <div class="icons">
+                      <i class="icon fa-brands fa-twitter" style="color: white; font-size: 18px"></i>
+                      <i class="icon fa-brands fa-linkedin-in" style="color: white; font-size: 18px"></i>
+                    </div>
+                  </div>
+                  <img src="assets/images/about/team/team4.png" alt="team 4" class="img-fluid" />
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span class="team-member-name" title="Peter Hesse">Peter Hesse</span>
+                  <span class="team-member-title mt-2" title="EVP & CSO">EVP & CSO</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-md-3 mt-5">
+              <div class="team-member-image-container">
+                <div class="team-member-image-hover-overlay">
+                  <div class="team-member-image-hover-effect">
+                    <button>Learn More</button>
+                    <div class="icons">
+                      <i class="icon fa-brands fa-twitter" style="color: white; font-size: 18px"></i>
+                      <i class="icon fa-brands fa-linkedin-in" style="color: white; font-size: 18px"></i>
+                    </div>
+                  </div>
+                  <img src="assets/images/about/team/team5.png" alt="team 5" class="img-fluid" />
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span class="team-member-name" title="Asher Epstein">Asher Epstein</span>
+                  <span class="team-member-title mt-2" title="COO">COO</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mt-5">
+              <div class="team-member-image-container">
+                <div class="team-member-image-hover-overlay">
+                  <img src="assets/images/about/team/team6.png" alt="team 6" class="img-fluid" />
+                  <div class="team-member-image-hover-effect">
+                    <button>Learn More</button>
+                    <div class="icons">
+                      <i class="icon fa-brands fa-twitter" style="color: white; font-size: 18px"></i>
+                      <i class="icon fa-brands fa-linkedin-in" style="color: white; font-size: 18px"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span class="team-member-name" title="Marley Huckabee">Marley Huckabee</span>
+                  <span class="team-member-title mt-2" title="Director of People Success">Director of People
+                    Success</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mt-5">
+              <div class="team-member-image-container">
+                <div class="team-member-image-hover-overlay">
+                  <div class="team-member-image-hover-effect">
+                    <button>Learn More</button>
+                    <div class="icons">
+                      <i class="icon fa-brands fa-twitter" style="color: white; font-size: 18px"></i>
+                      <i class="icon fa-brands fa-linkedin-in" style="color: white; font-size: 18px"></i>
+                    </div>
+                  </div>
+                  <img src="assets/images/about/team/team7.png" alt="team 7" class="img-fluid" />
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span class="team-member-name" title="Dan Zipper">Dan Zipper</span>
+                  <span class="team-member-title mt-2" title="VP of Client Solutions">VP of Client Solutions</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 mt-5">
+              <div class="team-member-image-container">
+                <div class="team-member-image-hover-overlay">
+                  <div class="team-member-image-hover-effect">
+                    <button>Learn More</button>
+                    <div class="icons">
+                      <i class="icon fa-brands fa-twitter" style="color: white; font-size: 18px"></i>
+                      <i class="icon fa-brands fa-linkedin-in" style="color: white; font-size: 18px"></i>
+                    </div>
+                  </div>
+                  <img src="assets/images/about/team/team8.png" alt="team 8" class="img-fluid" />
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <span class="team-member-name" title="María Clara Valencia">María Clara Valencia</span>
+                  <span class="team-member-title mt-2" title="Talent Director, Colombia">Talent Director,
+                    Colombia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-team-more mt-5">
+            <button class="section-team-more-button">Load More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- about team section closed -->
+  <!-- footer -->
+  <div class="footer pb-5">
+    <div class="container pb-4">
+      <div class="row">
+        <div class="col-md-12">
+          <img class="footer-logo" src="assets/images/footer-logo.png" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 d-flex flex-column gap-4 mt-5">
+          <div class="heading">Let's Get Started</div>
+          <div class="description"> Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt soluta nobis assumenda labore quod maxime. </div>
+          <div class="social-icons d-flex flex-row align-items-center flex-wrap gap-5 mt-3">
+            <img class="cursor-pointer" class="img-responsive" src="assets/images/facebook-footer.png" alt="" />
+            <img class="cursor-pointer" class="img-responsive" src="assets/images/instagram-footer.png" alt="" />
+            <img class="cursor-pointer" class="img-responsive" src="assets/images/twitter-footer.png" alt="" />
+            <img class="cursor-pointer" class="img-responsive" src="assets/images/pinerset-footer.png" alt="" />
+            <img class="cursor-pointer" class="img-responsive" src="assets/images/linkedin-footer.png" alt="" />
+          </div>
+        </div>
+        <div class="col-md-4 d-flex flex-column gap-4 mt-5">
+          <div class="heading">More Information</div>
+          <div class="d-flex flex-column information">
+            <span class="information-item">Privacy Policy</span>
+            <span class="information-item">Terms & Condtions</span>
+            <span class="information-item">Accessibility</span>
+            <span class="information-item">Cookie Policy</span>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex flex-column gap-4 mt-5">
+          <div class="heading">Contact Info</div>
+          <div class="d-flex flex-column contact-info">
+            <div class="d-flex flex-row gap-4 contact-info-item align-items-center">
+              <img class="icon1" src="assets/images/footer-phone.png" alt="footer phone" />
+              <span>+1 332 900 6225</span>
+            </div>
+            <div class="d-flex flex-row gap-4 contact-info-item align-items-center">
+              <img class="icon2" src="assets/images/footer-messaging.png" alt="footer messageing" />
+              <span class="break-word-line">info@comproventures.com</span>
+            </div>
+            <div class="d-flex flex-row gap-4 contact-info-item align-items-center">
+              <img class="icon3" src="assets/images/footer-location.png" alt="footer location" />
+              <span>539 W COMMERCE ST 288, DALLAS, TX, 75208</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-</div>
-    <!-- script -->
-    <script src="icons/fontawesome/js/all.js"></script>
-    <script src="scripts/bootstrap/bootstrap.min.js"></script>
-    <script src="scripts/mixitup.js"></script>
-    <script src="scripts/jquery.js"></script>
-    <script src="scripts/main.js"></script>
-  </body>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="foot-bo-contain">
+            <span> © Copyright
+              <script>
+                document.write(new Date().getFullYear());
+              </script> by Compro Ventures. All Rights Reserved.
+            </span>
+            <div class="foot-bo-contain-under d-flex gap-3">
+              <span class="foot-bo-contain-under-span">Terms of Use</span>
+              <span class="seprator"></span>
+              <span class="foot-bo-contain-under-span">Refund Policy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- top button -->
+  <div id="top-button">
+    <i class="fa-solid fa-arrow-up" style="font-size: 18px; color: white; font-weight: bold"></i>
+  </div>
+  <!-- Modal -->
+  <!-- Modal -->
+  <div class="modal fade mt-5 mx-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="mx-5">
+      <div class="mx-5">
+        <div class="mx-5">
+          <div class="mx-5">
+            <div class="mx-3">
+              <div class="modal-dialog mx-5 mt-5">
+                <div class="modal-content model_dialog_innner">
+                  <div class="model-header"> We’re the full package. reach out and we'll see how we can help. </div>
+                  <div class="modal-body">
+                    <form class="mt-5 d-flex flex-column gap-2"
+                      action="https://formsubmit.co/917467e3d28b2878d0fd8381a942abd8" method="post">
+                      <div class="d-flex flex-row gap-5 align-items-center justify-content-between mt-3">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input class="input" type="hidden" name="_subject" value="New Email From Compro Form" />
+                        <div class="w-100">
+                          <input class="input" type="text" class="form-control" name="Name" placeholder="Your Name" />
+                        </div>
+                        <div class="w-100">
+                          <input class="input" type="text" class="form-control"
+                            name="What company, or cause do you represent?"
+                            placeholder="What company, or cause do you represent?" />
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row gap-5 align-items-center justify-content-between mt-3">
+                        <div class=" w-100">
+                          <input class="input" type="email" name="Email" class="form-control"
+                            placeholder="Email Address" />
+                        </div>
+                        <div class="w-100">
+                          <input class="input" type="text" name="Phone" class="form-control"
+                            placeholder="Phone Number" />
+                        </div>
+                      </div>
+                      <input class="input" type="hidden" name="_next" value="http://127.0.0.1:5500/index.html" />
+                  </div>
+                  <div class="px-3">
+                    <textarea class="form-control text-area" placeholder="Your Message" rows="4" style="height: 100%"
+                      id="floatingTextarea" name="Message" required></textarea>
+                    <!-- <label class="textarea-label" for="floatingTextarea"
+                        >Your Message</label
+                      > -->
+                  </div>
+                  <div class="mb-4 d-flex flex-1 align-items-center justify-content-center">
+                    <button type="submit" class="submit-button mt-4">Submit</button>
+                  </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- script -->
+  <script src="icons/fontawesome/js/all.js"></script>
+  <script src="scripts/bootstrap/bootstrap.min.js"></script>
+  <script src="scripts/mixitup.js"></script>
+  <script src="scripts/jquery.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
 </html>

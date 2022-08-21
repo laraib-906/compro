@@ -51,6 +51,9 @@
     .sticky_services_nav {
       width: 720px !important;
     }
+    .sticky_services_nav .services-section-header-image {
+        width: 40px;
+    }
   }
   @media (min-width: 992px) {
     .sticky_services_nav {

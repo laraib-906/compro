@@ -54,11 +54,6 @@ body {
     height: 66px;
     width: 100px;
 }
-
-.get-quote-top {
-    display: none;
-}
-
 .get-quote-bottom {
     display: flex;
 }
@@ -254,4 +249,15 @@ body {
 .break-word-line {
     word-wrap: break-word;
     overflow: hidden;
+}
+
+.foot-bo-contain {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.foot-bo-contain-under-span {
+    cursor: pointer;
 }

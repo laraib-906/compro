@@ -2,416 +2,305 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/favicon.ico" />
-    <title>Compro Ventures</title>
-    <link rel="stylesheet" href="icons/fontawesome/css/all.css" />
-    <link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="fonts/open-sans/style.css" />
-    <link rel="stylesheet" href="fonts/roboto/style.css" />
-    <link rel="stylesheet" href="fonts/inter/style.css" />
-    <link rel="stylesheet" href="styles/responsive.css" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/contact.css" />
-    <link rel="stylesheet" href="styles/loader.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/favicon.ico" />
+  <title>Compro Ventures</title>
+  <link rel="stylesheet" href="icons/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="styles/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="fonts/open-sans/style.css" />
+  <link rel="stylesheet" href="fonts/roboto/style.css" />
+  <link rel="stylesheet" href="fonts/inter/style.css" />
+  <link rel="stylesheet" href="styles/responsive.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/contact.css" />
+  <link rel="stylesheet" href="styles/loader.css" />
 </head>
 
 <body>
-    <!-- pre loader -->
-    <div id="preloader">
-        <div class="loader">
-            <div class="loader__bar"></div>
-            <div class="loader__bar"></div>
-            <div class="loader__bar"></div>
-            <div class="loader__bar"></div>
-            <div class="loader__bar"></div>
-            <div class="loader__ball"></div>
-        </div>
+  <!-- pre loader -->
+  <div id="preloader">
+    <div class="loader">
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__ball"></div>
     </div>
-    <!-- navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg bg-light custom-nav">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo.png" alt="logo" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+  </div>
+  <!-- navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg bg-light custom-nav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/logo.png" alt="logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav ms-auto navbar-nav-scroll d-flex gap-5">
-                    <li class="nav-item get-quote-top">
-                        <button type="button" id="myModal" href="#" class="quote" data-bs-toggle="modal" data-bs-target="#exampleModal"> Get a Quote </button>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item get-quote-bottom">
-                      <button type="button"
-                id="myModal"
-                class="quote"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                Get a Quote
-              </button>
-                   </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Banner -->
-    <section class="contact-banner banner">
-        <div class="banner-content">
-            <h1 class="banner-heading">Talk to the Digital Experts.</h1>
-            <div class="banner-description"> Projects, Questions, Feedback? <br /> We are here for you, 24/7 </div>
-        </div>
-    </section>
-    <section class="constant-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 reveal-loaded">
-            <div class="section-header">
-              We’re the full package. reach out and we'll see how we can help.
-            </div>
-            <form class="mt-5 d-flex flex-column gap-2" action="https://formsubmit.co/917467e3d28b2878d0fd8381a942abd8" method="post">
-              <div
-                class="d-flex flex-row gap-3 align-items-center justify-content-between mt-3"
-              >
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav ms-auto navbar-nav-scroll d-flex gap-5">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item ">
+            <button type="button" id="myModal" class="quote" data-bs-toggle="modal" data-bs-target="#exampleModal"> Get
+              a Quote </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Banner -->
+  <section class="contact-banner banner">
+    <div class="banner-content">
+      <h1 class="banner-heading">Talk to the Digital Experts.</h1>
+      <div class="banner-description"> Projects, Questions, Feedback? <br /> We are here for you, 24/7 </div>
+    </div>
+  </section>
+  <section class="constant-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 reveal-loaded">
+          <div class="section-header"> We’re the full package. reach out and we'll see how we can help. </div>
+          <form class="mt-5 d-flex flex-column gap-2" action="https://formsubmit.co/917467e3d28b2878d0fd8381a942abd8"
+            method="post">
+            <div class="d-flex flex-row gap-3 align-items-center justify-content-between mt-3">
               <input type="hidden" name="_captcha" value="false">
               <input type="hidden" name="_template" value="table">
-              <input
-                  class="input"
-                  type="hidden"
-                  name="_subject"
-                  value="New Email From Compro Form"
-                />
+              <input class="input" type="hidden" name="_subject" value="New Email From Compro Form" />
               <div class="mb-3 w-100">
-                  <input
-                  class="input"
-                  type="text"
-                  class="form-control"
-                  name="Name"
-                  placeholder="Your Name"
-                  />
-                </div>
-                
-                <div class="mb-3 w-100">
-                  <input
-                    class="input"
-                    type="text"
-                    class="form-control"
-                    name="What company, or cause do you represent?"
-                    placeholder="What company, or cause do you represent?"
-                  />
-                </div>
+                <input class="input" type="text" class="form-control" name="Name" placeholder="Your Name" />
               </div>
-              <div
-                class="d-flex flex-row gap-3 align-items-center justify-content-between"
-              >
-                <div class="mb-3 w-100">
-                  <input
-                    class="input"
-                    type="email"
-                    name="Email"
-                    class="form-control"
-                    placeholder="Email Address"
-                  />
-                </div>
-                <input
-                  class="input"
-                  type="hidden"
-                  name="_next"
-                  value="http://127.0.0.1:5500/contact.html"
-                />
-                <div class="mb-3 w-100">
-                  <input
-                    class="input"
-                    type="text"
-                    name="Phone"
-                    class="form-control"
-                    placeholder="Phone Number"
-                  />
-                </div>
+              <div class="mb-3 w-100">
+                <input class="input" type="text" class="form-control" name="What company, or cause do you represent?"
+                  placeholder="What company, or cause do you represent?" />
               </div>
-              <div
-                class="d-flex flex-row gap-3 align-items-center justify-content-between"
-              >
-                <div class="mb-3 w-100">
-                  <select
-                    class="form-select select cursor-pointer"
-                    aria-label="Default select example"
-                    name="How can we help"
-                  >
-                    <option class="options" selected>How can we help?</option>
-                    <option class="options" value="1">One</option>
-                    <option class="options" value="2">Two</option>
-                    <option class="options" value="3">Three</option>
-                  </select>
-                </div>
-                <div class="mb-3 w-100">
-                  <select
-                    class="form-select select cursor-pointer"
-                    aria-label="Default select example"
-                    name="How did you hear about us"
-                  >
-                    <option class="options" selected>
-                      How did you hear about us?
-                    </option>
-                    <option class="options" value="1">One</option>
-                    <option class="options" value="2">Two</option>
-                    <option class="options" value="3">Three</option>
-                  </select>
-                </div>
+            </div>
+            <div class="d-flex flex-row gap-3 align-items-center justify-content-between">
+              <div class="mb-3 w-100">
+                <input class="input" type="email" name="Email" class="form-control" placeholder="Email Address" />
               </div>
-              <div class="form-floating">
-                <textarea
-                  class="form-control text-area"
-                  placeholder="Your Message"
-                  rows="4"
-                  style="height: 100%"
-                  id="floatingTextarea"
-                  name="Message"
-                  required
-                ></textarea>
-                <!-- <label class="textarea-label" for="floatingTextarea"
+              <input class="input" type="hidden" name="_next" value="http://127.0.0.1:5500/contact.html" />
+              <div class="mb-3 w-100">
+                <input class="input" type="text" name="Phone" class="form-control" placeholder="Phone Number" />
+              </div>
+            </div>
+            <div class="d-flex flex-row gap-3 align-items-center justify-content-between">
+              <div class="mb-3 w-100">
+                <select class="form-select select cursor-pointer" aria-label="Default select example"
+                  name="How can we help">
+                  <option class="options" selected>How can we help?</option>
+                  <option class="options" value="1">One</option>
+                  <option class="options" value="2">Two</option>
+                  <option class="options" value="3">Three</option>
+                </select>
+              </div>
+              <div class="mb-3 w-100">
+                <select class="form-select select cursor-pointer" aria-label="Default select example"
+                  name="How did you hear about us">
+                  <option class="options" selected> How did you hear about us? </option>
+                  <option class="options" value="1">One</option>
+                  <option class="options" value="2">Two</option>
+                  <option class="options" value="3">Three</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-floating">
+              <textarea class="form-control text-area" placeholder="Your Message" rows="4" style="height: 100%"
+                id="floatingTextarea" name="Message" required></textarea>
+              <!-- <label class="textarea-label" for="floatingTextarea"
                   >Your Message</label
                 > -->
+            </div>
+            <div class="mt-5 d-flex flex-1 align-items-center justify-content-center">
+              <button type="submit" class="submit-button mt-3">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="constant-section info-section pt-5 pb-5">
+    <div class="container pt-5 pb-5">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="d-flex flex-1 flex-column justify-content-center align-items-center gap-5 reveal-loaded">
+            <img src="assets/images/pak_flag.png" alt="pakistan flag" width="74" />
+            <div class="contact-info-content d-flex flex-1 flex-column justify-content-center align-items-center gap-4">
+              <span class="main-heading">DALLAS</span>
+              <span class="main-subheading">539 W COMMERCE ST 288, DALLAS, TX, 75208,<br />USA</span>
+              <div class="d-flex flex-row gap-4 contact-info-item">
+                <i class="fa-solid fa-phone" style="font-size: 24px"></i>
+                <span class="icon-text">+1 332 900 6225</span>
               </div>
-              <div
-                class="mt-5 d-flex flex-1 align-items-center justify-content-center"
-              >
-                <button type="submit" class="submit-button mt-3">Submit</button>
+              <div class="d-flex flex-row gap-3 contact-info-item">
+                <i class="fa-solid fa-envelope" style="height: 23px; width: 23px"></i>
+                <span class="icon-text">info@comproventures.com</span>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="constant-section info-section pt-5 pb-5">
-        <div class="container pt-5 pb-5">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="d-flex flex-1 flex-column justify-content-center align-items-center gap-5 reveal-loaded">
-                        <img src="assets/images/pak_flag.png" alt="pakistan flag" width="74"/>
-                        <div class="contact-info-content d-flex flex-1 flex-column justify-content-center align-items-center gap-4">
-                            <span class="main-heading">DALLAS</span>
-                            <span class="main-subheading">539 W COMMERCE ST 288, DALLAS, TX, 75208,<br />USA</span>
-                            <div class="d-flex flex-row gap-4 contact-info-item">
-                                <i class="fa-solid fa-phone" style="font-size: 24px"></i>
-                                <span class="icon-text">+1 332 900 6225</span>
-                            </div>
-                            <div class="d-flex flex-row gap-3 contact-info-item">
-                                <i class="fa-solid fa-envelope" style="height: 23px; width: 23px"></i>
-                                <span class="icon-text">info@comproventures.com</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.7162865801024!2d-96.83549148451935!3d32.77326189148331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e99623917f035%3A0x17a58afd18c0d193!2s539%20W%20Commerce%20St%20%23288%2C%20Dallas%2C%20TX%2075208%2C%20USA!5e0!3m2!1sen!2sde!4v1660827583321!5m2!1sen!2sde"
-        height="600" style="border: 0; width: 100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <!-- footer -->
-    <div class="footer pb-5">
-        <div class="container pb-4">
-            <div class="row">
-                <div class="col-md-12">
-                    <img class="footer-logo" src="assets/images/footer-logo.png" />
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-5 d-flex flex-column gap-4 mt-5">
-                    <div class="heading">Let's Get Started</div>
-                    
-                    <div class="description"> Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt soluta nobis assumenda labore quod maxime.</div>
-                    <div class="social-icons d-flex flex-row align-items-center gap-5 mt-3">
-                        <img class="cursor-pointer" class="img-responsive" src="assets/images/facebook-footer.png" alt="" />
-                        <img class="cursor-pointer" class="img-responsive" src="assets/images/instagram-footer.png" alt="" />
-                        <img class="cursor-pointer" class="img-responsive" src="assets/images/twitter-footer.png" alt="" />
-                        <img class="cursor-pointer" class="img-responsive" src="assets/images/pinerset-footer.png" alt="" />
-                        <img class="cursor-pointer" class="img-responsive" src="assets/images/linkedin-footer.png" alt="" />
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex flex-column gap-4 mt-5">
-                    <div class="heading">More Information</div>
-                    <div class="d-flex flex-column information">
-                        <span class="information-item">Privacy Policy</span>
-                        <span class="information-item">Terms & Condtions</span>
-                        <span class="information-item">Accessibility</span>
-                        <span class="information-item">Cookie Policy</span>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex flex-column gap-4 mt-5">
-                    <div class="heading">Contact Info</div>
-                    <div class="d-flex flex-column contact-info">
-                      <div class="d-flex flex-row gap-4 contact-info-item align-items-center">
-                          <img class="icon1" src="assets/images/footer-phone.png" alt="footer phone">
-                          <span>+1 332 900 6225</span>
-                      </div>
-                      <div class="d-flex flex-row gap-4 contact-info-item align-items-center">
-                          <img class="icon2" src="assets/images/footer-messaging.png" alt="footer messageing">
-                          <span class="break-word-line">info@comproventures.com</span>
-                      </div>
-                      <div class="d-flex flex-row gap-4 contact-info-item align-items-center">
-                          <img class="icon3" src="assets/images/footer-location.png" alt="footer location">
-                          <span>539 W COMMERCE ST 288, DALLAS, TX, 75208</span>
-                      </div>
-                  </div>
-                </div>
-            </div>
-        </div>
     </div>
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="d-flex flex-1 flex-row justify-content-between">
-                        <span> © Copyright
+  </section>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.7162865801024!2d-96.83549148451935!3d32.77326189148331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e99623917f035%3A0x17a58afd18c0d193!2s539%20W%20Commerce%20St%20%23288%2C%20Dallas%2C%20TX%2075208%2C%20USA!5e0!3m2!1sen!2sde!4v1660827583321!5m2!1sen!2sde"
+    height="600" style="border: 0; width: 100%" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <!-- footer -->
+  <div class="footer pb-5">
+    <div class="container pb-4">
+      <div class="row">
+        <div class="col-md-12">
+          <img class="footer-logo" src="assets/images/footer-logo.png" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 d-flex flex-column gap-4 mt-5">
+          <div class="heading">Let's Get Started</div>
+          <div class="description"> Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt soluta nobis assumenda labore quod maxime.</div>
+          <div class="social-icons d-flex flex-row align-items-center flex-wrap gap-5 mt-3">
+            <img class="cursor-pointer" class="img-responsive" src="assets/images/facebook-footer.png" alt="" />
+            <img class="cursor-pointer" class="img-responsive" src="assets/images/instagram-footer.png" alt="" />
+            <img class="cursor-pointer" class="img-responsive" src="assets/images/twitter-footer.png" alt="" />
+            <img class="cursor-pointer" class="img-responsive" src="assets/images/pinerset-footer.png" alt="" />
+            <img class="cursor-pointer" class="img-responsive" src="assets/images/linkedin-footer.png" alt="" />
+          </div>
+        </div>
+        <div class="col-md-4 d-flex flex-column gap-4 mt-5">
+          <div class="heading">More Information</div>
+          <div class="d-flex flex-column information">
+            <span class="information-item">Privacy Policy</span>
+            <span class="information-item">Terms & Condtions</span>
+            <span class="information-item">Accessibility</span>
+            <span class="information-item">Cookie Policy</span>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex flex-column gap-4 mt-5">
+          <div class="heading">Contact Info</div>
+          <div class="d-flex flex-column contact-info">
+            <div class="d-flex flex-row gap-4 contact-info-item align-items-center">
+              <img class="icon1" src="assets/images/footer-phone.png" alt="footer phone">
+              <span>+1 332 900 6225</span>
+            </div>
+            <div class="d-flex flex-row gap-4 contact-info-item align-items-center">
+              <img class="icon2" src="assets/images/footer-messaging.png" alt="footer messageing">
+              <span class="break-word-line">info@comproventures.com</span>
+            </div>
+            <div class="d-flex flex-row gap-4 contact-info-item align-items-center">
+              <img class="icon3" src="assets/images/footer-location.png" alt="footer location">
+              <span>539 W COMMERCE ST 288, DALLAS, TX, 75208</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="foot-bo-contain">
+            <span> © Copyright
               <script>
                 document.write(new Date().getFullYear());
               </script> by Compro Ventures. All Rights Reserved.
             </span>
-                        <div class="d-flex gap-3">
-                            <span>Terms of Use</span>
-                            <span class="seprator"></span>
-                            <span>Refund Policy</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="foot-bo-contain-under d-flex gap-3">
+              <span class="foot-bo-contain-under-span">Terms of Use</span>
+              <span class="seprator"></span>
+              <span class="foot-bo-contain-under-span">Refund Policy</span>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    <!-- top button -->
-    <div id="top-button">
-        <i class="fa-solid fa-arrow-up" style="font-size: 18px; color: white; font-weight: bold"></i>
-    </div>
-    <!-- Modal -->
-   <!-- Modal -->
-   <div
-   class="modal fade mt-5 mx-5"
-   id="exampleModal"
-   tabindex="-1"
-   aria-labelledby="exampleModalLabel"
-   aria-hidden="true"
-   >
-   <div class="mx-5">
-     <div class="mx-5">
-       <div class="mx-5">
-         <div class="mx-5">
-           <div class="mx-3">
-             <div class="modal-dialog mx-5 mt-5">
-               <div class="modal-content model_dialog_innner">
-                 <div class="model-header">
-                     We’re the full package. reach out and we'll see how we can help.
-                 </div>
-                 <div class="modal-body">
-                   <form class="mt-5 d-flex flex-column gap-2" action="https://formsubmit.co/917467e3d28b2878d0fd8381a942abd8" method="post">
-                       <div
-                         class="d-flex flex-row gap-5 align-items-center justify-content-between mt-3"
-                       >
-                       <input type="hidden" name="_captcha" value="false">
-                       <input type="hidden" name="_template" value="table">
-                       <input
-                           class="input"
-                           type="hidden"
-                           name="_subject"
-                           value="New Email From Compro Form"
-                         />
-                       <div class="w-100">
-                           <input
-                           class="input"
-                           type="text"
-                           class="form-control"
-                           name="Name"
-                           placeholder="Your Name"
-                           />
-                         </div>
-                         <div class="w-100">
-                           <input
-                             class="input"
-                             type="text"
-                             class="form-control"
-                             name="What company, or cause do you represent?"
-                             placeholder="What company, or cause do you represent?"
-                           />
-                         </div>
-                         </div>
-                         <div
-                         class="d-flex flex-row gap-5 align-items-center justify-content-between mt-3"
-                       >
-                         <div class=" w-100">
-                             <input
-                               class="input"
-                               type="email"
-                               name="Email"
-                               class="form-control"
-                               placeholder="Email Address"
-                             />
-                         </div>
-                         <div class="w-100">
-                           <input
-                             class="input"
-                             type="text"
-                             name="Phone"
-                             class="form-control"
-                             placeholder="Phone Number"
-                           />
-                         </div>
-                       </div>
-                         <input
-                           class="input"
-                           type="hidden"
-                           name="_next"
-                           value="http://127.0.0.1:5500/index.html"
-                         />
-                       </div>
-                       <div class="px-3">
-                         <textarea
-                           class="form-control text-area"
-                           placeholder="Your Message"
-                           rows="4"
-                           style="height: 100%"
-                           id="floatingTextarea"
-                           name="Message"
-                           required
-                         ></textarea>
-                         <!-- <label class="textarea-label" for="floatingTextarea"
+  </div>
+  <!-- top button -->
+  <div id="top-button">
+    <i class="fa-solid fa-arrow-up" style="font-size: 18px; color: white; font-weight: bold"></i>
+  </div>
+  <!-- Modal -->
+  <!-- Modal -->
+  <div class="modal fade mt-5 mx-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="mx-5">
+      <div class="mx-5">
+        <div class="mx-5">
+          <div class="mx-5">
+            <div class="mx-3">
+              <div class="modal-dialog mx-5 mt-5">
+                <div class="modal-content model_dialog_innner">
+                  <div class="model-header"> We’re the full package. reach out and we'll see how we can help. </div>
+                  <div class="modal-body">
+                    <form class="mt-5 d-flex flex-column gap-2"
+                      action="https://formsubmit.co/917467e3d28b2878d0fd8381a942abd8" method="post">
+                      <div class="d-flex flex-row gap-5 align-items-center justify-content-between mt-3">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input class="input" type="hidden" name="_subject" value="New Email From Compro Form" />
+                        <div class="w-100">
+                          <input class="input" type="text" class="form-control" name="Name" placeholder="Your Name" />
+                        </div>
+                        <div class="w-100">
+                          <input class="input" type="text" class="form-control"
+                            name="What company, or cause do you represent?"
+                            placeholder="What company, or cause do you represent?" />
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row gap-5 align-items-center justify-content-between mt-3">
+                        <div class=" w-100">
+                          <input class="input" type="email" name="Email" class="form-control"
+                            placeholder="Email Address" />
+                        </div>
+                        <div class="w-100">
+                          <input class="input" type="text" name="Phone" class="form-control"
+                            placeholder="Phone Number" />
+                        </div>
+                      </div>
+                      <input class="input" type="hidden" name="_next" value="http://127.0.0.1:5500/index.html" />
+                  </div>
+                  <div class="px-3">
+                    <textarea class="form-control text-area" placeholder="Your Message" rows="4" style="height: 100%"
+                      id="floatingTextarea" name="Message" required></textarea>
+                    <!-- <label class="textarea-label" for="floatingTextarea"
                            >Your Message</label
                          > -->
-                       </div>
-                       <div
-                       class="mb-4 d-flex flex-1 align-items-center justify-content-center"
-                     >
-                       <button type="submit" class="submit-button mt-4">Submit</button>
-                     </div>
-                     </form>
-                 </div>
-                 </div>
+                  </div>
+                  <div class="mb-4 d-flex flex-1 align-items-center justify-content-center">
+                    <button type="submit" class="submit-button mt-4">Submit</button>
+                  </div>
+                  </form>
+                </div>
+              </div>
             </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
-    <!-- script -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
-    <script src="icons/fontawesome/js/all.js"></script>
-    <script src="scripts/bootstrap/bootstrap.min.js"></script>
-    <script src="scripts/mixitup.js"></script>
-    <script src="scripts/jquery.js"></script>
-    <script src="scripts/main.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- script -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+    defer></script>
+  <script src="icons/fontawesome/js/all.js"></script>
+  <script src="scripts/bootstrap/bootstrap.min.js"></script>
+  <script src="scripts/mixitup.js"></script>
+  <script src="scripts/jquery.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 
 </html>
