@@ -469,9 +469,9 @@
                             Reserved.
                         </span>
                         <div class="foot-bo-contain-under d-flex gap-3">
-                          <span class="foot-bo-contain-under-span">Terms of Use</span>
-                          <span class="seprator"></span>
-                          <span class="foot-bo-contain-under-span">Refund Policy</span>
+                            <span class="foot-bo-contain-under-span">Terms of Use</span>
+                            <span class="seprator"></span>
+                            <span class="foot-bo-contain-under-span">Refund Policy</span>
                         </div>
                     </div>
                 </div>
@@ -564,20 +564,22 @@
 
 
         function scrollServices() {
-            const serviceContainer = document.getElementById('services_header_fixed');
-            const top = serviceContainer.getBoundingClientRect().top;
-            if (top <= 66) {
-                serviceContainer.classList.add("sticky_services_nav");
-            }
+            if (window.innerWidth > 991) {
+                const serviceContainer = document.getElementById('services_header_fixed');
+                const top = serviceContainer.getBoundingClientRect().top;
+                if (top <= 66) {
+                    serviceContainer.classList.add("sticky_services_nav");
+                }
 
-            const serviceSection = document.getElementById('service_nav_Sections');
-            const sectionTop = serviceSection.getBoundingClientRect().top;
-            const serviceSection1container = document.getElementById('services_development_key');
-            if (sectionTop <= 66) {
-                serviceSection1container.classList.add('p-t-6-r-e-m');
-            } else {
-                serviceSection1container.classList.remove('p-t-6-r-e-m');
-                serviceContainer.classList.remove('sticky_services_nav');
+                const serviceSection = document.getElementById('service_nav_Sections');
+                const sectionTop = serviceSection.getBoundingClientRect().top;
+                const serviceSection1container = document.getElementById('services_development_key');
+                if (sectionTop <= 66) {
+                    serviceSection1container.classList.add('p-t-6-r-e-m');
+                } else {
+                    serviceSection1container.classList.remove('p-t-6-r-e-m');
+                    serviceContainer.classList.remove('sticky_services_nav');
+                }
             }
         }
 
@@ -588,62 +590,63 @@
         }
 
         function handleSercviceSectionScrollContainer() {
+            if (window.innerWidth > 991) {
+                const services_development_key = document.getElementById('services_development_key').getBoundingClientRect().top
+                const services_designing_key = document.getElementById('services_designing_key').getBoundingClientRect().top
+                const services_writting_key = document.getElementById('services_writting_key').getBoundingClientRect().top
+                const services_marketing_key = document.getElementById('services_marketing_key').getBoundingClientRect().top
 
-            const services_development_key = document.getElementById('services_development_key').getBoundingClientRect().top
-            const services_designing_key = document.getElementById('services_designing_key').getBoundingClientRect().top
-            const services_writting_key = document.getElementById('services_writting_key').getBoundingClientRect().top
-            const services_marketing_key = document.getElementById('services_marketing_key').getBoundingClientRect().top
+                if (services_development_key <= 66) {
+                    $("#services_development").addClass("active");
 
-            if (services_development_key <= 66) {
-                $("#services_development").addClass("active");
+                    if (checkIncludeActiceClass("#services_designing")) {
+                        $("#services_designing").removeClass("active");
+                    }
+                    if (checkIncludeActiceClass("#services_writting")) {
+                        $("#services_writting").removeClass("active");
+                    }
+                    if (checkIncludeActiceClass("#services_marketing")) {
+                        $("#services_marketing").removeClass("active");
+                    }
+                }
+                if (services_designing_key <= 66) {
+                    $("#services_designing").addClass("active");
 
-                if (checkIncludeActiceClass("#services_designing")) {
-                    $("#services_designing").removeClass("active");
+                    if (checkIncludeActiceClass("#services_development")) {
+                        $("#services_development").removeClass("active");
+                    }
+                    if (checkIncludeActiceClass("#services_writting")) {
+                        $("#services_writting").removeClass("active");
+                    }
+                    if (checkIncludeActiceClass("#services_marketing")) {
+                        $("#services_marketing").removeClass("active");
+                    }
                 }
-                if (checkIncludeActiceClass("#services_writting")) {
-                    $("#services_writting").removeClass("active");
-                }
-                if (checkIncludeActiceClass("#services_marketing")) {
-                    $("#services_marketing").removeClass("active");
-                }
-            }
-            if (services_designing_key <= 66) {
-                $("#services_designing").addClass("active");
+                if (services_writting_key <= 66) {
+                    $("#services_writting").addClass("active");
 
-                if (checkIncludeActiceClass("#services_development")) {
-                    $("#services_development").removeClass("active");
+                    if (checkIncludeActiceClass("#services_designing")) {
+                        $("#services_designing").removeClass("active");
+                    }
+                    if (checkIncludeActiceClass("#services_development")) {
+                        $("#services_development").removeClass("active");
+                    }
+                    if (checkIncludeActiceClass("#services_marketing")) {
+                        $("#services_marketing").removeClass("active");
+                    }
                 }
-                if (checkIncludeActiceClass("#services_writting")) {
-                    $("#services_writting").removeClass("active");
-                }
-                if (checkIncludeActiceClass("#services_marketing")) {
-                    $("#services_marketing").removeClass("active");
-                }
-            }
-            if (services_writting_key <= 66) {
-                $("#services_writting").addClass("active");
+                if (services_marketing_key <= 66) {
+                    $("#services_marketing").addClass("active");
 
-                if (checkIncludeActiceClass("#services_designing")) {
-                    $("#services_designing").removeClass("active");
-                }
-                if (checkIncludeActiceClass("#services_development")) {
-                    $("#services_development").removeClass("active");
-                }
-                if (checkIncludeActiceClass("#services_marketing")) {
-                    $("#services_marketing").removeClass("active");
-                }
-            }
-            if (services_marketing_key <= 66) {
-                $("#services_marketing").addClass("active");
-
-                if (checkIncludeActiceClass("#services_designing")) {
-                    $("#services_designing").removeClass("active");
-                }
-                if (checkIncludeActiceClass("#services_writting")) {
-                    $("#services_writting").removeClass("active");
-                }
-                if (checkIncludeActiceClass("#services_development")) {
-                    $("#services_development").removeClass("active");
+                    if (checkIncludeActiceClass("#services_designing")) {
+                        $("#services_designing").removeClass("active");
+                    }
+                    if (checkIncludeActiceClass("#services_writting")) {
+                        $("#services_writting").removeClass("active");
+                    }
+                    if (checkIncludeActiceClass("#services_development")) {
+                        $("#services_development").removeClass("active");
+                    }
                 }
             }
         }
