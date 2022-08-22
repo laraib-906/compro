@@ -9,6 +9,7 @@
     .gird-caption {
         display: none;
     }
+
 }
 
 @media only screen and (min-width: 991px) and (max-width: 1199px) {
@@ -1094,6 +1095,19 @@
 @media only screen and (max-width: 767px) {
 
     /* home */
+    .logo-scroll {
+        overflow: scroll;
+        white-space: nowrap;
+    }
+
+    .logo-scroll img {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 20px !important;
+        text-decoration: none;
+    }
+
     .carouselContainer .carousel-image-content {
         font-size: 16px !important;
         line-height: 1.5rem !important;
@@ -1440,7 +1454,7 @@
     }
 
     .clients .home-clients img {
-        width: 50px;
+        width: 180px;
     }
 
     /* footer end */
@@ -1467,6 +1481,19 @@
 @media only screen and (max-width: 538px) {
 
     /* home */
+    .logo-scroll {
+        overflow: scroll;
+        white-space: nowrap;
+    }
+
+    .logo-scroll img {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+        height: 90px;
+    }
     .home-qoute .content {
         font-size: 30px !important;
     }
@@ -1703,6 +1730,10 @@
     .home-qoute .review-batch-container .review-batch-item .review-batch-item-content {
         font-size: 8px !important;
     }
+
+    .clients .home-clients img {
+        width: 170px;
+    }
 }
 
 
@@ -1751,7 +1782,9 @@
     .sevices-right-images .sevices-right-images-img2 {
         max-width: 50% !important;
     }
-    .sevices-left-images .sevices-left-images-upper-box-inner, .sevices-right-images .sevices-right-images-upper-box-inner {
+
+    .sevices-left-images .sevices-left-images-upper-box-inner,
+    .sevices-right-images .sevices-right-images-upper-box-inner {
         height: 138px !important;
     }
 }
