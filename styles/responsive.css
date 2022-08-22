@@ -9,6 +9,7 @@
     .gird-caption {
         display: none;
     }
+
 }
 
 @media only screen and (min-width: 991px) and (max-width: 1199px) {
@@ -24,6 +25,20 @@
     .sevices-details-more {
         padding-left: 0 !important;
     }
+    .logo-scroll{
+        /* background-color: #333; */
+        overflow: scroll;
+        white-space: nowrap;
+      }
+      
+    .logo-scroll img {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 40px;
+        text-decoration: none;
+      }
+      
 }
 
 @media only screen and (max-width: 1588px) {
@@ -1440,7 +1455,7 @@
     }
 
     .clients .home-clients img {
-        width: 50px;
+        width: 180px;
     }
 
     /* footer end */
@@ -1702,6 +1717,9 @@
 
     .home-qoute .review-batch-container .review-batch-item .review-batch-item-content {
         font-size: 8px !important;
+    }
+    .clients .home-clients img {
+        width: 170px;
     }
 }
 
