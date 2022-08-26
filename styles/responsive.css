@@ -2,6 +2,7 @@
     .navbar-nav {
         margin-top: 30px;
         gap: 10px !important;
+
     }
 }
 
@@ -24,6 +25,21 @@
     .sevices-details-list,
     .sevices-details-more {
         padding-left: 0 !important;
+    }
+    .navbar-collapse .nav_container{
+        height: 100vh;
+        text-align: center;
+        padding: 150px 0px;
+    }
+    .nav_container a{
+        font-size: 30px;
+    }
+    .nav_container .quote{
+        font-size: 30px;
+        padding: 10px 40px !important;
+    }
+    .nav_container .nav-button{
+        padding: 10px 0px;
     }
 }
 

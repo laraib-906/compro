@@ -21,7 +21,9 @@ body {
 .navbar-brand img {
     height: 40px;
 }
-
+.navbar-collapse{
+    flex-grow: 0;
+}
 .navbar .navbar-nav .nav-item .quote {
     margin: 0;
     padding: 8px 15px;
