@@ -28,7 +28,7 @@
   .navbar-collapse .nav_container {
     height: 100vh;
     text-align: center;
-    padding: 150px 0px;
+    margin-top: 130px;
   }
 
   .nav_container a {
