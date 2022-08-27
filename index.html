@@ -879,17 +879,6 @@
   <script src="scripts/flickity.js"></script>
   <script src="scripts/main.js"></script>
   <script>
-    window.addEventListener('resize', () => {
-      if (window.innerWidth <= 767) {
-        document.getElementById('testinomials-id-1').style.display = "none";
-        document.getElementById('testinomials-id-2').style.display = "none";
-        document.getElementById('testinomials-id-3').style.display = "none";
-      } else {
-        document.getElementById('testinomials-id-1').style.display = "flex";
-        document.getElementById('testinomials-id-2').style.display = "flex";
-        document.getElementById('testinomials-id-3').style.display = "flex";
-      }
-    })
     // testimonials coursoul
     var $imagesCarousel = jQuery(".carouselOfImages").flickity({
       accessibility: false,
@@ -971,10 +960,27 @@
     window.onload = function () {
       const home_buss = $('#home_business_id').height();
       $('#home_business_section_image').css("height", home_buss);
+      
+      if (window.innerWidth <= 767) {
+        document.getElementById('testinomials-id-1').style.display = "none";
+        document.getElementById('testinomials-id-2').style.display = "none";
+        document.getElementById('testinomials-id-3').style.display = "none";
+      }
     }
     window.addEventListener('resize', () => {
       const home_buss = $('#home_business_id').height();
       $('#home_business_section_image').css("height", home_buss);
+
+      if (window.innerWidth <= 767) {
+        document.getElementById('testinomials-id-1').style.display = "none";
+        document.getElementById('testinomials-id-2').style.display = "none";
+        document.getElementById('testinomials-id-3').style.display = "none";
+      } else {
+        document.getElementById('testinomials-id-1').style.display = "flex";
+        document.getElementById('testinomials-id-2').style.display = "flex";
+        document.getElementById('testinomials-id-3').style.display = "flex";
+      }
+
     })
 
     function revealTestimonialsHome() {
