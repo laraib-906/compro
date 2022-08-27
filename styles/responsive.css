@@ -19,29 +19,49 @@
 }
 
 @media only screen and (max-width: 767px) {
+
   .sevices-details-list,
   .sevices-details-more {
     padding-left: 0 !important;
   }
+
   .navbar-collapse .nav_container {
     height: 100vh;
     text-align: center;
     padding: 150px 0px;
   }
+
   .nav_container a {
     font-size: 30px;
   }
+
   .nav_container .quote {
     font-size: 30px;
     padding: 10px 40px !important;
   }
+
   .nav_container .nav-button {
     padding: 10px 0px;
   }
+
   .home_our_work .grid-container {
     grid-template-columns: 1fr;
     gap: 10px;
+    flex: 1;
   }
+
+  .potfolio-small-btn {
+    display: flex !important;
+  }
+
+  .potfolio-full-btn {
+    display: none !important;
+  }
+
+  .home-qoute {
+    padding: 5rem 0 !important;
+  }
+
 }
 
 @media only screen and (max-width: 1588px) {
@@ -91,6 +111,7 @@
 }
 
 @media only screen and (max-width: 1399px) {
+
   /* home */
   .complete-relative .turn-upwards {
     left: -300px !important;
@@ -126,12 +147,7 @@
     width: 51% !important;
   }
 
-  .home-services
-    .home-service-ul
-    .home-service-li
-    .home-service-container
-    .service_content
-    .service_subheading {
+  .home-services .home-service-ul .home-service-li .home-service-container .service_content .service_subheading {
     font-size: 18px !important;
     line-height: 2rem !important;
   }
@@ -157,17 +173,11 @@
     margin-right: 5rem !important;
   }
 
-  .home-qoute
-    .review-batch-container
-    .review-batch-item
-    .review-batch-item-year {
+  .home-qoute .review-batch-container .review-batch-item .review-batch-item-year {
     font-size: 36px !important;
   }
 
-  .home-qoute
-    .review-batch-container
-    .review-batch-item
-    .review-batch-item-content {
+  .home-qoute .review-batch-container .review-batch-item .review-batch-item-content {
     font-size: 18px !important;
   }
 
@@ -338,6 +348,7 @@
 }
 
 @media only screen and (max-width: 1199px) {
+
   /* home */
   .home_business .upper-container .title_container .home_business_title {
     font-size: 50px !important;
@@ -404,12 +415,7 @@
     font-size: 14px !important;
   }
 
-  .home-services
-    .home-service-ul
-    .home-service-li
-    .home-service-container
-    .service_content
-    .service_subheading {
+  .home-services .home-service-ul .home-service-li .home-service-container .service_content .service_subheading {
     font-size: 18px !important;
     line-height: 2rem !important;
   }
@@ -422,21 +428,11 @@
     font-size: 22px !important;
   }
 
-  .home-services
-    .home-service-ul
-    .home-service-li
-    .home-service-container
-    .service_content
-    .service_heading {
+  .home-services .home-service-ul .home-service-li .home-service-container .service_content .service_heading {
     font-size: 30px !important;
   }
 
-  .home-services
-    .home-service-ul
-    .home-service-li
-    .home-service-container
-    .service_content
-    .service_subheading {
+  .home-services .home-service-ul .home-service-li .home-service-container .service_content .service_subheading {
     font-size: 16px !important;
   }
 
@@ -447,17 +443,11 @@
     padding: 12px !important;
   }
 
-  .home-qoute
-    .review-batch-container
-    .review-batch-item
-    .review-batch-item-year {
+  .home-qoute .review-batch-container .review-batch-item .review-batch-item-year {
     font-size: 32px !important;
   }
 
-  .home-qoute
-    .review-batch-container
-    .review-batch-item
-    .review-batch-item-content {
+  .home-qoute .review-batch-container .review-batch-item .review-batch-item-content {
     font-size: 14px !important;
   }
 
@@ -511,15 +501,11 @@
     padding: 20px 0 !important;
   }
 
-  .sevices-details-list
-    .sevices-details-list-item
-    .sevices-details-list-item-text {
+  .sevices-details-list .sevices-details-list-item .sevices-details-list-item-text {
     font-size: 18px !important;
   }
 
-  .sevices-details-list
-    .sevices-details-list-item
-    .sevices-details-list-item-icon {
+  .sevices-details-list .sevices-details-list-item .sevices-details-list-item-icon {
     width: 32px !important;
   }
 
@@ -688,6 +674,7 @@
 }
 
 @media only screen and (max-width: 991px) {
+
   /* home */
   .past-history-year {
     font-size: 40px !important;
@@ -717,6 +704,7 @@
 
   .home_business_small_row {
     width: 100% !important;
+    margin: 0 !important;
   }
 
   .home_business_small_col {
@@ -843,21 +831,11 @@
     align-items: flex-start !important;
   }
 
-  .home-services
-    .home-service-ul
-    .home-service-li
-    .home-service-container
-    .service_number_and_image
-    .service_number {
+  .home-services .home-service-ul .home-service-li .home-service-container .service_number_and_image .service_number {
     display: none;
   }
 
-  .home-services
-    .home-service-ul
-    .home-service-li
-    .home-service-container
-    .service_number_and_image
-    .service_hr {
+  .home-services .home-service-ul .home-service-li .home-service-container .service_number_and_image .service_hr {
     display: none;
   }
 
@@ -866,17 +844,11 @@
     margin-right: 3rem !important;
   }
 
-  .home-qoute
-    .review-batch-container
-    .review-batch-item
-    .review-batch-item-year {
+  .home-qoute .review-batch-container .review-batch-item .review-batch-item-year {
     font-size: 28px !important;
   }
 
-  .home-qoute
-    .review-batch-container
-    .review-batch-item
-    .review-batch-item-content {
+  .home-qoute .review-batch-container .review-batch-item .review-batch-item-content {
     font-size: 12px !important;
   }
 
@@ -921,15 +893,11 @@
     padding: 15px 0 !important;
   }
 
-  .sevices-details-list
-    .sevices-details-list-item
-    .sevices-details-list-item-text {
+  .sevices-details-list .sevices-details-list-item .sevices-details-list-item-text {
     font-size: 14px !important;
   }
 
-  .sevices-details-list
-    .sevices-details-list-item
-    .sevices-details-list-item-icon {
+  .sevices-details-list .sevices-details-list-item .sevices-details-list-item-icon {
     width: 25px !important;
   }
 
@@ -1165,6 +1133,7 @@
 }
 
 @media only screen and (max-width: 767px) {
+
   /* home */
   .logo-scroll {
     overflow: scroll;
@@ -1209,14 +1178,18 @@
 
   .header-content-container .header-buttons {
     gap: 40px !important;
+    width: 100% !important;
   }
 
   .header-content-container .header-buttons .header-buttons-work {
     font-size: 16px !important;
+    width: 60% !important;
+    padding: 15px 35px !important;
   }
 
   .header-content-container .header-buttons .header-buttons-quote {
     font-size: 16px !important;
+    width: 60% !important;
   }
 
   .flickity-viewport {
@@ -1249,17 +1222,11 @@
     display: none;
   }
 
-  .home-qoute
-    .review-batch-container
-    .review-batch-item
-    .review-batch-item-year {
+  .home-qoute .review-batch-container .review-batch-item .review-batch-item-year {
     font-size: 24px !important;
   }
 
-  .home-qoute
-    .review-batch-container
-    .review-batch-item
-    .review-batch-item-content {
+  .home-qoute .review-batch-container .review-batch-item .review-batch-item-content {
     font-size: 10px !important;
   }
 
@@ -1292,25 +1259,38 @@
     min-width: 190px !important;
     flex-direction: column !important;
   }
+
   .home_our_work .work_section_header_container .main_subheading {
     display: none;
   }
+
   .help_images_container {
     display: none;
   }
+
   .review-batch {
     display: none;
   }
+
+  .home_business .upper-container .submit-button {
+    width: 175px !important;
+    height: 50px !important;
+    font-size: 16px !important;
+  }
+
   .home_business .upper-container .input,
   .home_business .upper-container .text-area {
-    padding: 6px !important;
+    border-radius: 5px !important;
+    padding: 12px !important;
     border: 1px solid #DCE7FE !important;
-    font-size: 16px ;
-    font-family: "Inter Regular";
+    font-size: 12px !important;
+    font-family: "Inter Regular" !important;
   }
-  .home_business .upper-container .text-area::placeholder{
+
+  .home_business .upper-container .text-area::placeholder {
     font-size: 16px;
   }
+
   /* home end */
   /* services */
   .past-services,
@@ -1574,6 +1554,7 @@
 }
 
 @media only screen and (max-width: 538px) {
+
   /* home */
   .logo-scroll {
     overflow: scroll;
@@ -1588,6 +1569,7 @@
     text-decoration: none;
     height: 90px;
   }
+
   .home-qoute .content {
     font-size: 30px !important;
   }
@@ -1816,17 +1798,11 @@
     margin-bottom: 2rem !important;
   }
 
-  .home-qoute
-    .review-batch-container
-    .review-batch-item
-    .review-batch-item-year {
+  .home-qoute .review-batch-container .review-batch-item .review-batch-item-year {
     font-size: 13px !important;
   }
 
-  .home-qoute
-    .review-batch-container
-    .review-batch-item
-    .review-batch-item-content {
+  .home-qoute .review-batch-container .review-batch-item .review-batch-item-content {
     font-size: 8px !important;
   }
 
@@ -1861,6 +1837,7 @@
 }
 
 @media only screen and (max-width: 473px) {
+
   .sevices-left-images .sevices-left-images-img2,
   .sevices-right-images .sevices-right-images-img2 {
     max-width: 55% !important;
@@ -1868,6 +1845,7 @@
 }
 
 @media only screen and (max-width: 473px) {
+
   .sevices-left-images .sevices-left-images-img1,
   .sevices-right-images .sevices-right-images-img1 {
     width: 45% !important;
@@ -1886,46 +1864,40 @@
 
 @media only screen and (min-width: 1921px) {
   .left-plane {
-    clip-path: polygon(
-      0 0,
-      100% 0%,
-      94% 0,
-      76% 100%,
-      100% 100%,
-      0% 100%,
-      0 100%,
-      0% 0%
-    ) !important;
+    clip-path: polygon(0 0,
+        100% 0%,
+        94% 0,
+        76% 100%,
+        100% 100%,
+        0% 100%,
+        0 100%,
+        0% 0%) !important;
   }
 }
 
 @media only screen and (max-width: 1750px) {
   .left-plane {
-    clip-path: polygon(
-      0 0,
-      100% 0%,
-      97% 0,
-      76% 100%,
-      100% 100%,
-      0% 100%,
-      0 100%,
-      0% 0%
-    ) !important;
+    clip-path: polygon(0 0,
+        100% 0%,
+        97% 0,
+        76% 100%,
+        100% 100%,
+        0% 100%,
+        0 100%,
+        0% 0%) !important;
   }
 }
 
 @media only screen and (max-width: 1540px) {
   .left-plane {
-    clip-path: polygon(
-      0 0,
-      100% 0%,
-      98% 0,
-      76% 100%,
-      100% 100%,
-      0% 100%,
-      0 100%,
-      0% 0%
-    ) !important;
+    clip-path: polygon(0 0,
+        100% 0%,
+        98% 0,
+        76% 100%,
+        100% 100%,
+        0% 100%,
+        0 100%,
+        0% 0%) !important;
   }
 }
 
