@@ -622,6 +622,73 @@
 
 @media only screen and (max-width: 991px) {
 
+    /* new changes */
+
+    .footer-section-width {
+        min-width: 200px !important;
+    }
+
+
+    .nav-ul-container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .nav-ul-container ul {
+        margin-left: 0 !important;
+        gap: 30px !important;
+    }
+
+    .nav-ul-container ul .nav-link {
+        font-size: 30px;
+    }
+
+    .nav-ul-container ul .quote {
+        font-size: 30px;
+        font-size: 24px;
+        padding: 10px 40px !important;
+        gap: 30px !important;
+    }
+
+    .home_our_work .grid-container {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 20px !important;
+    }
+
+    .right-container-lower-details-index {
+        margin-left: 25px !important;
+    }
+
+    .about-grow-section .past-growth-exp .past-growth {
+        height: 150px !important;
+    }
+
+
+    .contact-form-container .input,
+    .contact-form-container .select,
+    .contact-form-container .text-area {
+        font-size: 14px !important;
+        padding: 12px !important;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border-radius: 5px !important;
+    }
+
+    .contact-form-container .input::placeholder,
+    .contact-form-container .select::placeholder,
+    .contact-form-container .text-area::placeholder {
+        font-size: 14px !important;
+    }
+
+
+    /* new changes end */
+
+
     /* home */
     .navbar-nav {
         margin-top: 30px;
@@ -642,15 +709,6 @@
         right: none !important;
         z-index: 1;
         height: 100% !important;
-        width: 100% !important;
-    }
-
-    .home_business .lower-container .lower-main-container {
-        flex-direction: column !important;
-    }
-
-    .home_business .lower-container .lower-main-container .lower_hr {
-        height: 1px !important;
         width: 100% !important;
     }
 
@@ -714,7 +772,6 @@
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/home/header_image.png);
         background-size: cover !important;
         background-position: center !important;
-        text-align: center;
     }
 
     .left-plane {
@@ -911,7 +968,7 @@
 
     .sevices-left-images .sevices-left-images-centering-logo img,
     .sevices-right-images .sevices-right-images-centering-logo img {
-        width: 25% !important;
+        width: 35% !important;
     }
 
     .services-section-header-image {
@@ -1003,11 +1060,17 @@
     }
 
     .past-growth .past-growth-year {
-        font-size: 37px !important;
+        font-size: 46px !important;
     }
 
     .past-growth .past-growth-content {
-        font-size: 14px !important;
+        font-size: 16px !important;
+        display: -webkit-box !important;
+        -webkit-line-clamp: 2 !important;
+        -webkit-box-orient: vertical !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        height: 50px !important;
     }
 
     .about-programs-section .about-programs .title {
@@ -1082,12 +1145,31 @@
     /* footer end */
 }
 
+@media only screen and (max-width: 784px) {
+    .footer-section-width {
+        min-width: 165px !important;
+    }
+}
+
 @media only screen and (max-width: 767px) {
 
+
+    .past-growth .past-growth-content {
+        overflow: initial !important;
+    }
+
     /* home */
+    .about-grow-section .past-growth-exp .past-growth {
+        height: none !important;
+    }
+
     .logo-scroll {
         overflow: scroll;
         white-space: nowrap;
+    }
+
+    .right-container-lower-details-index {
+        margin-left: 0 !important;
     }
 
     .logo-scroll img {
@@ -1113,6 +1195,15 @@
 
     .header-content .header-slogun {
         font-size: 22px !important;
+    }
+
+    .home_business .lower-container .lower-main-container {
+        flex-direction: column !important;
+    }
+
+    .home_business .lower-container .lower-main-container .lower_hr {
+        height: 1px !important;
+        width: 100% !important;
     }
 
     .header-content .header-title {
@@ -1537,6 +1628,10 @@
         gap: 30px !important;
     }
 
+    .header {
+        text-align: center;
+    }
+
     /* new-changes ends */
 
     /* navbar end */
@@ -1897,8 +1992,6 @@
         width: 170px;
     }
 }
-
-
 
 @media only screen and (max-width: 466px) {
     .about-overview-image-section {
