@@ -1,10 +1,3 @@
-@media only screen and (max-width: 991px) {
-    .navbar-nav {
-        margin-top: 30px;
-        gap: 10px !important;
-    }
-}
-
 @media only screen and (max-width: 703px) {
     .gird-caption {
         display: none;
@@ -16,14 +9,6 @@
     .carouselContainer .carousel-image-content {
         font-size: 16px !important;
         line-height: 1.5rem !important;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-
-    .sevices-details-list,
-    .sevices-details-more {
-        padding-left: 0 !important;
     }
 }
 
@@ -638,6 +623,11 @@
 @media only screen and (max-width: 991px) {
 
     /* home */
+    .navbar-nav {
+        margin-top: 30px;
+        gap: 10px !important;
+    }
+
     .past-history-year {
         font-size: 40px !important;
     }
@@ -1286,6 +1276,11 @@
         width: 40px !important;
     }
 
+    .sevices-details-list,
+    .sevices-details-more {
+        padding-left: 0 !important;
+    }
+
     /* service end */
     /* about */
     .about-overview-section .subtitle,
@@ -1480,7 +1475,118 @@
 
 @media only screen and (max-width: 538px) {
 
+    /* navbar */
+    /* new-changes */
+    .nav-ul-container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .nav-ul-container ul {
+        margin-left: 0 !important;
+        gap: 30px !important;
+    }
+
+    .nav-ul-container ul .nav-link {
+        font-size: 30px;
+    }
+
+    .nav-ul-container ul .quote {
+        font-size: 30px;
+        font-size: 24px;
+        padding: 10px 40px !important;
+        gap: 30px !important;
+    }
+
+    /* new-changes ends */
+
+    /* navbar end */
+
     /* home */
+
+
+    /* new-changes */
+
+    .header-content .header-title {
+        font-size: 40px !important;
+        line-height: 3rem !important;
+        width: 100% !important;
+    }
+
+    .header-content .header-subtitle {
+        width: 100% !important;
+        font-size: 20px !important;
+    }
+
+    .header-content-container .header-buttons {
+        flex-direction: column;
+        gap: 20px !important;
+        width: 100%;
+    }
+
+    .header-content-container .header-buttons .header-buttons-work,
+    .header-content-container .header-buttons .header-buttons-quote {
+        width: 80% !important;
+        padding: 10px 28px !important;
+    }
+
+    .home_our_work .work_section_header_container .main_subheading {
+        display: none;
+    }
+
+    .home_our_work .complete-relative {
+        margin-top: 0 !important;
+    }
+
+    .home_our_work .grid-container {
+        display: flex !important;
+        flex: 1 !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+
+
+    .potfolio_view_all_button {
+        display: none !important;
+    }
+
+    .potfolio_view_more_button {
+        display: flex !important;
+    }
+
+    .home-review .help_images_container,
+    .home-qoute .review-batch-container {
+        display: none !important;
+    }
+
+    .home_business_small_row {
+        margin: 0 !important;
+    }
+
+    .home_business .upper-container .input,
+    .home_business .upper-container .text-area {
+        font-size: 16px !important;
+        border-radius: 5px !important;
+        font-family: "Inter Regular";
+    }
+
+    .home_business .upper-container .text-area::placeholder {
+        font-size: 16px !important;
+        border-radius: 5px !important;
+        font-family: "Inter Regular";
+    }
+
+    .home_business .upper-container .submit-button {
+        width: 200px !important;
+        height: 50px !important;
+        font-size: 16px !important;
+    }
+
+    /* new-changes end */
+
     .logo-scroll {
         overflow: scroll;
         white-space: nowrap;
@@ -1494,6 +1600,7 @@
         text-decoration: none;
         height: 90px;
     }
+
     .home-qoute .content {
         font-size: 30px !important;
     }
@@ -1684,17 +1791,6 @@
         height: 260px !important;
         margin-top: -29px !important;
         margin-left: 0 !important;
-    }
-
-    .header-content .header-title {
-        font-size: 30px !important;
-        line-height: 2rem !important;
-        width: 100% !important;
-    }
-
-    .header-content .header-subtitle {
-        width: 100% !important;
-        font-size: 16px !important;
     }
 
     .header-content-container {

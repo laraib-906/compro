@@ -44,24 +44,26 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav ms-auto navbar-nav-scroll d-flex gap-5">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="about.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <button type="button" id="myModal" class="quote" data-bs-toggle="modal" data-bs-target="#exampleModal"> Get
-              a Quote </button>
-          </li>
-        </ul>
+        <div class="nav-ul-container">
+          <ul class="navbar-nav ms-auto navbar-nav-scroll d-flex gap-5">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <button type="button" id="myModal" class="quote" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Get a Quote </button>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
@@ -385,7 +387,8 @@
                 <div class="review-batch-item-year">06</div>
                 <div class="review-batch-item-content"> Pro awards won for lorem amet </div>
               </div>
-              <div class="review-batch-item review-batch-item-year-reviewText-container text-center d-flex flex-column gap-5 justify-content-center align-items-centerc">
+              <div
+                class="review-batch-item review-batch-item-year-reviewText-container text-center d-flex flex-column gap-5 justify-content-center align-items-centerc">
                 <div class="review-batch-item-year review-batch-item-year-reviewText"> Review </div>
                 <div class="review-batch-item-content d-flex flex-row gap-2">
                   <i class="fa-solid fa-star"></i>
@@ -627,7 +630,7 @@
                 <img src="assets/images/portfolio/image3.png" />
               </a>
             </div>
-            <div class="item mix logos">
+            <div class="item mix logos potfolio_small_content_screen">
               <a href="assets/images/portfolio/image5.png" data-lightbox="ourportfolio"
                 data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
                 <div class="image-hover-content">
@@ -636,7 +639,7 @@
                 <img src="assets/images/portfolio/image5.png" />
               </a>
             </div>
-            <div class="item mix mobile">
+            <div class="item mix mobile potfolio_small_content_screen">
               <a href="assets/images/portfolio/image6.png" data-lightbox="ourportfolio"
                 data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
                 <div class="image-hover-content">
@@ -645,7 +648,7 @@
                 <img src="assets/images/portfolio/image6.png" />
               </a>
             </div>
-            <div class="item mix web">
+            <div class="item mix web potfolio_small_content_screen">
               <a href="assets/images/portfolio/image7.png" data-lightbox="ourportfolio"
                 data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
                 <div class="image-hover-content">
@@ -660,8 +663,11 @@
       </div>
       <div class="row mt-5">
         <div class="col-md-12 mt-5">
-          <div class="action_button_potfolio reveal-loaded">
+          <div class="action_button_potfolio potfolio_view_all_button reveal-loaded">
             <a href="portfolio.html" style="text-decoration: none"><button>View All</button></a>
+          </div>
+          <div class="action_button_potfolio potfolio_view_more_button reveal-loaded">
+            <button type="button" onclick="viewMorePortfolioItems()">View More</button>
           </div>
         </div>
       </div>
@@ -955,11 +961,23 @@
     window.onload = function () {
       const home_buss = $('#home_business_id').height();
       $('#home_business_section_image').css("height", home_buss);
+      if(window.innerWidth <= 538) {
+        $('.potfolio_small_content_screen').css('display', 'none');
+      }
     }
     window.addEventListener('resize', () => {
       const home_buss = $('#home_business_id').height();
       $('#home_business_section_image').css("height", home_buss);
+      if(window.innerWidth <= 538) {
+        $('.potfolio_small_content_screen').css('display', 'none');
+      } else {
+        $('.potfolio_small_content_screen').css('display', 'flex');        
+      }
     })
+
+    function viewMorePortfolioItems() {
+      $('.potfolio_small_content_screen').css('display', 'flex'); 
+    }
 
       // testimonials coursoul end
   </script>

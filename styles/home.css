@@ -772,8 +772,15 @@
     mix-blend-mode: luminosity !important;
 }
 
-.action_button_potfolio {
+.potfolio_view_all_button {
     display: flex;
+}
+
+.potfolio_view_more_button {
+    display: none;
+}
+
+.action_button_potfolio {
     flex: 1;
     justify-content: center;
     align-items: center;
