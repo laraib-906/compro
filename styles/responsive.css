@@ -1645,6 +1645,24 @@
         font-size: 50px !important;
     }
 
+    .contact-form-container .input,
+    .contact-form-container .select,
+    .contact-form-container .text-area {
+        font-size: 12px !important;
+        padding: 12px !important;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border-radius: 5px !important;
+    }
+
+    .contact-form-container .input::placeholder,
+    .contact-form-container .select::placeholder,
+    .contact-form-container .text-area::placeholder {
+        font-size: 12px !important;
+    }
+
+
     /* new-changes end */
 
     .logo-scroll {

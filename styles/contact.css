@@ -27,9 +27,9 @@
     width: 1320px;
     padding:10px;
 }
-.input,
-.select,
-.text-area {
+.contact-form-container .input,
+.contact-form-container .select,
+.contact-form-container .text-area {
     padding: 18px;
     width: 100%;
     border: none;
