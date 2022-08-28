@@ -43,8 +43,8 @@
         aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse " id="navbarScroll">
-        <div class="nav_container">
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <div class="nav-ul-container">
           <ul class="navbar-nav ms-auto navbar-nav-scroll d-flex gap-5">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="about.html">About Us</a>
@@ -58,7 +58,7 @@
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
-            <li class="nav-item nav-button">
+            <li class="nav-item">
               <button type="button" id="myModal" class="quote" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Get a Quote </button>
             </li>
@@ -630,7 +630,7 @@
                 <img src="assets/images/portfolio/image3.png" />
               </a>
             </div>
-            <div class="item mix logos" id="testinomials-id-1">
+            <div class="item mix logos potfolio_small_content_screen">
               <a href="assets/images/portfolio/image5.png" data-lightbox="ourportfolio"
                 data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
                 <div class="image-hover-content">
@@ -639,7 +639,7 @@
                 <img src="assets/images/portfolio/image5.png" />
               </a>
             </div>
-            <div class="item mix mobile" id="testinomials-id-2">
+            <div class="item mix mobile potfolio_small_content_screen">
               <a href="assets/images/portfolio/image6.png" data-lightbox="ourportfolio"
                 data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
                 <div class="image-hover-content">
@@ -648,7 +648,7 @@
                 <img src="assets/images/portfolio/image6.png" />
               </a>
             </div>
-            <div class="item mix web" id="testinomials-id-3">
+            <div class="item mix web potfolio_small_content_screen">
               <a href="assets/images/portfolio/image7.png" data-lightbox="ourportfolio"
                 data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit.">
                 <div class="image-hover-content">
@@ -663,11 +663,11 @@
       </div>
       <div class="row mt-5">
         <div class="col-md-12 mt-5">
-          <div class="action_button_potfolio potfolio-full-btn reveal-loaded">
+          <div class="action_button_potfolio potfolio_view_all_button reveal-loaded">
             <a href="portfolio.html" style="text-decoration: none"><button>View All</button></a>
           </div>
-          <div class="action_button_potfolio potfolio-small-btn reveal-loaded">
-            <button onclick="revealTestimonialsHome()">View More</button>
+          <div class="action_button_potfolio potfolio_view_more_button reveal-loaded">
+            <button type="button" onclick="viewMorePortfolioItems()">View More</button>
           </div>
         </div>
       </div>
@@ -960,33 +960,22 @@
     window.onload = function () {
       const home_buss = $('#home_business_id').height();
       $('#home_business_section_image').css("height", home_buss);
-      
-      if (window.innerWidth <= 767) {
-        document.getElementById('testinomials-id-1').style.display = "none";
-        document.getElementById('testinomials-id-2').style.display = "none";
-        document.getElementById('testinomials-id-3').style.display = "none";
+      if(window.innerWidth <= 538) {
+        $('.potfolio_small_content_screen').css('display', 'none');
       }
     }
     window.addEventListener('resize', () => {
       const home_buss = $('#home_business_id').height();
       $('#home_business_section_image').css("height", home_buss);
-
-      if (window.innerWidth <= 767) {
-        document.getElementById('testinomials-id-1').style.display = "none";
-        document.getElementById('testinomials-id-2').style.display = "none";
-        document.getElementById('testinomials-id-3').style.display = "none";
+      if(window.innerWidth <= 538) {
+        $('.potfolio_small_content_screen').css('display', 'none');
       } else {
-        document.getElementById('testinomials-id-1').style.display = "flex";
-        document.getElementById('testinomials-id-2').style.display = "flex";
-        document.getElementById('testinomials-id-3').style.display = "flex";
+        $('.potfolio_small_content_screen').css('display', 'flex');        
       }
-
     })
 
-    function revealTestimonialsHome() {
-      document.getElementById('testinomials-id-1').style.display = "flex";
-      document.getElementById('testinomials-id-2').style.display = "flex";
-      document.getElementById('testinomials-id-3').style.display = "flex";
+    function viewMorePortfolioItems() {
+      $('.potfolio_small_content_screen').css('display', 'flex'); 
     }
 
       // testimonials coursoul end
